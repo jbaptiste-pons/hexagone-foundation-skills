@@ -4,7 +4,7 @@ Génération automatique de comptes-rendus de réunion en français à partir d'
 
 ## Contexte
 
-Rédiger un compte-rendu de réunion prend du temps : écouter ou relire la transcription, réorganiser les échanges par sujet, extraire les décisions, identifier les actions à mener. Ce skill automatise toute la chaîne à partir du fichier `.vtt` exporté depuis Teams, avec en option le rapport de présence `.csv`.
+Rédiger un compte-rendu de réunion prend du temps : écouter ou relire la transcription, réorganiser les échanges par sujet, extraire les décisions. Ce skill automatise toute la chaîne à partir du fichier `.vtt` exporté depuis Teams, avec en option le rapport de présence `.csv`, et peut conclure en proposant des issues de suivi à créer dans GitLab ou GitHub.
 
 **Agnostique par défaut, enrichi pour hexagone-monorepo.** Le skill fonctionne sur n'importe quel projet. Quand il détecte le projet **hexagone-monorepo**, il active automatiquement la classification par sous-domaine et le routage vers `docs/reports/<sous-domaine>/`. Sur tout autre projet, il écrit dans un dossier unique (`docs/reports/`, `docs/meetings/`, etc.).
 
@@ -42,8 +42,8 @@ graph LR
     M -- générique --> G[Dossier unique]
     C --> D[Rewrite par sujet]
     G --> D
-    D --> E[Extraction actions]
-    E --> F[Fichier .md]
+    D --> F[Fichier .md]
+    F --> I[Proposition d'issues<br/>optionnelle]
 ```
 
 ## Mode hexagone-monorepo
@@ -95,10 +95,23 @@ Le compte-rendu suit la même structure dans les deux modes :
 - **Métadonnées** : date (`DD/MM/YYYY`), organisateur identifié
 - **Participants** : liste simple séparée par des virgules
 - **Sections numérotées** par sujet, chacune avec `### Décisions` et, si pertinent, `### Point d'attention` et `### Problèmes identifiés`
-- **Table `## Actions`** à la fin du document (toujours présente, avec une ligne « Aucune action identifiée » si rien n'a été repéré)
 - **Diagrammes Mermaid** optionnels, uniquement si le contenu les rend utiles (workflows multi-étapes, arbres de décision)
 
 Pas de front-matter YAML, pas de métadonnées cachées.
+
+## Création d'issues de suivi
+
+Après l'écriture du compte-rendu, le skill peut proposer de créer des issues de suivi GitLab ou GitHub à partir des **problèmes identifiés**, **points d'attention** et **décisions impliquant du travail**. C'est ce qui remplace l'ancienne table `## Actions` statique : au lieu d'une liste que personne n'exploite, le skill ferme la boucle décision → travail tracé.
+
+Cette étape est **optionnelle, gated et opt-in** :
+
+- Un **preflight silencieux** vérifie qu'un remote git existe, qu'il pointe vers exactement un GitLab *ou* un GitHub, et que la CLI correspondante (`glab` / `gh`) est installée et authentifiée. À la moindre défaillance, le skill l'indique en une ligne et s'arrête — le compte-rendu, lui, est toujours livré.
+- Les candidats sont dérivés du compte-rendu déjà écrit. Un filtre qualité écarte l'informatif et les items non actionnables.
+- Le skill présente jusqu'à 4 candidats via une question à choix multiple ; **rien n'est sélectionné par défaut**. L'en-tête nomme explicitement le dépôt cible (`owner/repo`).
+- Les issues sélectionnées sont créées via `glab` / `gh`. Le corps de chaque issue est un résumé court avec un lien vers le compte-rendu local — jamais d'extrait brut de transcription.
+- Aucun label n'est créé : un label existant n'est appliqué que s'il correspond clairement.
+
+Le skill ne commite ni ne pousse jamais. La création d'issues est le seul effet de bord réseau, et elle n'a lieu qu'après sélection explicite de l'utilisateur.
 
 ## Rewrite intelligent
 
@@ -132,3 +145,4 @@ Le skill n'invente jamais de noms.
 - Avoir exporté la transcription `.vtt` depuis Teams
 - Optionnel : avoir exporté le rapport de présence `.csv` pour enrichir la section Participants
 - Mode hexagone-monorepo : le skill suppose que `docs/reports/<domaine>/` existe pour les sous-dossiers concernés (et les crée au besoin si manquants)
+- Création d'issues (optionnelle) : `glab` (GitLab) ou `gh` (GitHub) installé et authentifié — sinon l'étape est simplement ignorée

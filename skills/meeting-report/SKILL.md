@@ -1,8 +1,8 @@
 ---
 name: meeting-report
-description: "Génère automatiquement un compte-rendu de réunion en français à partir d'une transcription Teams (.vtt) et optionnellement d'un rapport de présence (.csv). Agnostique par défaut, avec un mode enrichi auto-détecté pour le projet hexagone-monorepo. À utiliser quand l'utilisateur dépose un ou deux chemins de fichiers Teams dans le prompt et demande la génération d'un compte-rendu."
-allowed-tools: Read, Write, Bash, Grep, Glob
-version: 1.2.0
+description: "Génère automatiquement un compte-rendu de réunion en français à partir d'une transcription Teams (.vtt) et optionnellement d'un rapport de présence (.csv). Propose ensuite optionnellement de créer des issues de suivi GitLab/GitHub à partir du compte-rendu. Agnostique par défaut, avec un mode enrichi auto-détecté pour le projet hexagone-monorepo. À utiliser quand l'utilisateur dépose un ou deux chemins de fichiers Teams dans le prompt et demande la génération d'un compte-rendu."
+allowed-tools: Read, Write, Bash, Grep, Glob, AskUserQuestion
+version: 1.4.0
 license: MIT
 metadata:
   author: Foundation Skills
@@ -13,6 +13,15 @@ metadata:
 Generate a structured French meeting report from a Microsoft Teams `.vtt` transcript, optionally enriched with a Teams `.csv` attendance report.
 
 The skill works on **any project**. It auto-detects the **hexagone-monorepo** project and, when detected, applies project-specific rules (sub-domain classification, sub-folder routing, foundation date-only naming). On any other project, it falls back to a generic single-folder output.
+
+After the report is written, the skill can optionally propose follow-up GitLab/GitHub issues derived from the report (Step 12).
+
+## Prerequisites
+
+Steps 1–11 require no external tooling. **Step 12 (optional issue creation)** uses a Git platform CLI — these are *soft* dependencies: if the CLI is absent or unauthenticated, Step 12 simply skips and the report is unaffected.
+
+- **`gh`** (GitHub CLI) — required only to create GitHub issues from the report. Install: https://cli.github.com
+- **`glab`** (GitLab CLI) — required only to create GitLab issues from the report. Install: https://gitlab.com/gitlab-org/cli
 
 ## When to Use This Skill
 
@@ -98,7 +107,7 @@ Priority order:
 
 ### Step 4: Classify the Sub-Domain (hexagone-monorepo mode only)
 
-**Skip this step in generic mode.** In generic mode, there is no domain classification — the report goes to a single output folder (see Step 11).
+**Skip this step in generic mode.** In generic mode, there is no domain classification — the report goes to a single output folder (see Step 10).
 
 In **hexagone-monorepo mode**, analyze transcript content for domain signals using the table below (case-insensitive keyword matching):
 
@@ -151,23 +160,7 @@ Classification is **by project/domain, not by team org.** The Hexaflux team is o
 5. Number the sections: `## 1. <Topic>`, `## 2. <Topic>`, etc.
 6. **Do not quote speakers verbatim.** The output is a synthesized report, not minutes.
 
-### Step 7: Extract Actions
-
-Comb the transcript for action items — things to do, follow-ups, commitments, decisions requiring later implementation. Identify for each:
-
-- **Action** — the thing to do
-- **Responsable** — who was assigned (or « À préciser » if unclear)
-- **Statut** — typical values: `À planifier`, `En cours`, `En attente`, `Terminé`
-
-Format as a Markdown table. The `## Actions` section is **always present** at the end of the report. If no actions were identified, write a single row:
-
-```markdown
-| Action | Responsable | Statut |
-|--------|-------------|--------|
-| Aucune action identifiée | — | — |
-```
-
-### Step 8: Decide Whether to Add a Mermaid Diagram
+### Step 7: Decide Whether to Add a Mermaid Diagram
 
 Add a mermaid diagram **only** when the content genuinely benefits from visualization. Good triggers:
 
@@ -185,7 +178,7 @@ Place the diagram **inside the relevant topic section**, not at the top of the r
 
 **Default: no diagram.** When in doubt, skip it. A report without a diagram is the norm, not the exception.
 
-### Step 9: Assemble the Report
+### Step 8: Assemble the Report
 
 Use this exact template:
 
@@ -227,12 +220,6 @@ Use this exact template:
 ---
 
 <...as many topics as needed...>
-
-## Actions
-
-| Action | Responsable | Statut |
-|--------|-------------|--------|
-| ... | ... | ... |
 ```
 
 **Rules:**
@@ -241,9 +228,8 @@ Use this exact template:
 - **Participants** is a single comma-separated line, not a table, no roles
 - **Organisateur**: if identifiable from transcript/csv, write `**Organisateur :** Nom (Rôle)`. If not identifiable, write `**Organisateur :** À préciser`
 - `---` horizontal rule separator between topics
-- `## Actions` always at the very end
 
-### Step 10: Determine the Filename
+### Step 9: Determine the Filename
 
 **hexagone-monorepo mode:**
 - Foundation team meetings (`foundation/` folder) → `YYYY-MM-DD.md` (date only, no slug — one standing team meeting per day maximum)
@@ -254,7 +240,7 @@ Use this exact template:
 
 The filename always uses the **ISO date format** `YYYY-MM-DD`, different from the French `DD/MM/YYYY` used in the report body.
 
-### Step 11: Resolve the Output Folder and Write the File
+### Step 10: Resolve the Output Folder and Write the File
 
 **hexagone-monorepo mode:**
 1. Target path: `docs/reports/<sub-domain>/<filename>.md`
@@ -273,21 +259,79 @@ The filename always uses the **ISO date format** `YYYY-MM-DD`, different from th
 1. Check if a file with the same name already exists — if yes, append `-2`, `-3`, etc. before writing (do NOT overwrite)
 2. Write the file with the Write tool
 
-### Step 12: Report to the User
+### Step 11: Report to the User
 
 Show a concise summary:
 
 1. ✓ Mode: `hexagone-monorepo` or `generic`
 2. ✓ Target path
-3. One-line summary: (sub-domain in hexagone mode), number of topics, number of actions, number of participants
+3. One-line summary: (sub-domain in hexagone mode), number of topics, number of participants
 4. Note any fallback that was triggered (no attendance CSV, no voice tags, today's date used because no date found, default folder created, etc.)
-5. **Stop.** Do not run `git add`, `git commit`, or `git push`. The user commits the file manually after review.
+5. Do not run `git add`, `git commit`, or `git push` — the user commits the report manually after review.
+
+Then proceed to Step 12.
+
+### Step 12: Propose Follow-up Issues (Optional)
+
+After the report is written and reported, optionally offer to create follow-up GitLab/GitHub issues from it. This step **must never block, delay, or alter the report** — the report of Step 11 is already delivered. It runs in **both modes** (generic and hexagone-monorepo).
+
+#### Step 12a: Preflight (silent gate)
+
+Run these checks. **If any one fails, print a single short line stating why and stop — do NOT show a prompt:**
+
+1. **Interactive context** — if the skill is running non-interactively / in a batch, skip.
+2. **Single platform** — `git remote -v` in the current directory must resolve to exactly one platform: a GitHub remote (`github.com`) OR a GitLab remote. No remote, or both platforms present → skip.
+3. **CLI ready** — the matching CLI must be installed AND authenticated: `gh auth status` for GitHub, `glab auth status` for GitLab. Missing or unauthenticated → skip.
+4. **Quality candidates** — at least one quality candidate must survive Step 12b. Zero → skip.
+
+Skip messages (one line, French), e.g.: « Aucune issue proposée : pas de remote git détecté. » / « Aucune issue proposée : `glab` non authentifié. » / « Aucune issue proposée : aucune décision actionnable dans le compte-rendu. »
+
+#### Step 12b: Derive Candidate Issues
+
+From the **report just written** (not the raw transcript), extract actionable follow-up items:
+
+- **Primary sources:** `### Problèmes identifiés` and `### Point d'attention` bullets.
+- **`### Décisions`** bullets only when the decision implies follow-up work (e.g. « on a décidé de migrer X » → the migration is the candidate). A settled fact is not an issue.
+- **Quality filter** — drop items that are purely informational, deferrals (« on en reparlera »), or have no actionable verb. Prefer fewer sharp candidates over many vague ones.
+- For each surviving item, build:
+  - a **title** — imperative French reformulation, never the verbatim bullet, ≤ ~80 chars, control characters and stray newlines stripped
+  - a **suggested type** — `Problèmes identifiés` → `bug`; `Point d'attention` / `Décisions` → `task`
+- **Cap at the top 4** (the `AskUserQuestion` option limit). If more survive the filter, keep the 4 highest-signal and tell the user the rest can be created on a re-run.
+
+#### Step 12c: Present and Select
+
+Use a **single `AskUserQuestion`** with `multiSelect: true`:
+
+- The question header **names the exact target explicitly**: « Les issues seront créées sur `<owner/repo>` (`<host>`). Lesquelles créer ? » — this is both the selection and the target confirmation.
+- One option per candidate: label = title, description = source section + topic + suggested type.
+- The user selects zero or more. If nothing is selected or the prompt is dismissed → **create nothing**, report done.
+
+#### Step 12d: Create Selected Issues
+
+For each selected candidate, **inline the platform CLI** — do NOT route through the `gitlab-issue` / `github-issues` skills (those are interactive consoles and would re-ask everything already resolved here):
+
+1. **Search for a duplicate first:** `gh issue list --search "<title>"` / `glab issue list --search "<title>"`. If a near-identical open issue exists, surface it and let the user confirm or skip that candidate.
+2. **Create:**
+   - GitHub: `gh issue create --title "<title>" --body "<body>"`
+   - GitLab: `glab issue create --title "<title>" --description "<body>"`
+3. **Body** = a 2-3 line French summary of the item + a relative link to the report file. **Never** paste raw transcript excerpts or patient-identifying content into the body — the detail stays in the local report.
+4. **Labels** — apply an existing project label only if one clearly fits (e.g. `bug`). **Never create a new label**; omit the label if none fits.
+5. Always use the **detected** host/project — never a hardcoded default.
+
+#### Step 12e: Report the Outcome
+
+Print a per-issue result: the created issue URLs, and for any failure the candidate title + the error. Offer to re-run for the items that failed or were not shown.
+
+**Notes for Step 12:**
+- This step performs a **network side-effect** (issue creation) but still **no git actions** — no commit, no push.
+- v1 does not persist state between runs: re-running the skill on the same transcript re-proposes the same candidates. The empty default selection and the pre-create duplicate search are the safeguards.
 
 ## Important Notes
 
 - **Project-agnostic by default.** Sub-domain classification and `docs/reports/<sub-domain>/` routing only apply when the hexagone-monorepo project is detected.
 - **No redaction or pseudonymization.** Team meetings are considered internal and trusted. Names and content may appear verbatim in reports.
-- **No git actions.** The skill writes the file and stops. Commit and push are manual.
+- **No git commits or pushes.** The skill writes the report file; the user commits and pushes manually. Step 12 may create GitLab/GitHub issues — an opt-in, gated network side-effect — but never runs `git add`, `git commit`, or `git push`.
+- **Issue creation is opt-in, gated, and bounded.** Step 12 proposes shallow follow-up issues derived from the report and never auto-creates anything (empty default selection). Deep, investigated, single-bug issues belong to the `triage-issue` skill, not here.
 - **Rewrite heavily — do not transcribe.** The output is a thematic synthesis, not chronological minutes.
 - **Fix French accents aggressively.** Teams `.vtt` French transcripts routinely miss accents and punctuation.
 - **Foundation date-only naming applies only in hexagone-monorepo mode.** Generic mode always uses `YYYY-MM-DD-<slug>.md`.
@@ -371,4 +415,28 @@ User: crée un compte-rendu /tmp/hexaflux_weekly.vtt
 → Patient and admission keywords are present BUT tied to HL7 message segments, not business workflows
 → Applies the interop-vs-gap disambiguation rule → picks interoperability/
 → Writes docs/reports/interoperability/2026-04-17-hexaflux-weekly.md
+```
+
+### Example 7: Follow-up issue proposal after the report (GitHub)
+
+```
+User: génère le compte-rendu /tmp/sprint.vtt
+
+→ Report written to docs/reports/2026-05-12-sprint-planning.md and reported (Steps 1–11)
+→ Step 12a preflight: git remote → github.com/Dedalus-ERP-PAS/foo, `gh` authenticated → pass
+→ Step 12b: derives 3 quality candidates from Problèmes identifiés + Point d'attention
+→ Step 12c: AskUserQuestion « Les issues seront créées sur Dedalus-ERP-PAS/foo (github.com). Lesquelles créer ? »
+→ User selects 2 of 3
+→ Step 12d: `gh issue create` ×2 (duplicate search first, no label invented)
+→ Step 12e: reports the 2 created issue URLs
+```
+
+### Example 8: Issue step skipped — no git remote
+
+```
+User: transforme cette transcription en rapport /tmp/atelier.vtt
+
+→ Report written and reported (Steps 1–11)
+→ Step 12a preflight: `git remote -v` empty → no platform
+→ Prints « Aucune issue proposée : pas de remote git détecté. » and stops
 ```
