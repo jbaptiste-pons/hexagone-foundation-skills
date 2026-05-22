@@ -1,7 +1,7 @@
 ---
 name: fast-meeting
 description: "Lance une réunion autonome rapide avec des personas sélectionnés automatiquement, implémente la décision, crée une MR/PR, commite, pousse et publie un résumé en français — le tout sans intervention de l'utilisateur."
-version: 1.7.0
+version: 1.8.0
 license: MIT
 metadata:
   author: Foundation Skills
@@ -415,49 +415,50 @@ _Implémentation générée automatiquement par IA_
 
 ### Step 9: Post to Issue (PO / Consultant Oriented)
 
-Post a **Product Owner / consultant oriented** comment to the linked issue. This comment targets stakeholders, not developers — focus on business value, user impact, and strategic reasoning rather than technical details.
+Post a **Product Owner / consultant oriented** comment to the linked issue. This comment is a **decision bookmark** for the PO/consultant who reopens the ticket: it must answer "what was decided and why?" in under 15 displayed lines. Optimize for scan reading — the reader decides in 3 seconds whether to dig in.
 
 **Issue resolution:**
 - **Issue was referenced in Step 1:** post the comment on that issue
 - **Issue was created in Step 4b:** post the comment on the newly created issue
 - **Issue creation failed in Step 4b:** skip this step — log the failure in the Run Summary
 
+#### Authoring rules
+
+- **One H2 only — `## Décision`** at the top, stating the verdict in 1-2 actionable sentences. This is the only thing 80% of readers will read.
+- **Skip the question** — the issue title already carries it. Do not reformulate it.
+- **No personas table.** Personas are internal production mechanics, not a deliverable. Reference them only as a flat inline list in the footer for audit.
+- **3 bullets max per section.** If a section needs more, the decision was not clear enough.
+- **No empty placeholders.** If a field has no real content (no délai, no dependencies), omit it entirely — do not write "N/A" or "Si applicable".
+- **No technical details.** Implementation specifics belong in the MR/PR description.
+
 #### Issue Comment Template (French)
 
 ```markdown
-## Analyse de réunion rapide
+## Décision
 
-### Question posée
-[La question de décision formulée en termes métier]
+[1-2 phrases actionnables au présent, en termes métier]
 
-### Participants
-| Expert | Rôle | Position |
-|--------|------|----------|
-| ... | ... | [Position résumée en termes d'impact métier] |
-
-### Décision retenue
-[L'approche recommandée expliquée en termes de valeur utilisateur et impact business]
-
-**Pourquoi cette décision :**
+**Pourquoi**
 - [Bénéfice utilisateur / métier 1]
 - [Bénéfice utilisateur / métier 2]
-- [Alignement avec les objectifs produit]
+- [Bénéfice utilisateur / métier 3 ou trade-off assumé]
 
-### Risques projet
-- [Risque 1 formulé en impact métier → Mitigation]
-- [Risque 2 formulé en impact métier → Mitigation]
+**Risques**
+- [Risque métier → mitigation]
+- [Risque métier → mitigation]
 
-### Impact
-- **Utilisateurs concernés :** [Qui est impacté et comment]
-- **Délai estimé :** [Si applicable]
-- **Dépendances :** [Autres équipes ou fonctionnalités impactées]
+**Impact** : [utilisateurs concernés] · [délai si pertinent] · [dépendances si pertinentes]
 
-### MR/PR
-[Lien vers la MR/PR] — Les détails techniques d'implémentation sont dans la description de la MR/PR.
+**MR/PR** : [Lien]
 
 ---
-_Analyse générée automatiquement par IA_
+_Fast-meeting IA · [Persona1, Persona2, Persona3]_
 ```
+
+**Compaction rules :**
+- Omit the **Risques** section if no meaningful business risk emerged from the meeting.
+- Omit the **Impact** line if the answer would be a generic "tous les utilisateurs".
+- Keep the footer to a single line — personas as a flat comma-separated list, no roles, no positions.
 
 Post the comment using the appropriate tool:
 - **GitLab:** `glab issue note <iid> --message "<comment>"`
