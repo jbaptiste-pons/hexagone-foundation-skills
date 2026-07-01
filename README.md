@@ -98,6 +98,7 @@ graph LR
 | **hpk-parser** | Parsing des messages HPK propriétaires | [doc](docs/hpk-parser.md) |
 | **hl7-pam-parser** | Parsing des messages HL7 v2.5 IHE PAM | [doc](docs/hl7-pam-parser.md) |
 | **uniface-procscript** | Référence ProcScript pour Uniface 9.7 | [doc](docs/uniface-procscript.md) |
+| **fides-ace-spec** | Spécification fonctionnelle FIDES ACE (facturation SESAM-Vitale) | [doc](docs/fides-ace-spec.md) |
 
 ### Outils
 
