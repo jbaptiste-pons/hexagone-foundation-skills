@@ -146,13 +146,18 @@ async fillStep1(data: FeatureStep1Entrants): Promise<void> {
 ### Import JDD in specs
 
 ```typescript
-import * as jdd from "../../fixtures/jdd/PRODUCT-MODULE-001.json";
+import jdd from "../../fixtures/jdd/PRODUCT-MODULE-001.json";
 
-// TypeScript infers types from JSON — jdd.entrants.step1.label is string
-await etapesFeature.createItem(jdd.entrants, jdd.sortants);
+// With resolveJsonModule, TS infers narrow literal/readonly types from the JSON.
+// These often do NOT satisfy a wider, mutable interface (e.g. FeatureEntrants),
+// so cast at the boundary or use a typed loader:
+const entrants = jdd.entrants as FeatureEntrants;
+const sortants = jdd.sortants as FeatureSortants;
+
+await etapesFeature.createItem(entrants, sortants);
 ```
 
-**Note**: Enable `resolveJsonModule: true` in `tsconfig.json` for typed JSON imports.
+**Note**: Enable `resolveJsonModule: true` in `tsconfig.json` for typed JSON imports. Because inferred JSON types are readonly literals, cast to your JDD interface (`as FeatureEntrants`) — or wrap the import in a typed loader — when passing data to steps that expect the wider, mutable interface.
 
 ---
 

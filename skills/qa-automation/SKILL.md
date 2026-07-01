@@ -1,7 +1,7 @@
 ---
 name: qa-automation
 description: "Expert Playwright/TypeScript test automation using a 3-layer architecture (spec → steps → POM), fixture dependency injection, and JDD test data (entrants/sortants). Use when creating, modifying, or debugging Playwright tests, page objects, step files, fixtures, or test data in projects following this architecture."
-version: 2.0.0
+version: 1.0.0
 ---
 
 # QA Automation — Playwright 3-Layer Architecture

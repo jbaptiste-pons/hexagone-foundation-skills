@@ -13,8 +13,8 @@ The CSV uses **semicolon (`;`)** as separator for French locale compatibility wi
 | 3 | Description | Description | Brief functional description (1-3 sentences). What this test validates and why. |
 | 4 | Repository | Test Repository Path | Hierarchical path using `/`. Example: `Auth/Connexion/`, `Paramétrage/Fiches plat/Création/` |
 | 5 | Preconditions | Precondition | Bulleted list using `- `. State required BEFORE the test starts. |
-| 6 | Test Steps | Test Steps | Numbered steps: `1. Action\n2. Action`. Each step = one user action. |
-| 7 | Expected Results | Expected Result | Numbered results matching steps: `1. Result\n2. Result`. Observable, verifiable. |
+| 6 | Test Steps | Test Steps | Numbered steps, one per line inside the quoted cell (real line breaks, not `\n`). Each step = one user action. |
+| 7 | Expected Results | Expected Result | Numbered results matching steps, one per line inside the quoted cell (real line breaks). Observable, verifiable. |
 | 8 | Priority | Priority | `High` (P0), `Medium` (P1), or `Low` (P2) |
 | 9 | Labels | Labels | Comma-separated tags: `smoke,auth,positive` or `regression,negative,validation` |
 
@@ -125,11 +125,19 @@ Use lowercase, no spaces. Combine as needed.
 
 ## Multi-line Content in CSV
 
-When steps or preconditions contain multiple lines, wrap the cell content in **double quotes** and use `\n` (literal newline) inside:
+When steps, expected results, or preconditions contain multiple lines, wrap the cell content in **double quotes** and insert **real line breaks** (actual newlines) inside the quotes — **not** the two-character sequence `\n`. Xray's CSV importer parses genuine newlines within a quoted cell; a literal `\n` would import as a single line with visible backslash-n.
 
 ```csv
-TC-AUTH-001;"Connexion réussie avec identifiants valides";"Vérifier qu'un utilisateur peut se connecter";"Auth/Connexion/";"- Application accessible\n- Utilisateur valide existant";"1. Ouvrir l'URL\n2. Saisir identifiant\n3. Cliquer Connexion";"1. Page de connexion affichée\n2. Champ accepte la saisie\n3. Redirection vers accueil";High;smoke,auth,positive
+Test ID;Summary;Description;Repository;Preconditions;Test Steps;Expected Results;Priority;Labels
+;"Connexion réussie avec identifiants valides";"Vérifier qu'un utilisateur peut se connecter";"Auth/Connexion/";"- Application accessible
+- Utilisateur valide existant";"1. Ouvrir l'URL
+2. Saisir identifiant
+3. Cliquer Connexion";"1. Page de connexion affichée
+2. Champ accepte la saisie
+3. Redirection vers accueil";High;smoke,auth,positive
 ```
+
+A double quote (`"`) that must appear literally inside a quoted cell is escaped by doubling it (`""`), as shown in `examples.md`.
 
 ## Anti-patterns to Avoid
 
