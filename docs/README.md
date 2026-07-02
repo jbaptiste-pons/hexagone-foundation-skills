@@ -79,6 +79,7 @@ Index de la documentation disponible pour les Foundation Skills.
 | [hpk-parser](hpk-parser.md)                                         | Parsing des messages HPK propriétaires                                 |
 | [hl7-pam-parser](hl7-pam-parser.md)                                 | Parsing des messages HL7 v2.5 IHE PAM                                  |
 | [uniface-procscript](uniface-procscript.md)                         | Référence ProcScript pour Uniface 9.7                                  |
+| [fides-ace-spec](fides-ace-spec.md)                                 | Spécification fonctionnelle FIDES ACE (facturation SESAM-Vitale)       |
 
 ### Outils spécialisés
 
