@@ -12,20 +12,29 @@ import re
 import fitz  # PyMuPDF
 from pathlib import Path
 
-PDF = "SFG_FIDES_ACE_V06.08_version_fusionnée.pdf"
+PDF = "SFG_FIDES_ACE_V06.09_version_fusionnée.pdf"
+VERSION = "06.09"
 OUT = Path("docs")
 FIG = OUT / "figures"
 
 # Top-level sections: (start_page_1based, slug, human title)
+# Page numbers are 1-based and taken from the PDF bookmarks (level-1 entries).
 SECTIONS = [
     (1,   "01-PG-presentation-generale",     "PG — Présentation Générale"),
     (43,  "02-BS-beneficiaire-des-soins",    "BS — Acquérir les informations du Bénéficiaire des Soins"),
-    (87,  "03-IP-informations-prestations",  "IP — Acquérir les Informations des Prestations"),
-    (154, "04-CF-contexte-facturation",      "CF — Déterminer le Contexte de Facturation"),
-    (204, "05-VF-valoriser-prestations",     "VF — Valoriser les prestations de la Facture"),
-    (305, "06-TF-transmettre-factures",      "TF — Transmettre les Factures"),
-    (356, "07-DICO-dictionnaire-donnees",    "DICO — Dictionnaire de données"),
+    (84,  "03-IP-informations-prestations",  "IP — Acquérir les Informations des Prestations"),
+    (147, "04-CF-contexte-facturation",      "CF — Déterminer le Contexte de Facturation"),
+    (201, "05-VF-valoriser-prestations",     "VF — Valoriser les prestations de la Facture"),
+    (300, "06-TF-transmettre-factures",      "TF — Transmettre les Factures"),
+    (350, "07-DICO-dictionnaire-donnees",    "DICO — Dictionnaire de données"),
 ]
+
+# Caption-less diagram pages (1-based) that carry a real schema but no
+# "Figure N / Schéma …" caption line, so the caption heuristic cannot see them.
+# Kept as an explicit allowlist to stay reproducible without re-introducing the
+# hundreds of vector-drawn *tables* that the old drawings-count heuristic mistook
+# for figures.
+EXTRA_FIGURE_PAGES = {38, 100, 372, 373}
 
 # Lines that are page furniture / legal boilerplate -> dropped.
 BOILER = re.compile(
@@ -42,7 +51,7 @@ BOILER = re.compile(
 # Keyed by 1-based PDF page; emitted next to the rendered figure so the model
 # diagrams are searchable as text. Cardinalities transcribed from the figures.
 MERMAID = {
-    366: """```mermaid
+    360: """```mermaid
 erDiagram
     EF_BS02["EF_BS02 Bénéficiaire"] ||--|| EF_BS01["EF_BS01 Venue"] : a
     EF_BS02 ||--o| EF_BS06["EF_BS06 Accidents de droits communs"] : a
@@ -69,7 +78,7 @@ erDiagram
     EF_BS19 ||--|{ EF_BS20["EF_BS20 Période SP"] : a
     EF_BS02 ||--o{ EF_BS21["EF_BS21 Organisme Complémentaire"] : a
 ```""",
-    367: """```mermaid
+    361: """```mermaid
 erDiagram
     EF_IP05["EF_IP05 Prestation"] ||--o| EF_IP01["EF_IP01 Prescription"] : a
     EF_IP01 ||--|{ EF_IP02["EF_IP02 Professionnel de Santé (prescripteur)"] : a
@@ -87,7 +96,7 @@ erDiagram
     EF_IP08 ||--o{ EF_IP10["EF_IP10 CCAM-Dentaire (0..16)"] : a
     EF_IP08 ||--o{ EF_IP09["EF_IP09 CCAM-Modificateur (0..4)"] : a
 ```""",
-    368: """```mermaid
+    362: """```mermaid
 erDiagram
     %% CF - Contexte de facturation de niveau prestation (regroupement)
     NIV_PRESTATION["Contexte de facturation de niveau prestation"] ||--|| EF_CF01["EF_CF01 Date de référence AMO"] : a
@@ -197,28 +206,60 @@ def page_to_md(page) -> list[str]:
     return out
 
 
-def is_figure_page(page) -> bool:
-    dr = len(page.get_drawings())
-    # count non-trivial raster images (skip tiny logos by area)
-    big_img = 0
+CAPTION_RE = re.compile(
+    r"^(Figure\s+\d+|Schéma\b|Illustration\b|Diagramme\b|Vue\s+synth)", re.I)
+
+
+def figure_caption(page) -> str:
+    """Return a page's diagram caption, or '' when the page is not a figure.
+
+    A real diagram/schema page carries a caption line ("Figure N : …",
+    "Schéma …", "Illustration …", "Diagramme des données …"). Lines with dotted
+    leaders ("Figure 1 : … ........ 12") belong to a list-of-figures table of
+    contents and are ignored.
+    """
+    for b in page.get_text("dict")["blocks"]:
+        for ln in b.get("lines", []):
+            txt = "".join(s["text"] for s in ln["spans"]).strip()
+            if CAPTION_RE.match(txt):
+                if DOTLEADER.search(txt):
+                    return ""
+                return txt[:160]
+    return ""
+
+
+def _big_images(page) -> int:
+    """Count non-trivial raster images (skip tiny logos by area)."""
+    n = 0
     for img in page.get_images(full=True):
         try:
             w, h = img[2], img[3]
         except Exception:
             w = h = 0
         if w * h > 60000:
-            big_img += 1
-    return dr >= 40 or big_img >= 1
+            n += 1
+    return n
+
+
+def is_figure_page(page, pno: int) -> bool:
+    """Detect real schema/diagram pages via their caption.
+
+    The previous heuristic (drawings >= 40 or any raster image) over-triggered:
+    tables drawn as vector graphics were mistaken for diagrams, producing ~234
+    PNGs. Requiring a diagram *caption* (plus a rendered figure to confirm)
+    keeps only genuine diagrams. Caption-less diagrams are listed explicitly in
+    ``EXTRA_FIGURE_PAGES``.
+    """
+    if pno in EXTRA_FIGURE_PAGES:
+        return True
+    if not figure_caption(page):
+        return False
+    return _big_images(page) >= 1 or len(page.get_drawings()) >= 15
 
 
 def caption_for(page) -> str:
-    """Best-effort caption from a 'Schéma…/Diagramme…/Figure…' bold line."""
-    for b in page.get_text("dict")["blocks"]:
-        for ln in b.get("lines", []):
-            txt = "".join(s["text"] for s in ln["spans"]).strip()
-            if re.match(r"^(Schéma|Diagramme|Figure|Workflow|Processus|Diagramme d)", txt, re.I):
-                return txt[:160]
-    return ""
+    """Best-effort caption from a 'Figure N/Schéma/Diagramme/Illustration' line."""
+    return figure_caption(page)
 
 
 def main():
@@ -229,9 +270,9 @@ def main():
     bounds = [(s[0], SECTIONS[i + 1][0] - 1 if i + 1 < len(SECTIONS) else n, s[1], s[2])
               for i, s in enumerate(SECTIONS)]
 
-    index = ["# FIDES ACE — Spécifications Fonctionnelles Générales (v06.08)",
+    index = ["# FIDES ACE — Spécifications Fonctionnelles Générales (v06.09)",
              "",
-             "> Source : `SFG_FIDES_ACE_V06.08_version_fusionnée.pdf` (380 pages).",
+             "> Source : `SFG_FIDES_ACE_V06.09_version_fusionnée.pdf` (374 pages).",
              "> Documentation découpée par domaine fonctionnel pour servir de contexte de développement.",
              "",
              "## Domaines fonctionnels", ""]
@@ -249,7 +290,7 @@ def main():
             if body:
                 lines.append(f"\n<!-- p.{pno} -->")
                 lines.extend(md)
-            if is_figure_page(page):
+            if is_figure_page(page, pno):
                 pix = page.get_pixmap(dpi=130)
                 fname = f"p{pno:03d}.png"
                 pix.save(str(FIG / fname))
