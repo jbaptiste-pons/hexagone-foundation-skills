@@ -69,4 +69,3 @@ cd skills/fides-ace-spec/reference && python build_docs.py
 > `<!-- transcrit de p.NNN (ex-figure) -->`), car ces tableaux vectoriels ne s'extraient pas
 > proprement en texte. Ne relancer que sur une copie, puis reporter manuellement les
 > transcriptions.
-

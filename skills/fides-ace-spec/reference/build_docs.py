@@ -12,8 +12,8 @@ import re
 import fitz  # PyMuPDF
 from pathlib import Path
 
-PDF = "SFG_FIDES_ACE_V06.09_version_fusionnée.pdf"
 VERSION = "06.09"
+PDF = f"SFG_FIDES_ACE_V{VERSION}_version_fusionnée.pdf"
 OUT = Path("docs")
 FIG = OUT / "figures"
 
@@ -35,6 +35,12 @@ SECTIONS = [
 # hundreds of vector-drawn *tables* that the old drawings-count heuristic mistook
 # for figures.
 EXTRA_FIGURE_PAGES = {38, 100, 372, 373}
+
+# V06.09 pages the caption heuristic detects as diagrams but which were
+# deliberately left out of the committed figure set (they add no value over the
+# existing curated diagrams). Listing them here keeps ``build_docs.py`` output
+# consistent with the committed tree instead of re-introducing 3 extra PNGs.
+SKIP_FIGURE_PAGES = {5, 181, 293}
 
 # Lines that are page furniture / legal boilerplate -> dropped.
 BOILER = re.compile(
@@ -248,12 +254,19 @@ def is_figure_page(page, pno: int) -> bool:
     tables drawn as vector graphics were mistaken for diagrams, producing ~234
     PNGs. Requiring a diagram *caption* (plus a rendered figure to confirm)
     keeps only genuine diagrams. Caption-less diagrams are listed explicitly in
-    ``EXTRA_FIGURE_PAGES``.
+    ``EXTRA_FIGURE_PAGES``; captioned pages we choose not to commit are listed
+    in ``SKIP_FIGURE_PAGES``.
     """
+    if pno in SKIP_FIGURE_PAGES:
+        return False
     if pno in EXTRA_FIGURE_PAGES:
         return True
     if not figure_caption(page):
         return False
+    # A captioned page is only kept if it also *looks* like a diagram: either a
+    # large raster image, or a dense vector drawing. The >= 15 drawings floor
+    # was tuned empirically to pass real schemas while rejecting prose pages
+    # that merely mention "Figure …" in body text.
     return _big_images(page) >= 1 or len(page.get_drawings()) >= 15
 
 
@@ -270,9 +283,9 @@ def main():
     bounds = [(s[0], SECTIONS[i + 1][0] - 1 if i + 1 < len(SECTIONS) else n, s[1], s[2])
               for i, s in enumerate(SECTIONS)]
 
-    index = ["# FIDES ACE — Spécifications Fonctionnelles Générales (v06.09)",
+    index = [f"# FIDES ACE — Spécifications Fonctionnelles Générales (v{VERSION})",
              "",
-             "> Source : `SFG_FIDES_ACE_V06.09_version_fusionnée.pdf` (374 pages).",
+             f"> Source : `{PDF}` ({n} pages).",
              "> Documentation découpée par domaine fonctionnel pour servir de contexte de développement.",
              "",
              "## Domaines fonctionnels", ""]
