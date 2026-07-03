@@ -1,18 +1,18 @@
 ---
 name: fides-ace-spec
-description: "Navigue et interroge la spécification fonctionnelle FIDES ACE (SFG FIDES — Facturation Individuelle Des Établissements de Santé, Actes et Consultations Externes, v06.08, GIE SESAM-Vitale). À utiliser quand l'utilisateur pose des questions sur la facturation FIDES, les domaines fonctionnels BS / IP / CF / VF / TF, les entités de données (EF_BS, EF_IP, EF_CF, EF_VF), les règles de valorisation, le contexte de facturation, les flux de transmission des factures, ou le dictionnaire de données FIDES. La doc est découpée en Markdown + figures dans le dépôt — ne pas répondre de mémoire."
-version: 1.0.0
+description: "Navigue et interroge la spécification fonctionnelle FIDES ACE (SFG FIDES — Facturation Individuelle Des Établissements de Santé, Actes et Consultations Externes, v06.09, GIE SESAM-Vitale). À utiliser quand l'utilisateur pose des questions sur la facturation FIDES, les domaines fonctionnels BS / IP / CF / VF / TF, les entités de données (EF_BS, EF_IP, EF_CF, EF_VF), les règles de valorisation, le contexte de facturation, les flux de transmission des factures, ou le dictionnaire de données FIDES. La doc est découpée en Markdown + figures dans le dépôt — ne pas répondre de mémoire."
+version: 1.1.0
 license: Proprietary
 metadata:
   author: dedalus-erp-pas
-  source-pdf: "SFG_FIDES_ACE_V06.08_version_fusionnée.pdf"
+  source-pdf: "SFG_FIDES_ACE_V06.09_version_fusionnée.pdf"
   docs-root: reference
 allowed-tools: Read Grep Glob
 ---
 
 # FIDES ACE — Spécifications Fonctionnelles Générales (navigation)
 
-Ce skill donne accès à la **spécification fonctionnelle FIDES ACE v06.08** (GIE SESAM-Vitale, 380 pages) convertie en Markdown chunké + figures. Ton rôle est de **lire l'index puis la(les) section(s) pertinente(s)** avant de répondre — pas de répondre de mémoire.
+Ce skill donne accès à la **spécification fonctionnelle FIDES ACE v06.09** (GIE SESAM-Vitale, 374 pages) convertie en Markdown chunké + figures. Ton rôle est de **lire l'index puis la(les) section(s) pertinente(s)** avant de répondre — pas de répondre de mémoire.
 
 ## Emplacement de la doc
 
@@ -62,8 +62,11 @@ cd skills/fides-ace-spec/reference && python build_docs.py
 ```
 
 > ⚠️ **Attention** : `build_docs.py` régénère tout depuis le PDF et **écrase** les fichiers
-> Markdown. Sa détection de figures sur-déclenche (les tableaux dessinés en vectoriel sont
-> pris pour des diagrammes), ce qui réintroduirait ~234 PNG et **supprimerait les tableaux
-> transcrits à la main** (repérables par `<!-- transcrit de p.NNN (ex-figure) -->`). Ne
-> relancer que sur une copie, puis reporter manuellement les transcriptions, ou corriger
-> d'abord `is_figure_page()` pour exclure les pages purement tabulaires.
+> Markdown. La détection de figures se fait désormais par **légende** (`Figure N :`, `Schéma…`,
+> `Diagramme…`) + un petit allowlist `EXTRA_FIGURE_PAGES` pour les schémas sans légende : elle
+> ne produit plus que ~62 vrais diagrammes (contre ~234 auparavant). En revanche, une
+> régénération **supprime toujours les tableaux transcrits à la main** (repérables par
+> `<!-- transcrit de p.NNN (ex-figure) -->`), car ces tableaux vectoriels ne s'extraient pas
+> proprement en texte. Ne relancer que sur une copie, puis reporter manuellement les
+> transcriptions.
+
