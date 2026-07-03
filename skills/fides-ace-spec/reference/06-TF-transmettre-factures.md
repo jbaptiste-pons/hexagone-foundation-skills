@@ -1,13 +1,13 @@
 # TF — Transmettre les Factures
 
-_Pages 305–355 du PDF source._
+_Pages 300–349 du PDF source._
 
 
-<!-- p.305 -->
+<!-- p.300 -->
 TF  -  Transmettre les factures
 
 
-<!-- p.306 -->
+<!-- p.301 -->
 TF - Transmettre les factures
 arrangement, quel que soit le procédé utilisé.
 des sanctions pour l’auteur du délit.
@@ -16,7 +16,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.307 -->
+<!-- p.302 -->
 TF - Transmettre les factures
 1
 2
@@ -60,21 +60,21 @@ TRANSFORMER LE FORMAT DE L’IDENTIFIANT DES ETABLISSEMENTS
 DESCRIPTION GENERALE DE LA FONCTION « ML - REGROUPER LES FACTURES EN LOT ET
 6
 
-<!-- p.308 -->
+<!-- p.303 -->
 TF - Transmettre les factures
 7
 RENSEIGNER LES JUSTIFICATIFS D’EXONERATION SELON LES CAS
 METIERS
 50
 
-<!-- p.309 -->
+<!-- p.304 -->
 TF - Transmettre les factures
 TABLE DES ILLUSTRATIONS
 FIGURE 3 : DIAGRAMME DES OBJETS METIER DES FONCTIONS « MF - METTRE EN FORME LES FACTURES » ET « ML –
 FIGURE 5 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « MF30 - CONSTITUER LES LIGNES DE FACTURE
 FIGURE 6 : DIAGRAMME DES OBJETS METIERS DE LA FONCTION « ML - METTRE EN FORME LES FICHIERS DE LOTS » 48
 
-<!-- p.310 -->
+<!-- p.305 -->
 TF - Transmettre les factures
 
 ## 1 INTRODUCTION
@@ -105,7 +105,7 @@ De référence.
 
  Cf. [PG] – Présentation Générale
 
-<!-- p.311 -->
+<!-- p.306 -->
 TF - Transmettre les factures
 
 ## 2 DESCRIPTION GENERALE DU SOUS-PROCESSUS « TF - TRANSMETTRE LES FACTURES »
@@ -130,11 +130,11 @@ Description Il est composé des fonctions suivantes :
 le document « Transport des flux de facturation par messagerie SMTP et chiffrement
 de transport »
 
-![Figure 1 : Diagramme d’enchaînement du processus général](figures/p311.png)
-*Figure (p.311) : Figure 1 : Diagramme d’enchaînement du processus général*
+![Figure 1 : Diagramme d’enchaînement du processus général](figures/p306.png)
+*Figure (p.306) : Figure 1 : Diagramme d’enchaînement du processus général*
 
 
-<!-- p.312 -->
+<!-- p.306 -->
 TF - Transmettre les factures
 
 ### 2.3 Enchaînement des fonctions
@@ -145,11 +145,11 @@ Enchaînement
 des fonctions
 Figure 2 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les Factures »
 
-![Figure 2 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les Factures »](figures/p312.png)
-*Figure (p.312) : Figure 2 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les Factures »*
+![Figure 2 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les Factures »](figures/p307.png)
+*Figure (p.307) : Figure 2 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les Factures »*
 
 
-<!-- p.313 -->
+<!-- p.308 -->
 TF - Transmettre les factures
 
 ## 3 DESCRIPTION GENERALE DE LA FONCTION « MF - METTRE EN FORME LES FACTURES »
@@ -191,7 +191,7 @@ gauche :
  soit avec des zéros (0) pour des données de type numérique ;
  soit avec des espaces pour des données de type alphanumérique.
 
-<!-- p.314 -->
+<!-- p.309 -->
 TF - Transmettre les factures
 
 ### 3.2 Lien entre les objets métier de la fonction
@@ -203,11 +203,11 @@ objets
 Figure 3 : Diagramme des objets métier des fonctions « MF - Mettre en forme les Factures » et « ML –
 Constituer les fichiers et les lots »
 
-![Figure 3 : Diagramme des objets métier des fonctions « MF - Mettre en forme les Factures » et « ML –](figures/p314.png)
-*Figure (p.314) : Figure 3 : Diagramme des objets métier des fonctions « MF - Mettre en forme les Factures » et « ML –*
+![Figure 3 : Diagramme des objets métier des fonctions « MF - Mettre en forme les Factures » et « ML –](figures/p309.png)
+*Figure (p.309) : Figure 3 : Diagramme des objets métier des fonctions « MF - Mettre en forme les Factures » et « ML –*
 
 
-<!-- p.315 -->
+<!-- p.310 -->
 TF - Transmettre les factures
 
 ### 3.3 Enchaînement des sous-fonctions
@@ -219,11 +219,11 @@ des sous-
 fonctions
 Figure 4 : Diagramme d’enchaînement de la fonction « MF - Mettre en forme les Factures »
 
-![Figure 4 : Diagramme d’enchaînement de la fonction « MF - Mettre en forme les Factures »](figures/p315.png)
-*Figure (p.315) : Figure 4 : Diagramme d’enchaînement de la fonction « MF - Mettre en forme les Factures »*
+![Figure 4 : Diagramme d’enchaînement de la fonction « MF - Mettre en forme les Factures »](figures/p310.png)
+*Figure (p.310) : Figure 4 : Diagramme d’enchaînement de la fonction « MF - Mettre en forme les Factures »*
 
 
-<!-- p.316 -->
+<!-- p.311 -->
 TF - Transmettre les factures
 
 ## 4 DESCRIPTION DETAILLEE DE LA FONCTION « MF - METTRE EN FORME LES FACTURES »
@@ -249,12 +249,12 @@ des opérations
 Figure 5 : Diagramme d’enchaînement de la sous-fonction « MF30 - Constituer les
 lignes de facture »
 
-![Figure 5 : Diagramme d’enchaînement de la sous-fonction « MF30 - Constituer les](figures/p316.png)
-*Figure (p.316) : Figure 5 : Diagramme d’enchaînement de la sous-fonction « MF30 - Constituer les*
+![Figure 5 : Diagramme d’enchaînement de la sous-fonction « MF30 - Constituer les](figures/p311.png)
+*Figure (p.311) : Figure 5 : Diagramme d’enchaînement de la sous-fonction « MF30 - Constituer les*
 
 
-<!-- p.317 -->
-<!-- transcrit de p.317 (ex-figure) -->
+<!-- p.312 -->
+<!-- transcrit de p.312 (ex-figure) -->
 ### 4.1.1 MF30.01 - Identifier les prestations relatives aux lignes de facture
 
 **Vue générale**
@@ -292,8 +292,8 @@ Les prestations relatives aux lignes de facture sont identifiables selon les cri
 **Cas particulier — [SP06] : AME**
 
 
-<!-- p.318 -->
-<!-- transcrit de p.318 (ex-figure) -->
+<!-- p.312 -->
+<!-- transcrit de p.312 (ex-figure) -->
 Il convient d'alimenter le type 4M et 4B pour les bénéficiaires de l'AME.
 
 **[SP03] : C2S en facturation unique (EF_BS21_03)**
@@ -324,7 +324,7 @@ Les compléments de prestations appartenant aux lignes de factures sont identifi
 | Complément | Majoration | Contexte médical | NGAP | 4, 4S, 4E |
 
 
-<!-- p.319 -->
+<!-- p.313 -->
 TF - Transmettre les factures
 [RG_MF604] Remplacer les codes actes par les codes actes agrégés
 Condition : actes dont la catégorie (EF_IP05_06) est égale à « Réservé PS »
@@ -364,7 +364,7 @@ le suivant :
 rapportent.
  L’ordre de la liste numérotée ci-dessus est prioritaire par rapport à la chronologie des actes.
 
-<!-- p.320 -->
+<!-- p.315 -->
 TF - Transmettre les factures
 L’ordre des forfaits au sein du type 3 est le suivant :
 1. FPU / FPV / FPL / FPM / FPX
@@ -404,8 +404,8 @@ N° Alpha = 2A0002689     N° Numérique = 200102689
 
 N° Alpha = 2A0002168     N° Numérique = 200102168
 
-<!-- p.321 -->
-<!-- transcrit de p.321 (ex-figure) -->
+<!-- p.316 -->
+<!-- transcrit de p.316 (ex-figure) -->
 ### 4.1.2 MF30.02 - Constituer les lignes de facture relatives aux prestations d'hospitalisation – Type 3
 
 **Vue générale**
@@ -562,7 +562,7 @@ facturation doit le valoriser à
 | Coefficient | [0365] | 3+2 | N | F | EF_VF01_01 | Coefficient de la prestation regroupée. Si celui-ci n'est pas renseigné, le système de facturation doit le valoriser à 1. |
 
 
-<!-- p.322 -->
+<!-- p.317 -->
 TF - Transmettre les factures
 Donnée Type 3
 Données
@@ -727,7 +727,7 @@ Tout acte (hors forfait technique)
 00
 000
 
-<!-- transcrit de p.322 (ex-figure) -->
+<!-- transcrit de p.317 (ex-figure) -->
 
 **Donnée « Type 3 » (suite) → Données**
 
@@ -761,7 +761,7 @@ Tout acte (hors forfait technique)
 | Autres cas | Tout acte (hors forfait technique) | 00 | 000 |
 
 
-<!-- p.323 -->
+<!-- p.318 -->
 TF - Transmettre les factures
  Situations particulières
 [SP06] : AME ou [SP08] : BS coordonnés RSS et activités à forfait ou forfait activité
@@ -826,7 +826,7 @@ exonérant) »
 « Prévention maladie »
 7
 
-<!-- transcrit de p.323 (ex-figure) -->
+<!-- transcrit de p.318 (ex-figure) -->
 
 **Situations particulières — [SP06] : AME ou [SP08] : BS coordonnés RSS et activités à forfait ou forfait activité urgences ou forfait fausse couche**
 
@@ -851,7 +851,7 @@ exonérant) »
 | « Prévention maladie » | 7 |
 
 
-<!-- p.324 -->
+<!-- p.319 -->
 TF - Transmettre les factures
 « ASPA »
 9
@@ -891,7 +891,7 @@ blanc
 MRC (Montant remboursable AMC) (EF_VF05_04)*
 *ce montant peut être égal à 0 dans certains cas
 
-<!-- transcrit de p.324 (ex-figure) -->
+<!-- transcrit de p.319 (ex-figure) -->
 
 **[0364] Justification d'exonération du Ticket modérateur au niveau de l'acte (suite)**
 
@@ -910,7 +910,7 @@ MRC (Montant remboursable AMC) (EF_VF05_04)*
 > *ce montant peut être égal à 0 dans certains cas
 
 
-<!-- p.325 -->
+<!-- p.320 -->
 TF - Transmettre les factures
 [RG_MF611] Constituer le « Type 3S »
 À noter que le « Type 3S » doit obligatoirement succéder au « Type 3 ».
@@ -1106,7 +1106,7 @@ Si la Condition d'exercice du prescripteur (EF_IP02_02) = « L » alors le numé
 prescripteur est renseigné avec le N° Identification du PS prescripteur (EF_IP02_03).
 Sinon, il est valorisé avec l’Etablissement de rattachement du prescripteur (EF_IP17_01).
 
-<!-- transcrit de p.325 (ex-figure) -->
+<!-- transcrit de p.320 (ex-figure) -->
 
 **[RG_MF611] Constituer le « Type 3S » — Donnée Type 3S → Donnée**
 
@@ -1136,7 +1136,7 @@ Sinon, il est valorisé avec l’Etablissement de rattachement du prescripteur (
 | FILLER | [3S116] | 16 | A | F | | Blanc |
 
 
-<!-- p.326 -->
+<!-- p.321 -->
 TF - Transmettre les factures
 [3S52] Spécialité du prescripteur
 Cette information est valorisée avec le Code spécialité (PS prescripteur) (EF_IP02_01)
@@ -1150,7 +1150,7 @@ Cette information est valorisée avec la date d'envoi de la demande d'entente pr
 Dans le cas où le Code accord de l'entente préalable (EF_IP14_02) est égal à « 9 », la
 Date de demande d’accord préalable est facultative.
 
-<!-- p.327 -->
+<!-- p.322 -->
 TF - Transmettre les factures
 [RG_MF612] Constituer le « Type 3E »
 Le type 3 E doit être créé uniquement si le N° RPPS du PS prescripteur (EF_IP02_04) est
@@ -1261,7 +1261,7 @@ F
 
 Blanc
 
-<!-- transcrit de p.327 (ex-figure) -->
+<!-- transcrit de p.322 (ex-figure) -->
 
 **[RG_MF612] Constituer le « Type 3E » — Donnée Type 3E → Donnée**
 
@@ -1281,7 +1281,7 @@ Blanc
 | FILLER | [3E67] | 62 | A | F | | Blanc |
 
 
-<!-- p.328 -->
+<!-- p.323 -->
 TF - Transmettre les factures
 [RG_MF613] Constituer le « Type 3F »
 À noter que le « Type 3F » doit obligatoirement succéder au « Type 3S » ou « Type 3E ».
@@ -1443,7 +1443,7 @@ peut être numérotée de 01 à 10.
 Cette information est valorisée avec le code référence LPP (EF_IP12_01) sur 7 caractères
 cadrés à gauche et complétés par des blancs.
 
-<!-- transcrit de p.328 (ex-figure) -->
+<!-- transcrit de p.323 (ex-figure) -->
 
 **[RG_MF613] Constituer le « Type 3F » — Donnée Type 3F → Données**
 
@@ -1469,7 +1469,7 @@ cadrés à gauche et complétés par des blancs.
 | FILLER | [3F107] | 22 | A | F | | Blanc |
 
 
-<!-- p.329 -->
+<!-- p.324 -->
 TF - Transmettre les factures
 [RG_MF614] Constituer le « Type 3H »
 À noter que le « Type 3H » doit obligatoirement succéder au « Type 3S » ou « Type 3E ».
@@ -1640,7 +1640,7 @@ d’un écart indemnisable, ou soit
  Le tarif de responsabilité TTC (EF_IP13_11), c'est-à-dire le tarif de responsabilité
 publié au JO
 
-<!-- transcrit de p.329 (ex-figure) -->
+<!-- transcrit de p.324 (ex-figure) -->
 
 **[RG_MF614] Constituer le « Type 3H » — Donnée Type 3H → Données**
 
@@ -1668,7 +1668,7 @@ publié au JO
 | FILLER | [3H98] | 31 | A | F | | Blanc |
 
 
-<!-- p.330 -->
+<!-- p.325 -->
 TF - Transmettre les factures
 4.1.3
 MF30.03 - Constituer les lignes de facture relatives aux actes et
@@ -1825,7 +1825,7 @@ F
 Code spécialité (PS
 exécutant)
 
-<!-- transcrit de p.330 (ex-figure) -->
+<!-- transcrit de p.325 (ex-figure) -->
 
 **[RG_MF620] Constituer le « Type 4 » — Donnée « Type 4 » → Données (1/2)**
 
@@ -1849,7 +1849,7 @@ exécutant)
 | Spécialité exécutant | [0468] | 2 | N | F | EF_IP03_01 — Code spécialité (PS exécutant) |
 
 
-<!-- p.331 -->
+<!-- p.326 -->
 TF - Transmettre les factures
 Donnée Type 4
 Données
@@ -1985,7 +1985,7 @@ Et [0341]
  Situations particulières
 [SP06] : AME et [SP08] BS coordonnés RSS
 
-<!-- transcrit de p.331 (ex-figure) -->
+<!-- transcrit de p.326 (ex-figure) -->
 
 **[RG_MF620] Constituer le « Type 4 » — Donnée « Type 4 » → Données (2/2)**
 
@@ -2014,7 +2014,7 @@ Et [0341]
 | Autres prestations | 00 | 000 |
 
 
-<!-- p.332 -->
+<!-- p.327 -->
 TF - Transmettre les factures
 Prestation
 MT
@@ -2071,7 +2071,7 @@ Lorsque cela est possible, il est recommandé de codifier deux actes dans la fac
 sorte que la somme de leurs PU soit égale au PU du médicament.
  Pour les médicaments codés :
 
-<!-- transcrit de p.332 (ex-figure) -->
+<!-- transcrit de p.327 (ex-figure) -->
 
 **[0439] et [0441] — Mode de traitement (MT) et Discipline de prestation (DMT) (suite)**
 
@@ -2092,7 +2092,7 @@ sorte que la somme de leurs PU soit égale au PU du médicament.
 *ce montant peut être égal à 0 dans certains cas*
 
 
-<!-- p.333 -->
+<!-- p.328 -->
 TF - Transmettre les factures
 ○ Si la somme des PU d’un même médicament est supérieure à 9999,99 € du fait de
 sa quantité : il est recommandé de codifier deux actes dans la facture de telle sorte
@@ -2103,7 +2103,7 @@ fractionnement de telle sorte que la somme des coefficients de fractionnement so
 égale au coefficient de fractionnement total du médicament.
  Pour l’ensemble de ces cas, la marge (MAR) ne doit être demandée qu’une seule fois.
 
-<!-- p.334 -->
+<!-- p.329 -->
 TF - Transmettre les factures
 [RG_MF621] Constituer le « Type 4S »
 À noter que le « Type 4S » doit obligatoirement succéder au « Type 4 ».
@@ -2293,7 +2293,7 @@ ou
 Identifiant de la connexion
 vidéo sécurisée
 
-<!-- transcrit de p.334 (ex-figure) -->
+<!-- transcrit de p.329 (ex-figure) -->
 
 **[RG_MF621] Constituer le « Type 4S » — Donnée « Type 4S » → Données (1/2)**
 
@@ -2322,7 +2322,7 @@ vidéo sécurisée
 | Numéro de l'appareil | [4S106] | 14 | N | F | EF_CF06_01 ou EF_IP05_12 — Numéro d'identification de l'appareillage ou Identifiant de la connexion vidéo sécurisée |
 
 
-<!-- p.335 -->
+<!-- p.330 -->
 TF - Transmettre les factures
 Donnée Type 4S
 Données
@@ -2384,7 +2384,7 @@ Cette information est valorisée avec la date d'envoi de la demande d'entente pr
 Dans le cas où le Code accord de l'entente préalable (EF_IP14_02) est égal à « 9 », la
 Date de demande d’accord préalable est facultative.
 
-<!-- transcrit de p.335 (ex-figure) -->
+<!-- transcrit de p.330 (ex-figure) -->
 
 **[RG_MF621] Constituer le « Type 4S » — Donnée « Type 4S » → Données (2/2)**
 
@@ -2397,7 +2397,7 @@ Date de demande d’accord préalable est facultative.
 | Code participation assuré | [4S128] | 1 | A | F | EF_VF06_01 — Code participation assuré |
 
 
-<!-- p.336 -->
+<!-- p.331 -->
 TF - Transmettre les factures
 [RG_MF622] Constituer le « Type 4E »
 Le type 4E doit être créé uniquement si le N° RPPS du PS prescripteur (EF_IP02_04) ou
@@ -2522,7 +2522,7 @@ Cette information est renseignée avec le N° RPPS + clé (PS prescripteur) (EF_
 Cette information est renseignée avec l’établissement de rattachement (prescripteur)
 (EF_IP17_01).
 
-<!-- transcrit de p.336 (ex-figure) -->
+<!-- transcrit de p.331 (ex-figure) -->
 
 **[RG_MF622] Constituer le « Type 4E » — Donnée « Type 4E » → Donnée**
 
@@ -2543,7 +2543,7 @@ Cette information est renseignée avec l’établissement de rattachement (presc
 | FILLER | [4E89] | 40 | A | F | Blanc |
 
 
-<!-- p.337 -->
+<!-- p.332 -->
 TF - Transmettre les factures
 [RG_MF623] Constituer le « Type 4B »
 À noter que le « Type 4S » ou « Type 4E »  doit obligatoirement précéder le « Type 4B ».
@@ -2744,7 +2744,7 @@ Code affiné NABM
 Le nombre d’enregistrements de « Type 4B » étant limité à 10 par « Type 4 », la séquence
 peut être numérotée de 01 à 10.
 
-<!-- transcrit de p.337 (ex-figure) -->
+<!-- transcrit de p.332 (ex-figure) -->
 
 **[RG_MF623] Constituer le « Type 4B » — Donnée « Type 4B » → Données**
 
@@ -2777,7 +2777,7 @@ peut être numérotée de 01 à 10.
 | Code acte 5 | [4B121] | 8 | N | F | EF_IP11_01 — Code affiné NABM |
 
 
-<!-- p.338 -->
+<!-- p.333 -->
 TF - Transmettre les factures
 [RG_MF625] Constituer le « Type 4H »
 À noter qu’un « Type 4S » ou « Type 4E »  doit obligatoirement précéder un « Type 4H ».
@@ -2955,7 +2955,7 @@ Cette information est valorisée avec le coefficient de fractionnement (EF_IP13_
 coefficient de fractionnement est exprimé en dix-millièmes et ne doit pas comporter de
 virgule.
 
-<!-- transcrit de p.338 (ex-figure) -->
+<!-- transcrit de p.333 (ex-figure) -->
 
 **[RG_MF625] Constituer le « Type 4H » — Donnée « Type 4H » → Donnée**
 
@@ -2983,7 +2983,7 @@ virgule.
 | FILLER | [4H98] | 31 | A | F | Blanc |
 
 
-<!-- p.339 -->
+<!-- p.334 -->
 TF - Transmettre les factures
 [RG_MF626] Constituer le « Type 4M »
 À noter qu’un « Type 4S » ou « Type 4E »  doit obligatoirement précéder un « Type 4M ».
@@ -3201,7 +3201,7 @@ EF_IP10_01
 Numéro de dent  traitée
 en CCAM
 
-<!-- transcrit de p.339 (ex-figure) -->
+<!-- transcrit de p.334 (ex-figure) -->
 
 **[RG_MF626] Constituer le « Type 4M » — Donnée « Type 4M » → Données (1/2)**
 
@@ -3233,7 +3233,7 @@ en CCAM
 | Numéro de la dent 4 | [4M77] | 2 | A | F | EF_IP10_01 — Numéro de dent traitée en CCAM |
 
 
-<!-- p.340 -->
+<!-- p.335 -->
 TF - Transmettre les factures
 Donnée Type 4M
 Données
@@ -3405,7 +3405,7 @@ Les enregistrements de type 4M doivent être triés par dates de séance croissa
 La date d'exécution de la phase de l'acte (type 4A pos 68-73) doit être valorisée à la date
 de la dernière séance.
 
-<!-- transcrit de p.340 (ex-figure) -->
+<!-- transcrit de p.335 (ex-figure) -->
 
 **[RG_MF626] Constituer le « Type 4M » — Donnée « Type 4M » → Données (2/2)**
 
@@ -3431,7 +3431,7 @@ de la dernière séance.
 | FILLER | [4M108] | 21 | A | F | Blanc |
 
 
-<!-- p.341 -->
+<!-- p.336 -->
 TF - Transmettre les factures
 
 ### 4.2 MF31 - Constituer les factures (types 2 et 5)
@@ -3487,7 +3487,7 @@ pas appartenir à la même facture
  IPS (Indicateur de Parcours de Soins)
 EF_CF03_01 ;
 
-<!-- transcrit de p.341 (ex-figure) -->
+<!-- transcrit de p.336 (ex-figure) -->
 
 **[RG_MF639] Déterminer si la facture doit être anonyme — situations métier autorisant une facture anonyme**
 
@@ -3496,7 +3496,7 @@ EF_CF03_01 ;
 | Dépistage IST pour les moins de 18 ans | • le contexte métier ~~d'anonymisation~~ (EF_IP05_13) vaut « IST » selon la RG_IP663<br>• L'âge du BS (EF_IP05_02) est strictement inférieur à 18 ans |
 
 
-<!-- p.342 -->
+<!-- p.337 -->
 TF - Transmettre les factures
 ○ Dans la norme B2, les prestations d’IPS différents ne peuvent pas appartenir à la
 même facture
@@ -3517,7 +3517,7 @@ de numéro de séquence (cf. [3F37], [4B37], [4D37], [4H37] et [4M37]).
 [RG_MF636] Transformer le format de l’identifiant des établissements corses dans les factures
 Voir RG_MF609
 
-<!-- p.343 -->
+<!-- p.338 -->
 TF - Transmettre les factures
 [RG_MF631] Constituer le « Type 2 »
 Donnée Type 2
@@ -3725,7 +3725,7 @@ F
 EF_BS02_02
 Rang de naissance
 
-<!-- transcrit de p.343 (ex-figure) -->
+<!-- transcrit de p.338 (ex-figure) -->
 
 **[RG_MF631] Constituer le « Type 2 » — Donnée « Type 2 » → Données**
 
@@ -3757,7 +3757,7 @@ Rang de naissance
 | Rang de naissance | [02102] | 1 | N | F | EF_BS02_02 — Rang de naissance |
 
 
-<!-- p.344 -->
+<!-- p.339 -->
 TF - Transmettre les factures
 Donnée Type 2
 Données
@@ -3842,7 +3842,7 @@ Le n° facture ou n° de titre est la concaténation des données suivantes :
 caractères numériques (ex : 14 correspond à l’année 2014)
  le N° de titre :
 
-<!-- transcrit de p.344 (ex-figure) -->
+<!-- transcrit de p.339 (ex-figure) -->
 
 **Donnée « Type 2 » (suite) — correspondance Donnée / Source**
 
@@ -3861,7 +3861,7 @@ caractères numériques (ex : 14 correspond à l’année 2014)
 | 333 | le contexte métier ~~d'anonymisation~~ (EF_IP05_13) vaut « IST » |
 
 
-<!-- p.345 -->
+<!-- p.340 -->
 TF - Transmettre les factures
 ○ cette donnée doit être valorisée sous la forme de 7 caractères numériques.
 À noter que ce n° de facture ou n° de titre constitue une partie de la clé comptable qui
@@ -3916,7 +3916,7 @@ utilisée pour déterminer le taux de prise
 en charge (cf. [RG_VF665])
 13
 
-<!-- transcrit de p.345 (ex-figure) -->
+<!-- transcrit de p.340 (ex-figure) -->
 
 **[0277] — Code Nature d'assurance**
 
@@ -3929,7 +3929,7 @@ en charge (cf. [RG_VF665])
 | Autre cas | | 10 |
 
 
-<!-- p.346 -->
+<!-- p.341 -->
 TF - Transmettre les factures
 Autre cas
 10
@@ -3976,7 +3976,7 @@ vaut
 C2S en facturation unique (EF_BS21_03)
 Blanc
 
-<!-- transcrit de p.346 (ex-figure) -->
+<!-- transcrit de p.342 (ex-figure) -->
 
 **[0295] — Top éclatement des flux par établissement**
 
@@ -3988,7 +3988,7 @@ Blanc
 | Une part complémentaire est facturée en tiers payant aux AMC. (y compris BS coordonnés RSS) | « F » | Eclatement du flux à la source par l'établissement (La part AMC est transmise sur une facture distincte) |
 
 
-<!-- p.347 -->
+<!-- p.342 -->
 TF - Transmettre les factures
 AME
 Blanc
@@ -4030,7 +4030,7 @@ dans la facture uniquement si le mode de facturation (EF_BS21_03) est égal à
 <!-- transcrit de p.347 (ex-figure) : suite du tableau « Top éclatement des flux par établissement » transcrit en p.346 -->
 
 
-<!-- p.348 -->
+<!-- p.343 -->
 TF - Transmettre les factures
 [RG_MF632] Constituer le « Type 2S »
 À noter que le « Type 2S » doit obligatoirement succéder au « Type 2 ».
@@ -4214,7 +4214,7 @@ des données suivantes :
  le code établissement
 ○ cette donnée doit être valorisée à « 000 » par défaut.
 
-<!-- transcrit de p.348 (ex-figure) -->
+<!-- transcrit de p.343 (ex-figure) -->
 
 **[RG_MF632] Constituer le « Type 2S »** — À noter que le « Type 2S » doit obligatoirement succéder au « Type 2 ».
 
@@ -4242,7 +4242,7 @@ des données suivantes :
 | FILLER | [2S122] | 7 | A | F | | Blanc |
 
 
-<!-- p.349 -->
+<!-- p.344 -->
 TF - Transmettre les factures
  le code produit
 ○ cette donnée doit être valorisée sous la forme d’un caractère numérique.
@@ -4288,7 +4288,7 @@ En cas d’actes non concernés par le parcours (actes en rapport avec l’artic
 CSS, IPS à A ou actes en urgence, IPS à U), tous les actes doivent être concernés par
 l’IPS. Il ne peut pas y avoir des actes exclus du parcours (IPS à blanc)
 
-<!-- transcrit de p.349 (ex-figure) -->
+<!-- transcrit de p.344 (ex-figure) -->
 
 **[2S121] — Indicateur du parcours de soins : factures contenant des actes soumis et des actes exclus du parcours (CP02)**
 
@@ -4298,7 +4298,7 @@ l’IPS. Il ne peut pas y avoir des actes exclus du parcours (IPS à blanc)
 | « DANS parcours de soins » | La valeur de l'IPS par rapport à la situation du BS dans le parcours c'est-à-dire au choix parmi T, N, R, H, D, O, M |
 
 
-<!-- p.350 -->
+<!-- p.345 -->
 TF - Transmettre les factures
 [RG_MF633] Constituer le « Type 5 »
 Donnée Type 5
@@ -4469,7 +4469,7 @@ complément de type (3x, 4x).
 Cette information correspond au total des bases de remboursement des enregistrements
 de « Type 3 » (cf. [0383]).
 
-<!-- transcrit de p.350 (ex-figure) -->
+<!-- transcrit de p.345 (ex-figure) -->
 
 **[RG_MF633] Constituer le « Type 5 »**
 
@@ -4496,7 +4496,7 @@ de « Type 3 » (cf. [0383]).
 | FILLER | [05127] | 2 | A | F | | Blanc |
 
 
-<!-- p.351 -->
+<!-- p.346 -->
 TF - Transmettre les factures
 [0550] Total remboursable par la caisse des prestations hospitalières
 Cette information correspond au total des montants remboursables par la caisse pour les
@@ -4538,7 +4538,7 @@ Les consignes relatives à l’interprétation des anomalies sont décrites dans
 suivant :
 Cf. [RR] - Réceptionner les retours.
 
-<!-- p.352 -->
+<!-- p.347 -->
 TF - Transmettre les factures
 
 ## 5 DESCRIPTION GENERALE DE LA FONCTION « ML - REGROUPER LES FACTURES EN LOT ET REGROUPER LES LOTS EN FICHIER »
@@ -4572,11 +4572,11 @@ Lien entre les
 objets
 Figure 6 : Diagramme des objets métiers de la fonction « ML - Mettre en forme les fichiers de Lots »
 
-![Figure 6 : Diagramme des objets métiers de la fonction « ML - Mettre en forme les fichiers de Lots »](figures/p352.png)
-*Figure (p.352) : Figure 6 : Diagramme des objets métiers de la fonction « ML - Mettre en forme les fichiers de Lots »*
+![Figure 6 : Diagramme des objets métiers de la fonction « ML - Mettre en forme les fichiers de Lots »](figures/p347.png)
+*Figure (p.347) : Figure 6 : Diagramme des objets métiers de la fonction « ML - Mettre en forme les fichiers de Lots »*
 
 
-<!-- p.353 -->
+<!-- p.348 -->
 TF - Transmettre les factures
 
 ### 5.3 Enchaînement des sous-fonctions
@@ -4604,11 +4604,11 @@ de transport]
 Les entités fonctionnelles sont décrites dans le document :
  Cf. [DICO] - Dictionnaire de données »
 
-![Figure 7 : Diagramme d’enchaînement de la fonction « ML - Mettre en forme les fichiers de Lots »](figures/p353.png)
-*Figure (p.353) : Figure 7 : Diagramme d’enchaînement de la fonction « ML - Mettre en forme les fichiers de Lots »*
+![Figure 7 : Diagramme d’enchaînement de la fonction « ML - Mettre en forme les fichiers de Lots »](figures/p348.png)
+*Figure (p.348) : Figure 7 : Diagramme d’enchaînement de la fonction « ML - Mettre en forme les fichiers de Lots »*
 
 
-<!-- p.354 -->
+<!-- p.349 -->
 TF - Transmettre les factures
 RENSEIGNER LES JUSTIFICATIFS D’EXONERATION
 SELON LES CAS METIERS
@@ -4653,7 +4653,7 @@ Bénéficiaires de l’ASPA
 Même en cas de facture entièrement exonérée par la RG du seuil, le justificatif
 d’exonération reste renseigné sur tous les actes.
 
-<!-- transcrit de p.354 (ex-figure) -->
+<!-- transcrit de p.349 (ex-figure) -->
 
 **Annexe 1 — A1-1 : Bénéficiaires du régime CANSSM** — Pour les bénéficiaires du régime CANSSM, toutes les situations d'exonération sont listées ci-dessous :
 
@@ -4664,7 +4664,7 @@ d’exonération reste renseigné sur tous les actes.
 | Aucune prestation avec une ALD | 0 - pas d'exonération | 6 - Régimes spéciaux SNCF et MINES |
 
 
-<!-- p.355 -->
+<!-- p.341 -->
 TF - Transmettre les factures
 Prestations concernées
 Justificatif d’exonération de
@@ -4694,7 +4694,7 @@ Ou « 0 - pas d’exonération »
 pour les actes non exonérés
 9 - ASPA
 
-<!-- transcrit de p.355 (ex-figure) -->
+<!-- transcrit de p.341 (ex-figure) -->
 
 **Annexe 1 — A1-2.1 : Bénéficiaires de l'ASPA (application de la règle du seuil)**
 

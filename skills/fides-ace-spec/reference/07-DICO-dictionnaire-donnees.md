@@ -1,13 +1,13 @@
 # DICO — Dictionnaire de données
 
-_Pages 356–380 du PDF source._
+_Pages 350–374 du PDF source._
 
 
-<!-- p.356 -->
+<!-- p.350 -->
 DICO  -  Dictionnaire de données
 
 
-<!-- p.357 -->
+<!-- p.351 -->
 DICO - Dictionnaire de données
 arrangement, quel que soit le procédé utilisé.
 des sanctions pour l’auteur du délit.
@@ -16,7 +16,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.358 -->
+<!-- p.352 -->
 DICO - Dictionnaire de données
 1
 1.1
@@ -38,7 +38,7 @@ Diagramme des données du domaine fonctionnel IP - Acquérir les informations su
 3.8
 3.9
 
-<!-- p.359 -->
+<!-- p.353 -->
 DICO - Dictionnaire de données
 
 ## 1 Introduction
@@ -90,7 +90,7 @@ pertinent d’actes isolés.
 Actes en série
 Synonyme de traitements en série
 
-<!-- transcrit de p.359 (ex-figure) -->
+<!-- transcrit de p.353 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -100,7 +100,7 @@ Synonyme de traitements en série
 | Actes en série | Synonyme de traitements en série. |
 
 
-<!-- p.360 -->
+<!-- p.354 -->
 DICO - Dictionnaire de données
 Définitions
 Acte isolé
@@ -151,7 +151,7 @@ ne sont pas traitées par le même organisme.
 La transmission de la part complémentaire, dans ce cas, ne fait pas partie
 du périmètre des présentes SFG.
 
-<!-- transcrit de p.360 (ex-figure) -->
+<!-- transcrit de p.354 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -163,7 +163,7 @@ du périmètre des présentes SFG.
 | Gestion séparée | Mode de gestion pour lequel la part obligatoire et la part complémentaire ne sont pas traitées par le même organisme. La transmission de la part complémentaire, dans ce cas, ne fait pas partie du périmètre des présentes SFG. |
 
 
-<!-- p.361 -->
+<!-- p.355 -->
 DICO - Dictionnaire de données
 Définitions
 Phase CCAM
@@ -216,7 +216,7 @@ salariée en Alsace Moselle.
 Ex. : un Alsacien travaillant en Alsace bénéficie du régime local Alsace-
 Moselle (s’il remplit les conditions)
 
-<!-- transcrit de p.361 (ex-figure) -->
+<!-- transcrit de p.355 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -229,7 +229,7 @@ Moselle (s’il remplit les conditions)
 | Régime Local Alsace-Moselle | Le cas général pour bénéficier du régime local est d'exercer une activité salariée en Alsace Moselle. Ex. : un Alsacien travaillant en Alsace bénéficie du régime local Alsace-Moselle (s'il remplit les conditions). |
 
 
-<!-- p.362 -->
+<!-- p.356 -->
 DICO - Dictionnaire de données
 Séance de soins
 Actes d’infirmiers ou de kinésithérapeutes :
@@ -282,7 +282,7 @@ L’accompagnement à la téléconsultation est l’accompagnement du patient
 
  Cf. [PG] - Présentation Générale
 
-<!-- transcrit de p.362 (ex-figure) -->
+<!-- transcrit de p.356 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -294,7 +294,7 @@ L’accompagnement à la téléconsultation est l’accompagnement du patient
 | Accompagnement à la téléconsultation | L'accompagnement à la téléconsultation est l'accompagnement du patient à la téléconsultation par les infirmiers. |
 
 
-<!-- p.363 -->
+<!-- p.357 -->
 DICO - Dictionnaire de données
 
 ## 2 ABREVIATIONS
@@ -373,7 +373,7 @@ HAD
 Ce coefficient s’obtient en multipliant le coefficient de transition, le coefficient
 géographique et le coefficient prudentiel.
 
-<!-- transcrit de p.363 (ex-figure) -->
+<!-- transcrit de p.357 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -410,7 +410,7 @@ géographique et le coefficient prudentiel.
 | Coefficient MCO / HAD | Ce coefficient s'obtient en multipliant le coefficient de transition, le coefficient géographique et le coefficient prudentiel. |
 
 
-<!-- p.364 -->
+<!-- p.358 -->
 DICO - Dictionnaire de données
 CPU
 Caisse de Paiement Unique (également appelée CIE : Caisse Interlocutrice de
@@ -484,7 +484,7 @@ sécurité sociale
 PU
 Prix Unitaire
 
-<!-- transcrit de p.364 (ex-figure) -->
+<!-- transcrit de p.358 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -523,7 +523,7 @@ Prix Unitaire
 | PU | Prix Unitaire |
 
 
-<!-- p.365 -->
+<!-- p.359 -->
 DICO - Dictionnaire de données
 RG
 Règle de Gestion
@@ -552,7 +552,7 @@ Trésorier-Payeur Général
 UCD
 Unité Commune de Dispensation
 
-<!-- transcrit de p.365 (ex-figure) -->
+<!-- transcrit de p.359 (ex-figure) -->
 
 | Terme | Définition |
 | --- | --- |
@@ -571,7 +571,7 @@ Unité Commune de Dispensation
 | UCD | Unité Commune de Dispensation |
 
 
-<!-- p.366 -->
+<!-- p.363 -->
 DICO - Dictionnaire de données
 
 ## 3 DICTIONNAIRE DE DONNEES
@@ -580,8 +580,8 @@ DICO - Dictionnaire de données
 Diagramme des données du domaine fonctionnel BS - Bénéficiaire des
 soins
 
-![Diagramme des données du domaine fonctionnel BS - Bénéficiaire des](figures/p366.png)
-*Figure (p.366) : Diagramme des données du domaine fonctionnel BS - Bénéficiaire des*
+![Diagramme des données du domaine fonctionnel BS - Bénéficiaire des](figures/p360.png)
+*Figure (p.360) : Diagramme des données du domaine fonctionnel BS - Bénéficiaire des*
 
 > Transcription Mermaid (depuis la figure ci-dessus) :
 
@@ -614,14 +614,14 @@ erDiagram
 ```
 
 
-<!-- p.367 -->
+<!-- p.366 -->
 DICO - Dictionnaire de données
 
 ### 3.2 Diagramme des données du domaine fonctionnel IP - Acquérir les informations sur les prestations
 
 
-![Diagramme des données du domaine fonctionnel IP - Acquérir les](figures/p367.png)
-*Figure (p.367) : Diagramme des données du domaine fonctionnel IP - Acquérir les*
+![Diagramme des données du domaine fonctionnel IP - Acquérir les](figures/p361.png)
+*Figure (p.361) : Diagramme des données du domaine fonctionnel IP - Acquérir les*
 
 > Transcription Mermaid (depuis la figure ci-dessus) :
 
@@ -645,7 +645,7 @@ erDiagram
 ```
 
 
-<!-- p.368 -->
+<!-- p.352 -->
 DICO - Dictionnaire de données
 
 ### 3.3 Diagramme des données du domaine fonctionnel CF - Déterminer le contexte de facturation
@@ -654,8 +654,8 @@ DICO - Dictionnaire de données
 ### 3.4 Diagramme des données du domaine fonctionnel VF - Valoriser les prestations de la facture
 
 
-![Diagramme des données du domaine fonctionnel CF - Déterminer le](figures/p368.png)
-*Figure (p.368) : Diagramme des données du domaine fonctionnel CF - Déterminer le*
+![Diagramme des données du domaine fonctionnel CF - Déterminer le](figures/p362.png)
+*Figure (p.362) : Diagramme des données du domaine fonctionnel CF - Déterminer le*
 
 > Transcription Mermaid (depuis la figure ci-dessus) :
 
@@ -690,7 +690,7 @@ erDiagram
 ```
 
 
-<!-- p.369 -->
+<!-- p.363 -->
 DICO - Dictionnaire de données
 
 ### 3.5 Liste des données du domaine fonctionnel BS - Bénéficiaire des soins
@@ -765,7 +765,7 @@ Date fin de droits AMO
 EF_BS06
 Accidents de droits communs
 
-<!-- transcrit de p.369 (ex-figure) -->
+<!-- transcrit de p.363 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -805,7 +805,7 @@ Accidents de droits communs
 | EF_BS06 |  | Accidents de droits communs |
 
 
-<!-- p.370 -->
+<!-- p.364 -->
 DICO - Dictionnaire de données
 02
 Factures électroniques acceptées par la caisse
@@ -880,7 +880,7 @@ Prénom du médecin traitant
 04
 N° d'assurance maladie du médecin traitant
 
-<!-- transcrit de p.370 (ex-figure) -->
+<!-- transcrit de p.364 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -922,7 +922,7 @@ N° d'assurance maladie du médecin traitant
 |  | 04 | N° d'assurance maladie du médecin traitant |
 
 
-<!-- p.371 -->
+<!-- p.365 -->
 DICO - Dictionnaire de données
 05
 N° RPPS
@@ -975,7 +975,7 @@ Date début maternité
 02
 Date fin maternité
 
-<!-- transcrit de p.371 (ex-figure) -->
+<!-- transcrit de p.365 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1006,7 +1006,7 @@ Date fin maternité
 |  | 02 | Date fin maternité |
 
 
-<!-- p.372 -->
+<!-- p.366 -->
 DICO - Dictionnaire de données
 
 ### 3.6 Liste des données du domaine fonctionnel IP - Acquérir les informations sur les prestations
@@ -1079,7 +1079,7 @@ Montant total de l'écart indemnisable
 10
 Mode délivrance
 
-<!-- transcrit de p.372 (ex-figure) -->
+<!-- transcrit de p.366 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1118,7 +1118,7 @@ Mode délivrance
 |  | 10 | Mode délivrance |
 
 
-<!-- p.373 -->
+<!-- p.367 -->
 DICO - Dictionnaire de données
 EF_IP12
 Prestation LPP
@@ -1195,7 +1195,7 @@ Code spécialité (PS Exécutant)
 02
 N° RPPS + clé (PS exécutant)
 
-<!-- transcrit de p.373 (ex-figure) -->
+<!-- transcrit de p.367 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1238,7 +1238,7 @@ N° RPPS + clé (PS exécutant)
 |  | 02 | N° RPPS + clé (PS exécutant) |
 
 
-<!-- p.374 -->
+<!-- p.368 -->
 DICO - Dictionnaire de données
 03
 Secteur + Contrat tarifaire (PS Exécutant)
@@ -1265,7 +1265,7 @@ Lieu d'exécution de la prestation
 01
 N° FINESS Géographique (lieu d'exécution)
 
-<!-- transcrit de p.374 (ex-figure) -->
+<!-- transcrit de p.368 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1283,7 +1283,7 @@ N° FINESS Géographique (lieu d'exécution)
 |  | 01 | N° FINESS Géographique (lieu d'exécution) |
 
 
-<!-- p.375 -->
+<!-- p.369 -->
 DICO - Dictionnaire de données
 
 ### 3.7 Liste des données du domaine fonctionnel CF - Déterminer le contexte de facturation
@@ -1355,7 +1355,7 @@ Coefficient MCO
 EF_CF07
 Établissement ( Exécutant / exploitant)
 
-<!-- transcrit de p.375 (ex-figure) -->
+<!-- transcrit de p.369 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1393,7 +1393,7 @@ EF_CF07
 | EF_CF07 |  | Établissement ( Exécutant / exploitant) |
 
 
-<!-- p.376 -->
+<!-- p.370 -->
 DICO - Dictionnaire de données
 01
 N° FINESS géographique (ES Exécutant/exploitant)
@@ -1451,7 +1451,7 @@ Droits de base AMO ouverts
 Existence du médecin traitant à la date de référence
 Contexte de facturation de niveau prestation ou Séjour
 
-<!-- transcrit de p.376 (ex-figure) -->
+<!-- transcrit de p.370 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1485,7 +1485,7 @@ Contexte de facturation de niveau prestation ou Séjour
 |  |  | Contexte de facturation de niveau prestation ou Séjour |
 
 
-<!-- p.377 -->
+<!-- p.371 -->
 DICO - Dictionnaire de données
 
 ### 3.8 Liste des données du domaine fonctionnel VF - Valoriser les prestations de la facture
@@ -1540,7 +1540,7 @@ Montant des honoraires
 04
 Grille tarifaire CCAM
 
-<!-- transcrit de p.377 (ex-figure) -->
+<!-- transcrit de p.371 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |
@@ -1570,7 +1570,7 @@ Grille tarifaire CCAM
 |  | 04 | Grille tarifaire CCAM |
 
 
-<!-- p.378 -->
+<!-- p.372 -->
 DICO - Dictionnaire de données
 
 ### 3.9 Domaine fonctionnel « MF - Mettre en forme les Factures »
@@ -1583,11 +1583,11 @@ Facture B2
 01
 Statut de la facture
 
-![Schéma / diagramme page 378](figures/p378.png)
-*Figure (p.378) : Schéma / diagramme page 378*
+![Schéma / diagramme page 372](figures/p372.png)
+*Figure (p.372) : Schéma / diagramme page 372*
 
 
-<!-- p.379 -->
+<!-- p.373 -->
 DICO - Dictionnaire de données
 
 ### 3.10 Domaine fonctionnel « ML - Regrouper les factures en lot et regrouper les lots en fichier »
@@ -1614,11 +1614,11 @@ Adresse de l’AMO
 03
 Sujet du message
 
-![Schéma / diagramme page 379](figures/p379.png)
-*Figure (p.379) : Schéma / diagramme page 379*
+![Schéma / diagramme page 373](figures/p373.png)
+*Figure (p.373) : Schéma / diagramme page 373*
 
 
-<!-- p.380 -->
+<!-- p.374 -->
 DICO - Dictionnaire de données
 
 ### 3.12 Liste des données du domaine fonctionnel « RR - Réceptionner les Retours»
@@ -1645,7 +1645,7 @@ RSP
 01
 Type de RSP
 
-<!-- transcrit de p.380 (ex-figure) -->
+<!-- transcrit de p.374 (ex-figure) -->
 
 | Code EF | N° | Nom |
 | --- | --- | --- |

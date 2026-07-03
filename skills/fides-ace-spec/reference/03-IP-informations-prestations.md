@@ -1,14 +1,14 @@
 # IP — Acquérir les Informations des Prestations
 
-_Pages 87–153 du PDF source._
+_Pages 84–146 du PDF source._
 
 
-<!-- p.87 -->
+<!-- p.84 -->
 IP  -  Acquérir les informations des
 Prestations
 
 
-<!-- p.88 -->
+<!-- p.85 -->
 IP - Acquérir les informations des Prestations
 arrangement, quel que soit le procédé utilisé.
 des sanctions pour l’auteur du délit.
@@ -17,7 +17,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.89 -->
+<!-- p.86 -->
 IP - Acquérir les informations des Prestations
 1
 1.1
@@ -59,7 +59,7 @@ IP33.06 - Acquérir les informations relatives aux forfaits socles et supplémen
 IP35.05 - Contrôler les informations spécifiques aux forfaits pour l’activité d’urgence ... 63
 4
 
-<!-- p.90 -->
+<!-- p.87 -->
 IP - Acquérir les informations des Prestations
 TABLE DES ILLUSTRATIONS
 FIGURE 3 : DIAGRAMME DES OBJETS METIER DE LA FONCTION « IP - ACQUERIR LES INFORMATIONS SUR LES
@@ -69,7 +69,7 @@ FIGURE 6 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « IP33 - ACQUERIR LES
 FIGURE 7 : DIAGRAMME D’ENCHAINEMENT DE L’OPERATION « IP33.01 - ACQUERIR LES INFORMATIONS RELATIVES
 FIGURE 8 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « IP35 - CONTROLER LES INFORMATIONS DE LA
 
-<!-- p.91 -->
+<!-- p.88 -->
 IP - Acquérir les informations des Prestations
 
 ## 1 INTRODUCTION
@@ -100,7 +100,7 @@ De référence.
 
  Cf. [PG] – Présentation Générale
 
-<!-- p.92 -->
+<!-- p.89 -->
 IP - Acquérir les informations des Prestations
 
 ## 2 DESCRIPTION GENERALE DE LA FONCTION « IP - ACQUERIR LES INFORMATIONS SUR LES PRESTATIONS »
@@ -113,11 +113,11 @@ puis du sous-processus « EF - Élaborer les Factures ».
 Figure 1 : Diagramme d’enchaînement du processus général
 Figure 2 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »
 
-![Figure 1 : Diagramme d’enchaînement du processus général](figures/p092.png)
-*Figure (p.92) : Figure 1 : Diagramme d’enchaînement du processus général*
+![Figure 1 : Diagramme d’enchaînement du processus général](figures/p089.png)
+*Figure (p.89) : Figure 1 : Diagramme d’enchaînement du processus général*
 
 
-<!-- p.93 -->
+<!-- p.90 -->
 IP - Acquérir les informations des Prestations
 
 ### 2.2 Cadrage fonctionnel
@@ -147,16 +147,16 @@ La relation entre ces entités est une relation de type héritage signifiant « 
 particulier de ». Exemple, la prestation médicament (EF_IP13) est un cas particulier de
 prestation (EF_IP05).
 
-<!-- p.94 -->
+<!-- p.91 -->
 IP - Acquérir les informations des Prestations
 Figure 3 : Diagramme des objets métier de la fonction « IP - Acquérir les informations sur les
 Prestations »
 
-![Figure 3 : Diagramme des objets métier de la fonction « IP - Acquérir les informations sur les](figures/p094.png)
-*Figure (p.94) : Figure 3 : Diagramme des objets métier de la fonction « IP - Acquérir les informations sur les*
+![Figure 3 : Diagramme des objets métier de la fonction « IP - Acquérir les informations sur les](figures/p091.png)
+*Figure (p.91) : Figure 3 : Diagramme des objets métier de la fonction « IP - Acquérir les informations sur les*
 
 
-<!-- p.95 -->
+<!-- p.92 -->
 IP - Acquérir les informations des Prestations
 
 ### 2.4 Enchaînement des sous-fonctions
@@ -169,11 +169,11 @@ fonctions
 Figure 4 : Diagramme d’enchaînement de la fonction « IP - Acquérir les Informations sur les
 Prestations »
 
-![Figure 4 : Diagramme d’enchaînement de la fonction « IP - Acquérir les Informations sur les](figures/p095.png)
-*Figure (p.95) : Figure 4 : Diagramme d’enchaînement de la fonction « IP - Acquérir les Informations sur les*
+![Figure 4 : Diagramme d’enchaînement de la fonction « IP - Acquérir les Informations sur les](figures/p092.png)
+*Figure (p.92) : Figure 4 : Diagramme d’enchaînement de la fonction « IP - Acquérir les Informations sur les*
 
 
-<!-- p.96 -->
+<!-- p.93 -->
 IP - Acquérir les informations des Prestations
 
 ## 3 DESCRIPTION DETAILLEE DE LA FONCTION « IP - ACQUERIR LES INFORMATIONS SUR LES PRESTATIONS »
@@ -185,7 +185,7 @@ Chaque prestation est associée à des critères énumérés ci-dessous.
 Ces critères permettent de déterminer l’application de certaines règles de gestion dans la
 suite des documents de SFG :
 
-<!-- transcrit de p.96 (ex-figure) -->
+<!-- transcrit de p.93 (ex-figure) -->
 
 | Critère | Description |
 | --- | --- |
@@ -195,7 +195,7 @@ suite des documents de SFG :
 | Nomenclature | Nomenclature utilisée pour coder la prestation (NGAP, CCAM, NABM, UCD, etc…) |
 
 
-<!-- p.97 -->
+<!-- p.94 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.1 IP29 – Déterminer le forfait patient urgences et identifier sa prise en charge
@@ -223,7 +223,7 @@ CF
  Valorisation des prestations
 VF
 
-<!-- p.98 -->
+<!-- p.95 -->
 IP - Acquérir les informations des Prestations
 Enchaînement
 des fonctions
@@ -237,11 +237,11 @@ CF30.05 et CF30.06 sont disponibles dans :
 Les règles de gestion associées au sous-processus VF35.05.01 sont disponibles dans :
   [VF] - Valoriser les prestations des Factures
 
-![Figure 5 : Diagramme d’enchaînement de la sous-fonction « IP29 - Déterminer le forfait patient](figures/p098.png)
-*Figure (p.98) : Figure 5 : Diagramme d’enchaînement de la sous-fonction « IP29 - Déterminer le forfait patient*
+![Figure 5 : Diagramme d’enchaînement de la sous-fonction « IP29 - Déterminer le forfait patient](figures/p095.png)
+*Figure (p.95) : Figure 5 : Diagramme d’enchaînement de la sous-fonction « IP29 - Déterminer le forfait patient*
 
 
-<!-- p.99 -->
+<!-- p.96 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.2 IP30 - Acquérir les informations sur la prescription
@@ -266,7 +266,7 @@ savoir :
 (EF_IP01_02) ;
 Les valeurs possibles du code origine de la prescription sont les suivantes :
 
-<!-- transcrit de p.99 (ex-figure) -->
+<!-- transcrit de p.96 (ex-figure) -->
 
 | Contexte | Code origine de la prescription |
 | --- | --- |
@@ -294,7 +294,7 @@ En cas de soins consécutifs à un Examen Bucco-Dentaire (EBD), cette date doit 
 obligatoirement renseignée avec la date à laquelle le bilan est réalisé.
 
 
-<!-- p.100 -->
+<!-- p.97 -->
 IP - Acquérir les informations des Prestations
 [RG_IP601] Acquérir les informations relatives au Professionnel de Santé prescripteur (EF_IP02,
 EF_IP17)
@@ -359,7 +359,7 @@ Dans le cas où la prescription a été établie par un Professionnel de Santé 
 données doivent être renseignées avec le N° d’identification et n° RPPS du PS titulaire.
 
 
-<!-- transcrit de p.100 (ex-figure) -->
+<!-- transcrit de p.97 (ex-figure) -->
 
 | Champ | Libellé | Valeurs possibles dans ce contexte |
 | --- | --- | --- |
@@ -370,7 +370,7 @@ données doivent être renseignées avec le N° d’identification et n° RPPS d
 | EF_IP17_01 | Établissement de rattachement (prescripteur) | Si le prescripteur est salarié, correspond au n° FINESS géographique de l’établissement de rattachement du PS prescripteur.<br>Si le prescripteur exerce en Libéral, correspond au n° FINESS géographique de l’établissement dans lequel le PS a prescrit. |
 
 
-<!-- p.101 -->
+<!-- p.97 -->
 IP - Acquérir les informations des Prestations
  [CP02] : Dépistage sérologique du virus de l’immunodéficience humaine (VIH) et
 autres IST en laboratoire de biologie médicale, sans ordonnance.
@@ -403,7 +403,7 @@ rattachement
 (prescripteur)
 Non renseigné
 
-<!-- transcrit de p.101 (ex-figure) -->
+<!-- transcrit de p.98 (ex-figure) -->
 
 | Champ | Libellé | Valeurs possibles dans ce contexte |
 | --- | --- | --- |
@@ -414,7 +414,7 @@ Non renseigné
 | EF_IP17_01 | Établissement de rattachement (prescripteur) | Non renseigné |
 
 
-<!-- p.102 -->
+<!-- p.99 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.3 IP31 - Acquérir les informations sur l’exécutant de la prestation
@@ -474,7 +474,7 @@ le système de facturation doit permettre l'acquisition de la donnée :
 (EF_IP15_01)
 ○ FINESS géographique de l’établissement de rattachement du PS Salarié
 
-<!-- transcrit de p.102 (ex-figure) -->
+<!-- transcrit de p.99 (ex-figure) -->
 
 | Champ | Libellé | Valeurs possibles dans ce contexte |
 | --- | --- | --- |
@@ -486,7 +486,7 @@ le système de facturation doit permettre l'acquisition de la donnée :
 | EF_IP03_06 | Contrat tarifaire | Renseigné à « aucun » |
 
 
-<!-- p.103 -->
+<!-- p.100 -->
 IP - Acquérir les informations des Prestations
 Facturation des forfaits SUB, SB2, SB3, SIM, SIC exécutés par un laboratoire
 d’analyse médicale ou un centre d’imagerie extérieurs à l’établissement
@@ -513,11 +513,11 @@ de la lettre par un chiffre de la manière suivante :
  etc…
 La clé ainsi calculée doit être égale à la clé saisie.
 
-![Schéma / diagramme page 103](figures/p103.png)
-*Figure (p.103) : Schéma / diagramme page 103*
+![Schéma / diagramme page 100](figures/p100.png)
+*Figure (p.100) : Schéma / diagramme page 100*
 
 
-<!-- p.104 -->
+<!-- p.101 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.4 IP32 - Acquérir les informations générales de la prestation
@@ -573,7 +573,7 @@ Dans certains cas, les soins sont exonérés sur indication spécifique du Profe
 Santé exécutant.
 Le Professionnel de Santé exécutant précise pour la prestation s’il s’agit :
 
-<!-- transcrit de p.104 (ex-figure) -->
+<!-- transcrit de p.101 (ex-figure) -->
 
 Pour les forfaits Urgences (hors urgences gynécologiques), les dates d’exécution à prendre en compte sont listées ci-dessous :
 
@@ -587,7 +587,7 @@ Pour les forfaits Urgences (hors urgences gynécologiques), les dates d’exécu
 \* Le terme « médecin urgentiste » désigne le médecin responsable de la prise en charge du patient aux urgences. Il peut s’agir d’un généraliste, d’un pédiatre etc. »
 
 
-<!-- p.105 -->
+<!-- p.102 -->
 IP - Acquérir les informations des Prestations
 Motif médical
 d’exonération
@@ -643,7 +643,7 @@ Le domaine d’activité n’est pas renseigné
 Le domaine d’activité n’est pas renseigné.
  [CP02] : Activité d’urgence non gynécologiques
 
-<!-- transcrit de p.105 (ex-figure) -->
+<!-- transcrit de p.102 (ex-figure) -->
 
 | Motif médical d’exonération | Conditions |
 | --- | --- |
@@ -653,7 +653,7 @@ Le domaine d’activité n’est pas renseigné.
 | Soins pour les nouveau-nés | Soins exonérés car prescrits dans les 30 premiers jours de la vie du nourrisson (ACE) |
 
 
-<!-- p.106 -->
+<!-- p.103 -->
 IP - Acquérir les informations des Prestations
 En contexte d’urgence (hors urgences gynécologiques), les forfaits FUx, SIM, SIC, SAS,
 SUB, SB2, SB3, FPX le domaine doit être renseigné à « M », sauf pour les AME et les BS
@@ -667,7 +667,7 @@ en fonction de leur nomenclature :
 Lorsque la prestation en question nécessite un codage affiné, le Top codage affiné
 (EF_IP05_10) doit être valorisé à « Oui », dans le cas contraire à « Non ».
 
-<!-- p.107 -->
+<!-- p.104 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.5 IP33 - Acquérir les informations détaillées sur la prestation
@@ -701,18 +701,18 @@ EF_IP13
  Prestation LPP
 EF_IP12
 
-<!-- p.108 -->
+<!-- p.105 -->
 IP - Acquérir les informations des Prestations
 Schéma des
 opérations
 Figure 6 : Diagramme d’enchaînement de la sous-fonction « IP33 - Acquérir les informations
 détaillées sur la prestation »
 
-![Schéma des](figures/p108.png)
-*Figure (p.108) : Schéma des*
+![Schéma des](figures/p105.png)
+*Figure (p.105) : Schéma des*
 
 
-<!-- p.109 -->
+<!-- p.106 -->
 IP - Acquérir les informations des Prestations
 3.5.1
 IP33.01 - Acquérir les informations relatives aux actes professionnels
@@ -725,7 +725,7 @@ ou « Réservé PS » ou « Télémédecine » dans la table suivante :
 Ces actes sont inscrits dans les nomenclatures NGAP et CCAM et sont réalisés par les
 Professionnels de Santé selon les contextes suivants :
 
-<!-- p.110 -->
+<!-- p.107 -->
 IP - Acquérir les informations des Prestations
  Médecins ;
  Chirurgiens-dentistes ;
@@ -755,11 +755,11 @@ des étapes
 Figure 7 : Diagramme d’enchaînement de l’opération « IP33.01 - Acquérir les informations relatives
 aux actes professionnels »
 
-![Figure 7 : Diagramme d’enchaînement de l’opération « IP33.01 - Acquérir les informations relatives](figures/p110.png)
-*Figure (p.110) : Figure 7 : Diagramme d’enchaînement de l’opération « IP33.01 - Acquérir les informations relatives*
+![Figure 7 : Diagramme d’enchaînement de l’opération « IP33.01 - Acquérir les informations relatives](figures/p107.png)
+*Figure (p.107) : Figure 7 : Diagramme d’enchaînement de l’opération « IP33.01 - Acquérir les informations relatives*
 
 
-<!-- p.111 -->
+<!-- p.108 -->
 IP - Acquérir les informations des Prestations
 3.5.1.1
 IP33.01.01 - Acquérir les informations relatives aux actes professionnels de
@@ -790,7 +790,7 @@ EF_IP06
  Prestation
 EF_IP05
 
-<!-- p.112 -->
+<!-- p.109 -->
 IP - Acquérir les informations des Prestations
 Règles de
 gestion
@@ -854,7 +854,7 @@ Sous-catégorie
 Dentaire/ODF » pour les actes NGAP relevant du
 dentaire en fonction du code prestation (cf. table 1)
 
-<!-- transcrit de p.112 (ex-figure) -->
+<!-- transcrit de p.109 (ex-figure) -->
 
 **[RG_IP630] Acquérir les informations relatives aux Prestations NGAP (EF_IP06)**
 
@@ -883,7 +883,7 @@ Les champs du tableau ci-dessous sont présents dans la table 1 (noms des colonn
 | EF_IP05_07 | Sous-catégorie | « Dentaire » ou « Dentaire/Prothétique » ou « Dentaire/ODF » pour les actes NGAP relevant du dentaire en fonction du code prestation (cf. table 1) |
 
 
-<!-- p.113 -->
+<!-- p.110 -->
 IP - Acquérir les informations des Prestations
  code prestation devant figurer dans la facture pour les
 actes de catégorie « Réservé PS »,
@@ -922,7 +922,7 @@ Conditions :
 Le numéro de la dent traitée peut être renseignée. Ce numéro est codifié selon la norme
 N.F. S91011.
 
-<!-- transcrit de p.113 (ex-figure) -->
+<!-- transcrit de p.110 (ex-figure) -->
 
 | Champ | | Valeurs |
 | --- | --- | --- |
@@ -938,7 +938,7 @@ D’autres informations complémentaires sont renseignées telles que :
 | EF_IP05_12 | Identifiant de la connexion vidéo sécurisée | Uniquement pour les actes de catégorie « Télémédecine » :<br>Valorisé avec l’identifiant de la connexion vidéo sécurisée utilisée pour la Téléconsultation si celui-ci est connu. |
 
 
-<!-- p.114 -->
+<!-- p.111 -->
 IP - Acquérir les informations des Prestations
 3.5.1.2
 IP33.01.02 - Déterminer les informations relatives au contexte tarifaire
@@ -992,7 +992,7 @@ Le contexte tarifaire du BS est défini par la table « R_CONTEXT_BN » de la ba
  la date d’exécution de la prestation
 (EF_IP05_01)
 
-<!-- p.115 -->
+<!-- p.112 -->
 IP - Acquérir les informations des Prestations
 3.5.1.3
 IP33.01.03 - Acquérir les informations relatives aux actes professionnels de
@@ -1021,7 +1021,7 @@ EF_IP05
 Règles de
 gestion
 
-<!-- p.116 -->
+<!-- p.112 -->
 IP - Acquérir les informations des Prestations
 [RG_IP650] Acquérir les informations relatives aux Prestations CCAM (EF_IP08)
 Le système de facturation doit permettre l'acquisition des informations suivantes :
@@ -1069,7 +1069,7 @@ acte remboursable.
 Un code prestation autorisant un remboursement sous condition est caractérisé par son
 champ CCAM-22 de la base CCAM.
 
-<!-- transcrit de p.116 (ex-figure) -->
+<!-- transcrit de p.112 (ex-figure) -->
 
 **[RG_IP650] Acquérir les informations relatives aux Prestations CCAM (EF_IP08)**
 
@@ -1086,7 +1086,7 @@ Le système de facturation doit permettre l'acquisition des informations suivant
 L’assemblage du code acte CCAM (EF_IP08_01), du code activité CCAM (EF_IP08_02), et du code phase de traitement CCAM (EF_IP08_03), constitue le triplet « acte / activité / phase » caractérisant la prestation CCAM.
 
 
-<!-- p.117 -->
+<!-- p.113 -->
 IP - Acquérir les informations des Prestations
 [RG_IP_CC2] Acquérir le Code modificateur CCAM AMO (EF_IP09_01)
 Le Code modificateur CCAM AMO est une donnée facultative qui peut être renseignée.
@@ -1132,7 +1132,7 @@ Quadrant supérieur gauche
 Quadrant inférieur droit
 Ces précisions concernant la numérotation des dents sont données à titre indicatif.
 
-<!-- transcrit de p.117 (ex-figure) -->
+<!-- transcrit de p.113 (ex-figure) -->
 
 Numérotation sextants et maxillaires :
 
@@ -1146,7 +1146,7 @@ Numérotation sextants et maxillaires :
 | 20 | Quadrant supérieur gauche | 40 | Quadrant inférieur droit |
 
 
-<!-- p.118 -->
+<!-- p.113 -->
 IP - Acquérir les informations des Prestations
 [RG_IP653] Acquérir les informations complémentaires d’une prestation relatives aux actes
 professionnels de type CCAM
@@ -1192,7 +1192,7 @@ EF_IP05_08
 Nomenclature
  « CCAM »
 
-<!-- transcrit de p.118 (ex-figure) -->
+<!-- transcrit de p.113 (ex-figure) -->
 
 Pour les actes CCAM, la valeur présente est le code regroupement et non le code détaillé.
 
@@ -1211,7 +1211,7 @@ Données de la table des codes prestation — Table 1 : Codes prestation :
 | EF_IP05_08 | Nomenclature | « CCAM » |
 
 
-<!-- p.119 -->
+<!-- p.115 -->
 IP - Acquérir les informations des Prestations
 CODE ASSOCIATION
 [RG_IP654] Acquérir le Code association CCAM (EF_IP08_05)
@@ -1253,7 +1253,7 @@ le second est tarifé à 50% de sa valeur.
 2 Justification de leur réalisation inscrite dans le dossier médical tenu à disposition du Service médical (cf
 dérogation B) 2. h) à l’article III-3 du Livre III de la Liste des actes et prestations)
 
-<!-- p.120 -->
+<!-- p.116 -->
 IP - Acquérir les informations des Prestations
 Règle
 Code association
@@ -1323,7 +1323,7 @@ JLQE002 : colposcopie ; 49,82€.
 |_|
 |_||2||8,||8||0|
 
-<!-- transcrit de p.120 (ex-figure) -->
+<!-- transcrit de p.116 (ex-figure) -->
 
 Règle générale d'association d'actes :
 
@@ -1350,7 +1350,7 @@ Actes d'imagerie, d'anatomie et de cytologie pathologiques ou bucco-dentaires as
 _Nota_ : le code ANP « 4 » est dit non « panachable » (toutes les lignes de facturation doivent comporter la même valeur de code ANP, en l'occurrence le code 4).
 
 
-<!-- p.121 -->
+<!-- p.117 -->
 IP - Acquérir les informations des Prestations
 code acte
 activ
@@ -1416,7 +1416,7 @@ Ass
 Rbst
 Honoraire factur
 
-<!-- p.122 -->
+<!-- p.118 -->
 IP - Acquérir les informations des Prestations
 3 : Quatre actes dont trois de radiologie conventionnelle – Deux intervenants
 Les actes sont réalisés par un radiologue et un rhumatologue. Pour les actes de radiologie,
@@ -1522,7 +1522,7 @@ Ass
 Rbst
 Honoraire facturé
 
-<!-- p.123 -->
+<!-- p.119 -->
 IP - Acquérir les informations des Prestations
 3.5.2
 IP33.02 - Acquérir les informations relatives aux actes de Biologie
@@ -1565,7 +1565,7 @@ Certaines analyses peuvent être répétées plusieurs fois au cours d’une mê
 système de facturation doit permettre l'acquisition du N° d’ordre de l’analyse à laquelle la
 prestation correspondante doit être rattachée.
 
-<!-- transcrit de p.123 (ex-figure) -->
+<!-- transcrit de p.119 (ex-figure) -->
 
 [RG_IP660] Acquérir les informations relatives aux Prestations NABM (EF_IP11) :
 
@@ -1575,7 +1575,7 @@ prestation correspondante doit être rattachée.
 | EF_IP11_02 | Coefficient de la prestation NABM | Choisi par le PS selon les consignes de la NABM |
 
 
-<!-- p.124 -->
+<!-- p.120 -->
 IP - Acquérir les informations des Prestations
 [RG_IP662] Acquérir les informations d’une prestation relatives aux actes de Biologie
 Déterminer le
@@ -1613,7 +1613,7 @@ EF_IP05_08
 Nomenclature
  « NABM »
 
-<!-- transcrit de p.124 (ex-figure) -->
+<!-- transcrit de p.120 (ex-figure) -->
 
 Déterminer le code prestation — la valeur présente est le code regroupement et non le code détaillé de l'acte :
 
@@ -1631,7 +1631,7 @@ Données de la table des codes prestation — Table 1 : Codes prestation :
 | EF_IP05_08 | Nomenclature | « NABM » |
 
 
-<!-- p.125 -->
+<!-- p.121 -->
 IP - Acquérir les informations des Prestations
 [RG_IP663] Identifier le cas métier de dépistage des IST (infections sexuellement transmissibles)
 Si la RG_IP660 détecte un des codes ci-dessous alors le contexte métier d’anonymisation
@@ -1709,7 +1709,7 @@ utilisé pour éventuellement transmettre une facture anonyme mais va également
 pour déterminer le prescripteur fictif s’il n’y a pas d’ordonnance et pour déterminer le taux
 de prise en charge pour les BS de moins de 26 ans
 
-<!-- transcrit de p.125 (ex-figure) -->
+<!-- transcrit de p.121 (ex-figure) -->
 
 [RG_IP663] Identifier le cas métier de dépistage des IST (infections sexuellement transmissibles). Si la RG_IP660 détecte un des codes ci-dessous alors le contexte métier d'anonymisation (EF_IP05_13) prend la valeur « IST » :
 
@@ -1734,7 +1734,7 @@ de prise en charge pour les BS de moins de 26 ans
 | Neisseria gonorrhoeae et Chlamydia trachomatis | Recherche de Chlamydia trachomatis et/ou de Neisseria gonorrhoeae par amplification génique (3 sites) | 5303 |
 
 
-<!-- p.126 -->
+<!-- p.122 -->
 IP - Acquérir les informations des Prestations
 3.5.3
 IP33.03 - Acquérir les informations relatives aux produits et prestations de
@@ -1768,7 +1768,7 @@ la LPP sont identifiées dans la table suivante :
  [TABLES] Table 1 : Codes prestation.
 Le système de facturation doit permettre l'acquisition des informations suivantes :
 
-<!-- p.127 -->
+<!-- p.123 -->
 IP - Acquérir les informations des Prestations
 Champ
 Valeurs possibles dans ce contexte
@@ -1859,7 +1859,7 @@ correspond au prix de vente pratiqué par l’établissement. En cas d’article
 le prix unitaire se trouve dans EF_IP12_03 (Tarif de référence ou prix unitaire sur
 devis TTC)
 
-<!-- transcrit de p.127 (ex-figure) -->
+<!-- transcrit de p.123 (ex-figure) -->
 
 | Réf. | Champ | Valeurs possibles dans ce contexte |
 | --- | --- | --- |
@@ -1874,7 +1874,7 @@ devis TTC)
 | EF_IP12_09 | Mode délivrance | « en sus forfait hors hospitalisation ». |
 
 
-<!-- p.128 -->
+<!-- p.123 -->
 IP - Acquérir les informations des Prestations
  Prix unitaire d’achat TTC de la prestation LPP
 (EF_IP12_06) ;
@@ -1928,7 +1928,7 @@ EF_IP05_08
 Nomenclature
  « LPP »
 
-<!-- transcrit de p.128 (ex-figure) -->
+<!-- transcrit de p.123 (ex-figure) -->
 
 Remarque : l'écart indemnisable est facturé sous le code prestation ETI (cf. VF30.02 - Générer les écarts indemnisables pour les médicaments et la LPP en sus).
 
@@ -1948,7 +1948,7 @@ Données de la table des codes prestation — Table 1 : Codes prestation :
 | EF_IP05_08 | Nomenclature | « LPP » |
 
 
-<!-- p.129 -->
+<!-- p.125 -->
 IP - Acquérir les informations des Prestations
 3.5.4
 IP33.04 - Acquérir les informations relatives aux médicaments
@@ -1981,7 +1981,7 @@ EF_IP05
 Règles de
 gestion
 
-<!-- p.130 -->
+<!-- p.125 -->
 IP - Acquérir les informations des Prestations
 [RG_IP680a] Acquérir les informations relatives aux médicaments codés UCD (EF_IP13)
 Condition : Top codage affiné (EF_IP05_10) est valorisé à « Oui »
@@ -2054,7 +2054,7 @@ Médicaments dont l'arrêté sur la liste Rétrocession mentionne cette possibil
 4 A compter du 01/01/2018, certains médicaments peuvent avoir une marge différente de 22 € (0€ dans certains cas ou tout autre valeur).
 Cette marge est inscrite dans la base UCD
 
-<!-- transcrit de p.130 (ex-figure) -->
+<!-- transcrit de p.125 (ex-figure) -->
 
 [RG_IP680a] Acquérir les informations relatives aux médicaments codés UCD (EF_IP13) — Condition : Top codage affiné (EF_IP05_10) est valorisé à « Oui » :
 
@@ -2072,7 +2072,7 @@ Notes :
 - À compter du 01/01/2018, certains médicaments peuvent avoir une marge différente de 22 € (0€ dans certains cas ou tout autre valeur). Cette marge est inscrite dans la base UCD.
 
 
-<!-- p.131 -->
+<!-- p.126 -->
 IP - Acquérir les informations des Prestations
 EF_IP13_07
 Montant total
@@ -2153,7 +2153,7 @@ Prix d’achat par l’établissement TTC (prix libre)
 5 Le coefficient de majoration CTOM (16%) est fixé par le CEPS (cf. Arrêté du 2 mai 2005 pris en application de l’article L.753-4 du CSS)
 6 L’application du taux prend effet au 1er juillet 2015 (cf. arrêté du 12 février 2015)
 
-<!-- transcrit de p.131 (ex-figure) -->
+<!-- transcrit de p.126 (ex-figure) -->
 
 | Réf. | Libellé | Alimentation de la donnée si codés UCD |
 | --- | --- | --- |
@@ -2180,7 +2180,7 @@ Notes :
 - L'application du taux prend effet au 1er juillet 2015 (cf. arrêté du 12 février 2015).
 
 
-<!-- p.132 -->
+<!-- p.127 -->
 IP - Acquérir les informations des Prestations
 Préparations hospitalières et magistrales : Coût de
 fabrication TTC
@@ -2256,7 +2256,7 @@ affiné
 La détermination du code regroupement de la prestation des médicaments rétrocédés
 dépend de la valorisation de Top codage affiné (EF_IP05_10).
 
-<!-- transcrit de p.132 (ex-figure) -->
+<!-- transcrit de p.127 (ex-figure) -->
 
 | Réf. | Libellé | Alimentation de la donnée |
 | --- | --- | --- |
@@ -2280,7 +2280,7 @@ dépend de la valorisation de Top codage affiné (EF_IP05_10).
 [RG_IP682] Déterminer le Code regroupement (EF_IP05_04) du médicament rétrocédé. La détermination du code regroupement de la prestation des médicaments rétrocédés dépend de la valorisation de Top codage affiné (EF_IP05_10).
 
 
-<!-- p.133 -->
+<!-- p.128 -->
 IP - Acquérir les informations des Prestations
 Top codage
 affiné « Oui »
@@ -2331,7 +2331,7 @@ des
 médicaments de la liste en sus (sous-catégorie (EF_IP05_07) = « Liste en sus »)
 Le Code regroupement de la délivrance de produits de la liste en sus est : PH8.
 
-<!-- transcrit de p.133 (ex-figure) -->
+<!-- transcrit de p.128 (ex-figure) -->
 
 Top codage affiné « Oui » : lorsque le Top codage affiné (EF_IP05_10) est valorisé à « Oui » alors le code regroupement est déterminé en fonction des informations en base UCD. Celui-ci doit avoir un taux renseigné (correspondant au mode de délivrance « rétrocession »). La correspondance entre le taux et le Code regroupement est donnée ci-après :
 
@@ -2357,7 +2357,7 @@ Top codage affiné « Non » : lorsque le Top codage affiné (EF_IP05_10) est va
 [RG_IP683] Déterminer le Code regroupement (EF_IP05_04) de l'administration des médicaments de la liste en sus (sous-catégorie (EF_IP05_07) = « Liste en sus »). Le Code regroupement de la délivrance de produits de la liste en sus est : PH8.
 
 
-<!-- p.134 -->
+<!-- p.129 -->
 IP - Acquérir les informations des Prestations
 3.5.5
 IP33.06 - Acquérir les informations relatives aux forfaits socles et
@@ -2432,7 +2432,7 @@ SB3
 Activités à
 forfait
 
-<!-- transcrit de p.134 (ex-figure) -->
+<!-- transcrit de p.130 (ex-figure) -->
 
 **[RG_IP685] — Forfaits facturables dans le cadre des urgences non gynécologiques**
 
@@ -2445,7 +2445,7 @@ forfait
 | Supplément biologie, facturable en fonction de l'âge du patient à la date d'exécution du supplément | Urgence | SUB, SB2, SB3 | Activités à forfait |
 
 
-<!-- p.135 -->
+<!-- p.130 -->
 IP - Acquérir les informations des Prestations
  Cas particuliers
 [CP01] : Actes d’imagerie standard et d’imagerie en coupe
@@ -2476,7 +2476,7 @@ EF_IP05_08
 Nomenclature
 « Activité à forfait »
 
-<!-- transcrit de p.135 (ex-figure) -->
+<!-- transcrit de p.130 (ex-figure) -->
 
 **[RG_IP686] — Table 1 : Codes prestation (forfait FUx, SIM, SIC, SAS de l'activité urgences)**
 
@@ -2489,7 +2489,7 @@ Nomenclature
 | EF_IP05_08 | Nomenclature | « Activité à forfait » |
 
 
-<!-- p.136 -->
+<!-- p.131 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.6 IP34 - Acquérir les informations relatives à l’entente préalable
@@ -2541,7 +2541,7 @@ La caisse dispose d’un délai de 15 jours pour se prononcer sur la demande
 d’entente préalable, à défaut de réponse dans ce délai, son accord est réputé
 acquis.
 
-<!-- p.137 -->
+<!-- p.132 -->
 IP - Acquérir les informations des Prestations
 ○ “ 4 ” - Avis favorable ;
 ○ “ 5 ” - Urgence.
@@ -2551,7 +2551,7 @@ renseignée. Elle correspond à la date à laquelle l’entente préalable a ét
 « FAUX » alors l’acte n’est pas soumis à entente préalable et la valeur du Code accord
 de l’entente préalable (EF_IP14_02) doit être valorisé à « 9 ».
 
-<!-- p.138 -->
+<!-- p.133 -->
 IP - Acquérir les informations des Prestations
 
 ### 3.7 IP35 - Contrôler les informations de la prestation
@@ -2589,11 +2589,11 @@ Les contrôles s’effectuent :
 Figure 8 : Diagramme d’enchaînement de la sous-fonction « IP35 - Contrôler les informations de la
 prestation »
 
-![Figure 8 : Diagramme d’enchaînement de la sous-fonction « IP35 - Contrôler les informations de la](figures/p138.png)
-*Figure (p.138) : Figure 8 : Diagramme d’enchaînement de la sous-fonction « IP35 - Contrôler les informations de la*
+![Figure 8 : Diagramme d’enchaînement de la sous-fonction « IP35 - Contrôler les informations de la](figures/p133.png)
+*Figure (p.133) : Figure 8 : Diagramme d’enchaînement de la sous-fonction « IP35 - Contrôler les informations de la*
 
 
-<!-- p.139 -->
+<!-- p.134 -->
 IP - Acquérir les informations des Prestations
 3.7.1
 IP35.01 - Contrôler les informations de la prestation
@@ -2640,7 +2640,7 @@ prestation NABM (EF_IP11_02)
 Conditions : la nomenclature (EF_IP05_08) vaut NGAP ou NABM
 L’obligation d’un coefficient pour certains actes est imposée par sa nomenclature.
 
-<!-- p.140 -->
+<!-- p.134 -->
 IP - Acquérir les informations des Prestations
 Pour ces actes, il faut donc vérifier que le coefficient de la prestation (EF_IP06_01 pour
 une prestation NGAP ou EF_IP11_02 pour une prestation NABM) appartient à l’intervalle
@@ -2691,7 +2691,7 @@ en table.
 L’âge maximum indiqué dans la table s’entend jusqu’à la veille de la date anniversaire de
 l’âge indiqué en table.
 
-<!-- p.141 -->
+<!-- p.135 -->
 IP - Acquérir les informations des Prestations
 CONTROLES LIES A LA PRESCRIPTION
 [RG_IP705] Contrôler la compatibilité entre la date d’exécution de la prestation (EF_IP05_01) et
@@ -2734,7 +2734,7 @@ Un code de l'acte/activité ne peut être effectué que par certaines classes de
 spécialités d'exécutants.
 
 
-<!-- p.142 -->
+<!-- p.137 -->
 IP - Acquérir les informations des Prestations
 La liste des classes de spécialités autorisées pour un acte donné est contenue dans
 le champ n°32 de la base CCAM. La table TB04 regroupe les spécialités
@@ -2744,7 +2744,7 @@ le champ n°32 de la base CCAM. La table TB04 regroupe les spécialités
 Les laboratoires d'anatomo-cyto-pathologie ne sont pas autorisés à coder des actes en
 CCAM. Ils doivent les coder en NABM.
 
-<!-- p.143 -->
+<!-- p.136 -->
 IP - Acquérir les informations des Prestations
 3.7.2
 IP35.02 - Contrôler les informations spécifiques aux actes CCAM
@@ -2792,7 +2792,7 @@ Le codage CCAM rend obsolète certaines lettres clé NGAP à partir d'une date d
 propre à chaque lettre et pouvant varier en fonction de la spécialité du Professionnel de
 Santé.
 
-<!-- p.144 -->
+<!-- p.137 -->
 IP - Acquérir les informations des Prestations
 Actes non CCAM : pour toute lettre-clé saisie par un professionnel de santé de la famille
 prescripteur, le système de facturation doit obligatoirement vérifier si elle n'est pas close à
@@ -2841,7 +2841,7 @@ Valeur du code association
 La valeur du code association appartient nécessairement à la table TB02 de la base CCAM
 qui référence la liste des valeurs significatives pour ce code.
 
-<!-- p.145 -->
+<!-- p.138 -->
 IP - Acquérir les informations des Prestations
 CONTROLES LIES AUX MODIFICATEURS
 [RG_IP_RC3] Contrôler la compatibilité entre le couple Code acte / activité (EF_IP08_01,
@@ -2895,7 +2895,7 @@ Cas 2 : Les modificateurs P et T sont compatibles entre eux entre le 25/03/2005 
 Les codes U, P, S et F ne peuvent être facturés qu'une seule fois par Professionnel de
 Santé exécutant quel que soit le nombre d'actes qu'il réalise.
 
-<!-- transcrit de p.145 (ex-figure) -->
+<!-- transcrit de p.139 (ex-figure) -->
 
 **[RG_IP_RC12] — Exemple (extrait de la TB09)**
 
@@ -2905,7 +2905,7 @@ Santé exécutant quel que soit le nombre d'actes qu'il réalise.
 | 2 | P | T | 25/03/2005 | 31/08/2005 |
 
 
-<!-- p.146 -->
+<!-- p.139 -->
 IP - Acquérir les informations des Prestations
 Dans le contexte des ACE, c’est le numéro de l’établissement qui apparaît comme numéro
 d’exécutant sur chaque acte réalisé, la règle s’applique à l’ensemble de la facture (cf.
@@ -2952,7 +2952,7 @@ CCAM-43a de la base CCAM.
 Si le nombre minimum de dents à traiter est égal à zéro ou non renseigné, les numéros de
 dents transmis dans la facture sont non significatifs.
 
-<!-- p.147 -->
+<!-- p.140 -->
 IP - Acquérir les informations des Prestations
 [RG_IP_R43] Contrôler le non panachage des paniers de soins dentaires sur une même dent
 Cette règle a pour objet de vérifier la cohérence des paniers de soins des actes CCAM
@@ -2971,7 +2971,7 @@ panier de valeur 2 : il convient d’ignorer cette valeur 2 pour le présent con
 En cas d’incohérence des paniers de soins sur une même dent, le logiciel doit déclencher
 un message d’alerte au PS.
 
-<!-- p.148 -->
+<!-- p.140 -->
 IP - Acquérir les informations des Prestations
 3.7.3
 IP35.03 - Contrôler les informations spécifiques à la délivrance de
@@ -3015,7 +3015,7 @@ Pour un médicament délivré en sus, celui-ci est délivrable à la date d’ex
 prestation (EF_IP05_01) si, pour le code UCD (EF_IP13_01) en question :
 7 Les bases UCD sont fournies par l’Assurance Maladie et disponibles sous ameli
 
-<!-- p.149 -->
+<!-- p.140 -->
 IP - Acquérir les informations des Prestations
  la date d’exécution est strictement antérieure à la date de fin d’inscription (cf.
 nomenclature UCD)
@@ -3057,7 +3057,7 @@ facturation d’un forfait SAS est possible, et rémunère le spécialiste appel
 Les entités fonctionnelles sont décrites dans le document :
  [DICO] - Dictionnaire de données »
 
-<!-- p.150 -->
+<!-- p.143 -->
 IP - Acquérir les informations des Prestations
 ANNEXE 1 SYNTHESE DES REGLES DE GESTION
 1
@@ -3084,7 +3084,7 @@ DESCRIPTION DETAILLEE DE LA FONCTION « IP - ACQUERIR LES INFORMATIONS SUR LES
 3.4
 [RG_IP622] Déterminer l’ « âge du bénéficiaire des soins à la date d’exécution de la prestation »
 
-<!-- p.151 -->
+<!-- p.144 -->
 IP - Acquérir les informations des Prestations
 3.5
 [RG_IP631] Acquérir les informations complémentaires d’une prestation relatives aux actes professionnels
@@ -3097,7 +3097,7 @@ IP - Acquérir les informations des Prestations
 [RG_IP691] Déterminer les informations relatives au Contexte de l’entente préalable (EF_IP14_02,
 3.7
 
-<!-- p.152 -->
+<!-- p.145 -->
 IP - Acquérir les informations des Prestations
 [RG_IP701]  Contrôler la date d’exécution de la prestation (EF_IP05_01) par rapport à la date de la
 [RG_IP703] Contrôler le Coefficient de la prestation NGAP (EF_IP06_01) et le Coefficient de la prestation
@@ -3116,6 +3116,6 @@ IP - Acquérir les informations des Prestations
 [RG_IP712] Contrôler l’unicité de la facturation du Montant de la marge TTC (EF_IP13_04) par code UCD
 [RG_IP713] Contrôler que le médicament codé en UCD est délivrable en sus à la date d’exécution
 
-<!-- p.153 -->
+<!-- p.146 -->
 IP - Acquérir les informations des Prestations
 4
