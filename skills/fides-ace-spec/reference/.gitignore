@@ -1,0 +1,8 @@
+# Source PDF is proprietary (GIE SESAM-Vitale) — not versioned in this repo.
+SFG_FIDES_ACE_*.pdf
+
+# Python scratch from build_docs.py
+.venv/
+__pycache__/
+# Scratch regeneration output (committed docs live directly under reference/)
+docs/
