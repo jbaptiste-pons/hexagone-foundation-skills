@@ -293,7 +293,7 @@ Le principe de la facturation individuelle pour les ACE relevant du champ des so
 et de réadaptation a été établi par l’article 78 de la LFSS pour 2016 qui réforme les modalités
 de financement des activités de SMR.
 
-<!-- p.10 -->
+<!-- p.9 -->
 PG - Présentation Générale
 
 ### 2.2 Évolutions réglementaires
@@ -332,7 +332,7 @@ et de suppléments fonction de l’intensité des prises en charge et du recours
 technique. Ils sont pris en charge à 100% par l’assurance maladie obligatoire sans facturation
 en sus d’actes CCAM, NGAP ou NABM.
 
-<!-- p.11 -->
+<!-- p.10 -->
 PG - Présentation Générale
 
 ### 2.3 Périmètre du système et échanges des flux
@@ -355,7 +355,7 @@ gestionnaire de l’assurance maladie obligatoire du bénéficiaire. Cette derni
 de la liquidation de la facture et indique à la CPU si elle doit payer ou rejeter la facture pour
 son compte.
 
-<!-- p.12 -->
+<!-- p.11 -->
 PG - Présentation Générale
 Schéma des échanges dans le cas d’un Établissement Privé à but Non Lucratif (PNL) :
 Schéma des échanges dans le cas d’un Établissement Public de Santé (EPS) :
@@ -446,11 +446,11 @@ Informations financières
 9
 9
 
-![Schéma des échanges dans le cas d’un Établissement Privé à but Non Lucratif (PNL) :](figures/p012.png)
-*Figure (p.12) : Schéma des échanges dans le cas d’un Établissement Privé à but Non Lucratif (PNL) :*
+![Schéma des échanges dans le cas d’un Établissement Privé à but Non Lucratif (PNL) :](figures/p011.png)
+*Figure (p.11) : Schéma des échanges dans le cas d’un Établissement Privé à but Non Lucratif (PNL) :*
 
 
-<!-- p.13 -->
+<!-- p.12 -->
 PG - Présentation Générale
 
 ### 2.4 Périmètre d’application des SFG
@@ -497,7 +497,7 @@ du CSS, (cf. § 2.2.4)
 structure des urgences pédiatriques ou une antenne de médecine d'urgence non
 suivis d’hospitalisation),
 
-<!-- p.14 -->
+<!-- p.13 -->
 PG - Présentation Générale
 ○ l’activité à forfait.
 2.4.3
@@ -532,11 +532,11 @@ qu’elles comprennent :
 
 Les actes et consultations externes (ACE)
 
-![Figure 4 : vue synthétique des prestations couvertes](figures/p014.png)
-*Figure (p.14) : Figure 4 : vue synthétique des prestations couvertes*
+![Figure 4 : vue synthétique des prestations couvertes](figures/p013.png)
+*Figure (p.13) : Figure 4 : vue synthétique des prestations couvertes*
 
 
-<!-- p.15 -->
+<!-- p.14 -->
 PG - Présentation Générale
 
 La délivrance de médicaments rétrocédés, cf. § Rétrocession hospitalière,
@@ -590,7 +590,7 @@ nationale de biologie (NABM).
 <!-- ex-figure p.15 supprimée : page de texte déjà transcrite ci-dessus -->
 
 
-<!-- p.16 -->
+<!-- p.14 -->
 PG - Présentation Générale
 Forfaits imagerie
 médicale (FT)
@@ -632,7 +632,7 @@ Les médicaments facturables en contexte ACE sont soit délivrés soit administr
 ○ de médicaments de la liste en sus, cf.§ Activités à forfait - Forfait APE,
 ○ de toxine botulique, cf.§ Activités à forfait - Forfaits SE5, SE6.
 
-<!-- p.17 -->
+<!-- p.15 -->
 PG - Présentation Générale
 LPP
 Les produits de la LPP facturables avec le forfait APE sont identifiés sous le code prestation
@@ -685,7 +685,7 @@ hospitalisation. Dans certaines situations, le FPU est minoré (invalides, ALD
 notamment) ou pris en charge intégralement par l’assurance maladie (maternité,
 victimes d’un acte de terrorisme, détenus).
 
-<!-- transcrit de p.17 (ex-figure) -->
+<!-- transcrit de p.15 (ex-figure) -->
 
 **Rétrocession hospitalière — Deux types de médicaments entrent dans le périmètre :**
 
@@ -695,7 +695,7 @@ victimes d’un acte de terrorisme, détenus).
 | Médicaments rétrocédés ne faisant pas l’objet d’une codification UCD | • Médicaments disposant d’une Autorisation d’accès compassionnel (AAC)<br>• Préparations hospitalières ;<br>• Médicaments bénéficiant d’une autorisation d’importation (autre que parallèle) ;<br>• Pharmacie hospitalière dérogatoire ;<br>• Les nutriments (code NUT) destinés à des patients spécifiques atteints de maladie métaboliques héréditaires. |
 
 
-<!-- p.18 -->
+<!-- p.16 -->
 PG - Présentation Générale
 o Le FPU étant indépendant de la nature des actes dispensés ou d’un lien médical
 avec une pathologie existante (ALD), il est ainsi facturable avant la sortie du
@@ -738,7 +738,7 @@ Ce forfait n’est pas compatible :
  avec les molécules onéreuses inscrites sur la liste en sus,
  ni avec le forfait APE.
 
-<!-- p.19 -->
+<!-- p.17 -->
 PG - Présentation Générale
 Forfait
 Administration de
@@ -779,7 +779,7 @@ gynécologiques.
  Il est possible que l’établissement transmette un forfait sans les actes associés dans la facture
 de l’établissement (à ce jour uniquement possible pour les SEx).
 
-<!-- p.20 -->
+<!-- p.18 -->
 PG - Présentation Générale
 
 ### 2.5 Hors périmètre
@@ -842,7 +842,7 @@ forfaits.
 La mise à disposition des différents référentiels (base CCAM, base UCD, Liste des actes
 NGAP, etc.) est hors périmètre des présentes SFG.
 
-<!-- transcrit de p.20 (ex-figure) -->
+<!-- transcrit de p.18 (ex-figure) -->
 
 **§2.5 Hors périmètre — Les situations suivantes sont exclues du périmètre de ces SFG.**
 
@@ -858,7 +858,7 @@ NGAP, etc.) est hors périmètre des présentes SFG.
 | Activité libérale des praticiens hospitaliers | Pour rappel, l’activité libérale des praticiens hospitaliers (TPH) ne rentre pas dans le périmètre de la facturation individuelle des ACE ni des actes en sus des forfaits. |
 
 
-<!-- p.21 -->
+<!-- p.20 -->
 PG - Présentation Générale
 
 ### 2.6 Acteurs et objectifs d’utilisation du système
@@ -906,7 +906,7 @@ prestations servies ;
  L’élaboration de la facture,
  Le traitement des retours
 
-<!-- transcrit de p.21 (ex-figure) -->
+<!-- transcrit de p.20 (ex-figure) -->
 
 **Acteurs humains**
 
@@ -917,7 +917,7 @@ prestations servies ;
 | Professionnel de l’Établissement (PE) | Personnel de l’établissement en charge de la partie administrative liée au bénéficiaire des soins, l’élaboration de la facture ainsi que le traitement des retours.<br>Dans le cadre de ce système, il contribue à :<br>• L’acquisition des informations relatives au Bénéficiaire des Soins et aux prestations servies ;<br>• L’élaboration de la facture,<br>• Le traitement des retours |
 
 
-<!-- p.22 -->
+<!-- p.21 -->
 PG - Présentation Générale
 Acteurs système
 Nom
@@ -937,17 +937,17 @@ Assurance Maladie
 Obligatoire (AMO)
 Son rôle est de fournir une réponse au service CDRi
 
-<!-- p.23 -->
+<!-- p.22 -->
 PG - Présentation Générale
 Croisement Acteurs
 / Objectifs
 Figure 5 : Diagramme de cas d’utilisation du système
 
-![Figure 5 : Diagramme de cas d’utilisation du système](figures/p023.png)
-*Figure (p.23) : Figure 5 : Diagramme de cas d’utilisation du système*
+![Figure 5 : Diagramme de cas d’utilisation du système](figures/p022.png)
+*Figure (p.22) : Figure 5 : Diagramme de cas d’utilisation du système*
 
 
-<!-- p.24 -->
+<!-- p.23 -->
 PG - Présentation Générale
 
 ### 2.7 Échanges entre les acteurs du système
@@ -955,11 +955,11 @@ PG - Présentation Générale
 Le schéma ci-dessous décrit les échanges entre les acteurs du système.
 Figure 6 : Diagramme de séquence du système
 
-![Figure 6 : Diagramme de séquence du système](figures/p024.png)
-*Figure (p.24) : Figure 6 : Diagramme de séquence du système*
+![Figure 6 : Diagramme de séquence du système](figures/p023.png)
+*Figure (p.23) : Figure 6 : Diagramme de séquence du système*
 
 
-<!-- p.25 -->
+<!-- p.24 -->
 PG - Présentation Générale
 
 ## 3 DESCRIPTION GENERALE DU PROCESSUS
@@ -991,7 +991,7 @@ relatives à la réception des retours (NOEMIE).
  À noter que ce processus est intégré au sein du Système d’Information Hospitalier (SIH) et
 peut faire appel à des services en ligne mis à disposition par l’Assurance Maladie.
 
-<!-- p.26 -->
+<!-- p.24 -->
 PG - Présentation Générale
 Situations
 particulières
@@ -1020,7 +1020,7 @@ différentes règles de gestion. Il s’agit d’un formalisme de référencemen
 particuliers pour faciliter la lisibilité des documents (par ex. une recherche sur « SP03 » permet
 d’avoir les spécificités de la C2S).
 
-<!-- transcrit de p.26 (ex-figure) -->
+<!-- transcrit de p.24 (ex-figure) -->
 
 **Situations particulières — les situations particulières suivantes sont identifiées :**
 
@@ -1035,7 +1035,7 @@ d’avoir les spécificités de la C2S).
 | SP06 | Bénéficiaire de l’AME |
 
 
-<!-- p.27 -->
+<!-- p.26 -->
 PG - Présentation Générale
 
 ### 3.2 Lien entre les objets métier du processus
@@ -1047,8 +1047,8 @@ de données ».
 Lien entre les objets
 Figure 7 : Diagramme des objets métier du processus
 
-![Figure 7 : Diagramme des objets métier du processus](figures/p027.png)
-*Figure (p.27) : Figure 7 : Diagramme des objets métier du processus*
+![Figure 7 : Diagramme des objets métier du processus](figures/p026.png)
+*Figure (p.26) : Figure 7 : Diagramme des objets métier du processus*
 
 
 <!-- p.28 -->
@@ -1060,11 +1060,11 @@ Enchaînement des
 sous-processus
 Figure 8 : Diagramme d’enchaînement du processus
 
-![Figure 8 : Diagramme d’enchaînement du processus](figures/p028.png)
-*Figure (p.28) : Figure 8 : Diagramme d’enchaînement du processus*
+![Figure 8 : Diagramme d’enchaînement du processus](figures/p027.png)
+*Figure (p.27) : Figure 8 : Diagramme d’enchaînement du processus*
 
 
-<!-- p.29 -->
+<!-- p.28 -->
 PG - Présentation Générale
 
 ## 4 DESCRIPTION DETAILLEE DU PROCESSUS
@@ -1092,11 +1092,11 @@ Enchaînement des
 fonctions
 Figure 9 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »
 
-![Figure 9 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »](figures/p029.png)
-*Figure (p.29) : Figure 9 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »*
+![Figure 9 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »](figures/p028.png)
+*Figure (p.28) : Figure 9 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »*
 
 
-<!-- p.30 -->
+<!-- p.29 -->
 PG - Présentation Générale
 
 ### 4.2 Description générale du sous-processus « TF - Transmettre les Factures »
@@ -1122,11 +1122,11 @@ fonctions
 Figure 10 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les
 Factures »
 
-![Figure 10 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les](figures/p030.png)
-*Figure (p.30) : Figure 10 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les*
+![Figure 10 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les](figures/p029.png)
+*Figure (p.29) : Figure 10 : Diagramme d’enchaînement du sous-processus « TF - Transmettre les*
 
 
-<!-- p.31 -->
+<!-- p.30 -->
 PG - Présentation Générale
 
 ### 4.3 Description générale du sous-processus « RR - Réceptionner les Retours »
@@ -1157,17 +1157,17 @@ Enchaînement des fonctions
 Le schéma ci-dessous décrit l’enchaînement des fonctions du sous-processus « RR -
 Réceptionner les Retours ».
 
-<!-- p.32 -->
+<!-- p.31 -->
 PG - Présentation Générale
 Enchaînement des
 fonctions
 Figure 11 : Diagramme d’enchaînement du sous-processus « RR – Réceptionner les Retours »
 
-![Figure 11 : Diagramme d’enchaînement du sous-processus « RR – Réceptionner les Retours »](figures/p032.png)
-*Figure (p.32) : Figure 11 : Diagramme d’enchaînement du sous-processus « RR – Réceptionner les Retours »*
+![Figure 11 : Diagramme d’enchaînement du sous-processus « RR – Réceptionner les Retours »](figures/p031.png)
+*Figure (p.31) : Figure 11 : Diagramme d’enchaînement du sous-processus « RR – Réceptionner les Retours »*
 
 
-<!-- p.33 -->
+<!-- p.32 -->
 PG - Présentation Générale
 
 ## 5 DESCRIPTION DES SITUATIONS PARTICULIERES
@@ -1216,7 +1216,7 @@ Identification
 Cette situation particulière est caractérisée par l’existence d’un contrat de couverture C2S
 pour le bénéficiaire des soins, issu du support de droit.
 
-<!-- p.34 -->
+<!-- p.33 -->
 PG - Présentation Générale
 
 ### 5.2 SP06 : Bénéficiaire de l’AME
@@ -1254,7 +1254,7 @@ ces bénéficiaires. Ces mêmes bénéficiaires pouvaient également être dési
 « Ressortissant des Relations Internationales » dans des documentations de l’assurance
 maladie.
 
-<!-- p.35 -->
+<!-- p.34 -->
 PG - Présentation Générale
 5.3.1
 SP08.1 : BS de passage coordonné RSS
@@ -1301,7 +1301,7 @@ comme suit,
  Le NIR de l’assuré, sera renseigné dans la facture à transmettre avec une valeur fictive
  La clé du NIR sera calculée en fonction du NIR fictif
 
-<!-- p.36 -->
+<!-- p.35 -->
 PG - Présentation Générale
  La date de naissance, si non renseignée avec la date de naissance exacte du
 bénéficiaire des soins, sera renseignée, dans certains contextes d’anonymisation, par
@@ -1340,7 +1340,7 @@ Identification
 Cette situation particulière est caractérisée par l’existence d’une situation particulière du
 bénéficiaire de soins issue du support de droit.
 
-<!-- p.37 -->
+<!-- p.36 -->
 PG - Présentation Générale
 
 ## 6 SYNTHESE DES ENTITES FONCTIONNELLES
@@ -1370,7 +1370,7 @@ fonctionnelles. Ils sont précédés par la mention « Illustration » en marge.
 également possible d’utiliser une étiquette « Préambule » ;
  Les recommandations pour les développeurs et les éditeurs.
 
-<!-- p.38 -->
+<!-- p.37 -->
 PG - Présentation Générale
 Principe de
 navigation
@@ -1405,7 +1405,7 @@ précédente » et « Vue suivante ».
 <!-- ex-figure p.38 supprimée : page de texte (principe de navigation) déjà transcrite ci-dessus -->
 
 
-<!-- p.39 -->
+<!-- p.38 -->
 PG - Présentation Générale
 Gestion des
 arrondis
@@ -1429,11 +1429,11 @@ quatre classes « Roue » et une classe « Roue » appartient à une seule et un
 « Voiture ». Bien que les roues soient un élément constitutif important d’une voiture, on estime
 qu’elles peuvent être utilisées dans d'autres voitures.
 
-![Schéma / diagramme page 39](figures/p039.png)
-*Figure (p.39) : Schéma / diagramme page 39*
+![Schéma / diagramme page 38](figures/p038.png)
+*Figure (p.38) : Schéma / diagramme page 38*
 
 
-<!-- p.40 -->
+<!-- p.39 -->
 PG - Présentation Générale
 La composition
 La notion de composition intervient lorsque l’on souhaite modéliser un lien de constitution fort
@@ -1442,7 +1442,7 @@ d’une classe « Châssis » et une classe « Châssis » appartient à une seu
 « Voiture ». On estime que le châssis est un élément indissociable d'une voiture, c'est-à-dire
 que si la voiture n’existe pas alors le châssis non plus.
 
-<!-- p.41 -->
+<!-- p.40 -->
 PG - Présentation Générale
 ANNEXE 2 PRECISION SUR LES TYPES D’ETABLISSEMENTS DE SANTE
 Etablissements de
@@ -1514,7 +1514,7 @@ Groupement de coopération sanitaire de moyens - Exploitant
 696
 Groupement de coopération sanitaire de moyens
 
-<!-- transcrit de p.41 (ex-figure) -->
+<!-- transcrit de p.40 (ex-figure) -->
 
 **Établissements de santé — codes catégories sanitaires FINESS à retenir :**
 
@@ -1555,7 +1555,7 @@ Groupement de coopération sanitaire de moyens
 | 699 | Entité Ayant Autorisation |
 
 
-<!-- p.42 -->
+<!-- p.41 -->
 PG - Présentation Générale
 697
 Groupement de coopération sanitaire - Etablissement de santé
@@ -1645,7 +1645,7 @@ EBL
 77, 78, 85, 87, 95
 06
 
-<!-- transcrit de p.42 (ex-figure) -->
+<!-- transcrit de p.41 (ex-figure) -->
 
 **Type d’établissement selon L162-22 du CSS** — au sens de l’article L162-22 du code de la sécurité sociale, les établissements de santé sont catégorisés en 5 types. Le tableau ci-dessous précise les équivalences :
 

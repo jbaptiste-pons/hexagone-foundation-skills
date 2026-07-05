@@ -1,14 +1,14 @@
 # VF — Valoriser les prestations de la Facture
 
-_Pages 204–304 du PDF source._
+_Pages 201–299 du PDF source._
 
 
-<!-- p.204 -->
+<!-- p.201 -->
 VF  -  Valoriser les prestations de la
 facture
 
 
-<!-- p.205 -->
+<!-- p.202 -->
 VF - Valoriser les prestations de la facture
 arrangement, quel que soit le procédé utilisé.
 des sanctions pour l’auteur du délit.
@@ -17,7 +17,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.206 -->
+<!-- p.203 -->
 VF - Valoriser les prestations de la facture
 1
 1.1
@@ -61,11 +61,11 @@ VF33.02 - Déterminer les bases de remboursement pour les prestations non CCAM .
 3.7
 4
 
-<!-- p.207 -->
+<!-- p.204 -->
 VF - Valoriser les prestations de la facture
 ANNEXE 1
 
-<!-- p.208 -->
+<!-- p.205 -->
 VF - Valoriser les prestations de la facture
 TABLE DES ILLUSTRATIONS
 FIGURE 3 DIAGRAMME DES OBJETS METIERS DE LA FONCTION « VF - VALORISER LES PRESTATIONS DE LA FACTURE
@@ -81,7 +81,7 @@ FIGURE 16 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « VF35.05 – GENERE
 FIGURE 17 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « VF35.05.01 - DETERMINER LE FORFAIT PATIENT
 FIGURE 18 : DIAGRAMME D’ENCHAINEMENT DE LA SOUS-FONCTION « VF35.05.02 - GENERER LE FORFAIT PATIENT
 
-<!-- p.209 -->
+<!-- p.206 -->
 VF - Valoriser les prestations de la facture
 
 ## 1 INTRODUCTION
@@ -112,7 +112,7 @@ De référence.
 
  Cf. [PG] – Présentation Générale
 
-<!-- p.210 -->
+<!-- p.207 -->
 VF - Valoriser les prestations de la facture
 
 ## 2 DESCRIPTION GENERALE DE LA FONCTION « VF - VALORISER LES PRESTATIONS DE LA FACTURE »
@@ -125,11 +125,11 @@ puis du sous-processus « EF - Élaborer les Factures ».
 Figure 1 : Diagramme d’enchaînement du processus général
 Figure 2 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »
 
-![Figure 1 : Diagramme d’enchaînement du processus général](figures/p210.png)
-*Figure (p.210) : Figure 1 : Diagramme d’enchaînement du processus général*
+![Figure 1 : Diagramme d’enchaînement du processus général](figures/p207.png)
+*Figure (p.207) : Figure 1 : Diagramme d’enchaînement du processus général*
 
 
-<!-- p.211 -->
+<!-- p.208 -->
 VF - Valoriser les prestations de la facture
 
 ### 2.2 Cadrage fonctionnel
@@ -146,7 +146,7 @@ EF_IP
 Sorties Informations relatives à la valorisation du regroupement
 EF_VF
 
-<!-- p.212 -->
+<!-- p.209 -->
 VF - Valoriser les prestations de la facture
 
 ### 2.3 Lien entre les objets métiers de la fonction
@@ -158,11 +158,11 @@ objets
 Figure 3 Diagramme des objets métiers de la fonction « VF - Valoriser les
 prestations de la Facture »
 
-![Figure 3 Diagramme des objets métiers de la fonction « VF - Valoriser les](figures/p212.png)
-*Figure (p.212) : Figure 3 Diagramme des objets métiers de la fonction « VF - Valoriser les*
+![Figure 3 Diagramme des objets métiers de la fonction « VF - Valoriser les](figures/p209.png)
+*Figure (p.209) : Figure 3 Diagramme des objets métiers de la fonction « VF - Valoriser les*
 
 
-<!-- p.213 -->
+<!-- p.210 -->
 VF - Valoriser les prestations de la facture
 
 ### 2.4 Enchaînement des sous-fonctions
@@ -174,11 +174,11 @@ des sous-
 fonctions
 Figure 4 : Diagramme d’enchaînement de la fonction « VF - Valoriser les prestations de la Facture »
 
-![Figure 4 : Diagramme d’enchaînement de la fonction « VF - Valoriser les prestations de la Facture »](figures/p213.png)
-*Figure (p.213) : Figure 4 : Diagramme d’enchaînement de la fonction « VF - Valoriser les prestations de la Facture »*
+![Figure 4 : Diagramme d’enchaînement de la fonction « VF - Valoriser les prestations de la Facture »](figures/p210.png)
+*Figure (p.210) : Figure 4 : Diagramme d’enchaînement de la fonction « VF - Valoriser les prestations de la Facture »*
 
 
-<!-- p.214 -->
+<!-- p.211 -->
 VF - Valoriser les prestations de la facture
 
 ## 3 DESCRIPTION DETAILLEE DE LA FONCTION « VF - VALORISER LES PRESTATIONS DE LA FACTURE »
@@ -220,11 +220,11 @@ Schéma des
 opérations
 Figure 5 : Diagramme d’enchaînement de la sous-fonction « VF30 – Regrouper les prestations »
 
-![Schéma des](figures/p214.png)
-*Figure (p.214) : Schéma des*
+![Schéma des](figures/p211.png)
+*Figure (p.211) : Schéma des*
 
 
-<!-- p.215 -->
+<!-- p.212 -->
 VF - Valoriser les prestations de la facture
 3.1.1
 VF30.01 - Regrouper les prestations et leurs compléments
@@ -280,7 +280,7 @@ La nature d’assurance (EF_CF04_01) et l’IPS - indicateur du parcours de soin
 d’une même facture doivent avoir la même nature d’assurance et le même IPS.
 Cette règle est liée à la structure de la norme B2.
 
-<!-- p.216 -->
+<!-- p.213 -->
 VF - Valoriser les prestations de la facture
  Cas particuliers
  [CP01] : Présence de Forfaits Urgence (ATU / FFM), Sécurité (SE), APE
@@ -331,7 +331,7 @@ férié) ne peuvent pas être présents plus d'une fois dans la facture pour un 
 exécutant et avec une même spécialité.
 [CP02] : Actes CCAM réalisés en plusieurs séances
 
-<!-- transcrit de p.216 (ex-figure) -->
+<!-- transcrit de p.213 (ex-figure) -->
 
 **Exemples de factures :**
 
@@ -343,7 +343,7 @@ exécutant et avec une même spécialité.
 | Facture 4 | ATU<br>G_N<br>ATM (modificateur férié : F) | 21/04/2019 (dimanche) |
 
 
-<!-- p.217 -->
+<!-- p.214 -->
 VF - Valoriser les prestations de la facture
 Pour les actes CCAM nécessitant plusieurs séances étalées dans le temps il convient de
 ne facturer une phase que lorsque sa période est terminée, en mentionnant toutes les
@@ -394,7 +394,7 @@ Le regroupement de prestations médicaments se valorise avec les valeurs par dé
 (EF_VF01_03).
 ○ Valorisé à « 1 ».
 
-<!-- p.218 -->
+<!-- p.215 -->
 VF - Valoriser les prestations de la facture
  Remarque : la norme B2 impose un nombre limité de prestations détaillées médicaments
 codés (10 max) pour chaque regroupement. Si le nombre de prestations détaillées
@@ -456,7 +456,7 @@ défaut :
 (EF_VF01_03).
 ○ Valorisé à « 1 ».
 
-<!-- transcrit de p.218 (ex-figure) -->
+<!-- transcrit de p.215 (ex-figure) -->
 
 **Exemple : regroupement par séance de soins infirmiers (AMI), avec 2 soins effectués le matin et 1 soin le soir.**
 
@@ -466,7 +466,7 @@ défaut :
 | Soins effectués le soir | 01/02/2015 | AMI | 3,00 | 1 | 1 |
 
 
-<!-- p.219 -->
+<!-- p.216 -->
 VF - Valoriser les prestations de la facture
 [RG_VF604] Déterminer le regroupement de prestations (EF_VF01) des prestations NABM
 (EF_IP11)
@@ -536,7 +536,7 @@ Le regroupement de prestations LPP se valorise tel que :
  Dénombrement de la prestation regroupée
 (EF_VF01_03) ;
 
-<!-- transcrit de p.219 (ex-figure) -->
+<!-- transcrit de p.216 (ex-figure) -->
 
 **[CP01] : Plusieurs analyses identiques dans la même journée** — exemple de prestations :
 
@@ -546,7 +546,7 @@ Le regroupement de prestations LPP se valorise tel que :
 | 2ème analyse de la journée | B | 1 | n | 2 | XXXXXX<br>YYYYYY |
 
 
-<!-- p.220 -->
+<!-- p.217 -->
 VF - Valoriser les prestations de la facture
 ○ La valeur du Dénombrement de la prestation regroupée correspond au nombre de
 prestations LPP (EF_IP12) qui s’y rattachent.
@@ -584,7 +584,7 @@ fait, le coefficient (EF_VF01_01) pour le deuxième forfait (le forfait le moins
 à 0.50 et il n’est donc pas possible d’effectuer un regroupement.
 1 Arrêté du 18 février 2013 modifiant l'arrêté du 19 février 2009
 
-<!-- p.221 -->
+<!-- p.218 -->
 VF - Valoriser les prestations de la facture
 3.1.2
 VF30.02 - Générer les écarts indemnisables pour les médicaments et la LPP
@@ -633,7 +633,7 @@ de prestation (EF_CF05) ainsi que son regroupement2 (EF_VF01) :
 ○ Valorisé à « EMI »
 2 Le regroupement, dans le cas présent, ne contient qu’une seule prestation
 
-<!-- p.222 -->
+<!-- p.219 -->
 VF - Valoriser les prestations de la facture
  Niveau
 (EF_CF05_02) ;
@@ -673,7 +673,7 @@ La génération d’un écart indemnisable (ETI) n’est possible que
  et pour au moins une des prestations regroupées (EF_IP12), le Prix d’achat négocié
 TTC (EF_IP12_06) est inférieur au Tarif de responsabilité TTC (EF_IP12_03).
 
-<!-- p.223 -->
+<!-- p.219 -->
 VF - Valoriser les prestations de la facture
 [RG_VF613] Générer la prestation pour l’écart indemnisable de la prestation regroupée de LPP
 La génération de l’écart indemnisable ETI se matérialise par la création d’un complément
@@ -703,7 +703,7 @@ de prestation (EF_CF05) ainsi que son regroupement2 (EF_VF01) :
 (EF_VF01_03).
 ○ Valorisé à « 1 »
 
-<!-- p.224 -->
+<!-- p.220 -->
 VF - Valoriser les prestations de la facture
 3.1.3
 VF30.03 - Générer la marge de rétrocession
@@ -738,9 +738,9 @@ La génération de la prestation « marge de rétrocession » se matérialise pa
 complément de prestation (EF_CF05) ainsi que son regroupement3 (EF_VF01) :
 3 Le regroupement, dans le cas présent, ne contient qu’une seule prestation
 
-<!-- p.225 -->
+<!-- p.222 -->
 VF - Valoriser les prestations de la facture
-<!-- transcrit de p.225 (ex-figure) -->
+<!-- transcrit de p.221 (ex-figure) -->
 
 | Champ | | Valeurs possibles dans ce contexte |
 | --- | --- | --- |
@@ -769,7 +769,7 @@ VF - Valoriser les prestations de la facture
 | EF_VF02_03 | Montant des honoraires | Montant forfaitaire de la marge |
 
 
-<!-- p.226 -->
+<!-- p.222 -->
 VF - Valoriser les prestations de la facture
 3.1.4
 VF30.04 - Générer les écarts indemnisables pour la rétrocession
@@ -811,7 +811,7 @@ de délivrance,
  et pour au moins une des prestations regroupées (EF_IP13), le Prix d’achat négocié
 TTC (EF_IP13_05) est inférieur au Tarif de responsabilité TTC (EF_IP13_11).
 
-<!-- p.227 -->
+<!-- p.223 -->
 VF - Valoriser les prestations de la facture
 [RG_VF611] Générer la prestation pour l’écart indemnisable de la prestation regroupée de
 rétrocession
@@ -843,7 +843,7 @@ de prestation (EF_CF05) ainsi que son regroupement4 (EF_VF01) :
 ○ Valorisé à « 1 »
 4 Le regroupement, dans le cas présent, ne contient qu’une seule prestation
 
-<!-- p.228 -->
+<!-- p.224 -->
 VF - Valoriser les prestations de la facture
 
 ### 3.2 VF31 - Contrôler les informations des prestations de la facture
@@ -929,7 +929,7 @@ Dispositions générales et diverses de la CCAM et article R 162-33 -1 du CSS).
  Les actes CCAM ne sont pas cumulables avec des actes NGAP (hors forfaits) sur la
 même facture, pour le même Professionnel de Santé.
 
-<!-- transcrit de p.228 (ex-figure) -->
+<!-- transcrit de p.225 (ex-figure) -->
 
 **[RG_VF620] Cumulabilité des forfaits entre eux** (✗ = pas de cumul possible ; ✓ = cumul possible au cours d'une même séquence ; — = identité) :
 
@@ -948,7 +948,7 @@ même facture, pour le même Professionnel de Santé.
 | FUx | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | — |
 
 
-<!-- p.229 -->
+<!-- p.225 -->
 VF - Valoriser les prestations de la facture
  Cas particuliers
  [CP01] : Présence d’un forfait et d’un acte CCAM
@@ -992,7 +992,7 @@ Aucune consultation, ou acte ne peut être facturé en sus des Forfaits fausse c
 Sauf en cas de prise en charge lors d’un passage aux urgences
 Le forfait ATU peut être facturé en sus des forfaits FEF ou FFE.
 
-<!-- p.230 -->
+<!-- p.225 -->
 VF - Valoriser les prestations de la facture
 [CP08] : Facturation de l’Avastin
 Il est possible de cumuler le forfait SE2 et APE dans le cas de l’administration de
@@ -1038,7 +1038,7 @@ médicales.
 La liste des actes incompatibles avec un acte donné constitue le champ n° 14 de la base
 CCAM.
 
-<!-- p.231 -->
+<!-- p.226 -->
 VF - Valoriser les prestations de la facture
 [RG_VF_CC3] Contrôler la facturation des actes complémentaires CCAM
 Les différents types d’actes CCAM sont valorisés à :
@@ -1085,7 +1085,7 @@ Pour réaliser ce contrôle, il faut vérifier dans un premier temps la présenc
 examen sanguin (la nomenclature NABM porte l’information « Sanguin ») et le cas
 échéant :
 
-<!-- p.232 -->
+<!-- p.227 -->
 VF - Valoriser les prestations de la facture
 1. Effectuer le cumul des Coefficients de la prestation NABM (EF_IP11_02) de
 l’ensemble des Codes affinés prestations biologie (EF_IP11_01) présents sur la
@@ -1128,7 +1128,7 @@ Certains forfaits doivent répondre à des associations plus précises que celle
 prestation. Ces vérifications peuvent avoir lieu à la place ou en plus de combinatoires
 présentes en table 12. Les vérifications demandées sont les suivantes :
 
-<!-- p.233 -->
+<!-- p.228 -->
 VF - Valoriser les prestations de la facture
 Si le forfait
 vaut
@@ -1191,7 +1191,7 @@ Au moins un acte CCAM de code regroupement imagerie
 FTR
 Au moins un acte CCAM de code regroupement imagerie
 
-<!-- transcrit de p.233 (ex-figure) -->
+<!-- transcrit de p.228 (ex-figure) -->
 
 | Si le forfait vaut | Alors le logiciel doit vérifier la présence de : |
 | --- | --- |
@@ -1217,7 +1217,7 @@ Au moins un acte CCAM de code regroupement imagerie
 | FTR | Au moins un acte CCAM de code regroupement imagerie<br>⚠ Voir cas particulier CP03 ci-dessous |
 
 
-<!-- p.234 -->
+<!-- p.229 -->
 VF - Valoriser les prestations de la facture
 Si le forfait
 vaut
@@ -1242,7 +1242,7 @@ déclencheur du forfait.
 <!-- transcrit de p.234 (ex-figure : suite du tableau p.233, déjà transcrit) -->
 
 
-<!-- p.235 -->
+<!-- p.230 -->
 VF - Valoriser les prestations de la facture
 
 ### 3.3 VF34 - Déterminer le Taux de Remboursement AMO
@@ -1277,11 +1277,11 @@ des opérations
 Figure 6 : Diagramme d’enchaînement de la sous-fonction « VF34 -  Déterminer le taux de prise en
 charge AMO »
 
-![Figure 6 : Diagramme d’enchaînement de la sous-fonction « VF34 -  Déterminer le taux de prise en](figures/p235.png)
-*Figure (p.235) : Figure 6 : Diagramme d’enchaînement de la sous-fonction « VF34 -  Déterminer le taux de prise en*
+![Figure 6 : Diagramme d’enchaînement de la sous-fonction « VF34 -  Déterminer le taux de prise en](figures/p230.png)
+*Figure (p.230) : Figure 6 : Diagramme d’enchaînement de la sous-fonction « VF34 -  Déterminer le taux de prise en*
 
 
-<!-- p.236 -->
+<!-- p.231 -->
 VF - Valoriser les prestations de la facture
 3.3.1
 VF34.01 - Identifier la présence d’une exonération de niveau facture
@@ -1312,7 +1312,7 @@ EF_CF04
 Sorties Taux de Remboursement AMO
 EF_VF04
 
-<!-- p.237 -->
+<!-- p.232 -->
 VF - Valoriser les prestations de la facture
 Règles de
 gestion
@@ -1346,11 +1346,11 @@ Si la situation d’AME a été identifiée, il n’est pas nécessaire de pours
 d’autres exonérations.
  Le qualificatif de la dépense pour chaque prestation de la facture sera valorisé à « N ».
 
-![Figure 7 : Enchainement des règles pour « VF34.01 - Identifier la présence d’une exonération de](figures/p237.png)
-*Figure (p.237) : Figure 7 : Enchainement des règles pour « VF34.01 - Identifier la présence d’une exonération de*
+![Figure 7 : Enchainement des règles pour « VF34.01 - Identifier la présence d’une exonération de](figures/p232.png)
+*Figure (p.232) : Figure 7 : Enchainement des règles pour « VF34.01 - Identifier la présence d’une exonération de*
 
 
-<!-- p.238 -->
+<!-- p.233 -->
 VF - Valoriser les prestations de la facture
 [RG_VF651] Identifier la présence d’une exonération de niveau facture liée à la « Nature
 d’assurance »
@@ -1432,7 +1432,7 @@ Bénéficiaire exonéré
 Sauf pour les
 prestations ALD
 
-<!-- transcrit de p.238 (ex-figure) -->
+<!-- transcrit de p.233 (ex-figure) -->
 
 **[RG_VF651] Identifier la présence d'une exonération de niveau facture liée à la « Nature d'assurance »**
 
@@ -1455,7 +1455,7 @@ prestations ALD
 | Bénéficiaire exonéré | « Pension militaire » ou « Invalidité » ou « Bénéficiaire exonéré » | 100% | « Assuré ou Bénéficiaire exonéré (régime exonérant) » Sauf pour les prestations ALD |
 
 
-<!-- p.239 -->
+<!-- p.234 -->
 VF - Valoriser les prestations de la facture
 [SP17] : Détenus
 Les détenus sont des bénéficiaires exonérés, de ce fait :
@@ -1463,7 +1463,7 @@ Les détenus sont des bénéficiaires exonérés, de ce fait :
  le Justificatif d’exonération (EF_VF04_03) est égal à « Assuré ou Bénéficiaire exonéré
 (régime exonérant) ».
 
-<!-- p.240 -->
+<!-- p.234 -->
 VF - Valoriser les prestations de la facture
 3.3.2
 VF34.02 - Identifier la présence d’une exonération de niveau prestation pour
@@ -1495,7 +1495,7 @@ EF_IP11
 Sorties Taux de Remboursement AMO
 EF_VF04
 
-<!-- p.241 -->
+<!-- p.235 -->
 VF - Valoriser les prestations de la facture
 Règles de
 gestion
@@ -1503,11 +1503,11 @@ Le schéma ci-dessous- représente la priorisation d’usage des RG qui suivent 
 Figure 8 : Enchainement des règles pour « VF34.02 - Identifier la présence d’une exonération de
 niveau prestation »
 
-![Figure 8 : Enchainement des règles pour « VF34.02 - Identifier la présence d’une exonération de](figures/p241.png)
-*Figure (p.241) : Figure 8 : Enchainement des règles pour « VF34.02 - Identifier la présence d’une exonération de*
+![Figure 8 : Enchainement des règles pour « VF34.02 - Identifier la présence d’une exonération de](figures/p235.png)
+*Figure (p.235) : Figure 8 : Enchainement des règles pour « VF34.02 - Identifier la présence d’une exonération de*
 
 
-<!-- p.242 -->
+<!-- p.236 -->
 VF - Valoriser les prestations de la facture
 [RG_VF660] Identifier la présence d’une prestation exonérée « par nature »
 Conditions : la facture n’est pas exonérée
@@ -1568,7 +1568,7 @@ Médicaments rétrocédés codés pris en charge à
 100% : Le taux de prise en charge = 100% dans la
 base UCD
 
-<!-- transcrit de p.242 (ex-figure) -->
+<!-- transcrit de p.236 (ex-figure) -->
 
 **[RG_VF660] Identifier la présence d'une prestation exonérée « par nature »**
 
@@ -1599,7 +1599,7 @@ Conditions : la facture n'est pas exonérée
 | Médicaments rétrocédés codés pris en charge à 100% : Le taux de prise en charge = 100% dans la base UCD | 100% | « Pas d'exonération » |
 
 
-<!-- p.243 -->
+<!-- p.237 -->
 VF - Valoriser les prestations de la facture
 Identifiée par
 Conduit à
@@ -1654,7 +1654,7 @@ Si le BS est affilié au régime CANSSM, il n’est pas nécessaire de poursuivr
 d’autres exonérations pour cette prestation, que la situation d’exonération ait été identifiée
 ou non.
 
-<!-- transcrit de p.243 (ex-figure) -->
+<!-- transcrit de p.237 (ex-figure) -->
 
 | Identifiée par | Taux de remboursement (EF_VF04_02) | Justificatif d'exonération (EF_VF04_03) |
 | --- | --- | --- |
@@ -1667,7 +1667,7 @@ ou non.
 | 100% | « Soins Particuliers Exonérés » |
 
 
-<!-- p.244 -->
+<!-- p.238 -->
 VF - Valoriser les prestations de la facture
  La recherche d’exonération au titre de l’ALD pour les bénéficiaires CANSSM est nécessaire
 pour des raisons de traçabilité ce qui nécessite la présence du bon justificatif d’exonération.
@@ -1710,7 +1710,7 @@ Les tableaux ci-dessous recensent pour chaque type d’actes :
  Le périmètre d’exonération : actes seul, exonération d’une partie des actes de la
 facture, exonération de tous les actes de la facture
 
-<!-- p.245 -->
+<!-- p.239 -->
 VF - Valoriser les prestations de la facture
  le justificatif d’exonération à renseigner au niveau acte
 ACE : ACTES ET CONSULTATIONS EXTERNES
@@ -1790,7 +1790,7 @@ Justificatif d’exonération (EF_VF04_03)
  Le forfait FSD ne déclenchant pas la règle du seuil, il ne portera jamais l’éventuel TMF et
 sa participation assuré sera renseignée « à blanc » (Cf. VF35.08).
 
-<!-- transcrit de p.245 (ex-figure) -->
+<!-- transcrit de p.240 (ex-figure) -->
 
 **ACE : ACTES ET CONSULTATIONS EXTERNES**
 
@@ -1807,7 +1807,7 @@ sa participation assuré sera renseignée « à blanc » (Cf. VF35.08).
 | 100% | 3 « Soins particuliers exonérés » |
 
 
-<!-- p.246 -->
+<!-- p.243 -->
 VF - Valoriser les prestations de la facture
 Illustration de la règle du seuil en ACE
 Le schéma ci-dessous illustre les règles du tableau précédent et précise les cas
@@ -1860,11 +1860,11 @@ seuil »
 Pour tous les actes
 non déjà exonérés
 
-![Figure 9 : synthèse de la règle du seuil et application du TMF pour les ACE](figures/p246.png)
-*Figure (p.246) : Figure 9 : synthèse de la règle du seuil et application du TMF pour les ACE*
+![Figure 9 : synthèse de la règle du seuil et application du TMF pour les ACE](figures/p294.png)
+*Figure (p.294) : Figure 9 : synthèse de la règle du seuil et application du TMF pour les ACE*
 
 
-<!-- p.247 -->
+<!-- p.241 -->
 VF - Valoriser les prestations de la facture
 NGAP
 la somme du Coefficient  de la
@@ -1952,7 +1952,7 @@ d’application du TMF pour un assuré de droit commun sans droit particuliers.
 | 1er forfait SE | 100% | C « Soins exonérés en codage CCAM du fait de la nature de l'acte, ou du dépassement du seuil » |
 | 2ème forfait SE | 100% | 3 « Soins particuliers exonérés » |
 
-<!-- p.248 -->
+<!-- p.243 -->
 VF - Valoriser les prestations de la facture
 Figure 10 : synthèse de la règle du seuil et application du TMF pour les activités à
 forfait
@@ -1979,11 +1979,11 @@ En rente AT, la prestation PHQ est prise en charge comme suit :
 hors subsistants (Code contrat particulier à la date de référence (EF_CF13_01) = 18,
 19, 21.)
 
-![Figure 10 : synthèse de la règle du seuil et application du TMF pour les activités à](figures/p248.png)
-*Figure (p.248) : Figure 10 : synthèse de la règle du seuil et application du TMF pour les activités à*
+![Figure 10 : synthèse de la règle du seuil et application du TMF pour les activités à](figures/p295.png)
+*Figure (p.295) : Figure 10 : synthèse de la règle du seuil et application du TMF pour les activités à*
 
 
-<!-- p.249 -->
+<!-- p.243 -->
 VF - Valoriser les prestations de la facture
  30% pour les autres BS
  [RG_VF664] Déterminer le taux de prise en charge pour un Bénéficiaire du régime spécial CPRPF
@@ -2088,7 +2088,7 @@ spéciaux
 SNCF et
 MINES».
 
-<!-- transcrit de p.249 (ex-figure) -->
+<!-- transcrit de p.244 (ex-figure) -->
 
 [RG_VF664] — Taux de prise en charge pour un Bénéficiaire du régime spécial CPRPF :
 
@@ -2104,7 +2104,7 @@ MINES».
 | 4 | Code contrat particulier à la date de référence (EF_CF13_01) = 22 Régime SNCF Actifs | prestations prescrites par un médecin SNCF (Top Prescription par médecin SNCF EF_IP01_03 = Vrai) | 100% | « Régimes spéciaux SNCF et MINES » |
 
 
-<!-- p.250 -->
+<!-- p.244 -->
 VF - Valoriser les prestations de la facture
 priorité
 Pour les BS dont
@@ -2177,7 +2177,7 @@ PHS
 90%
 90%
 
-<!-- transcrit de p.250 (ex-figure) -->
+<!-- transcrit de p.244 (ex-figure) -->
 
 [RG_VF664] (suite) :
 
@@ -2200,7 +2200,7 @@ PHS
 | PHS | 90% | 90% |
 
 
-<!-- p.251 -->
+<!-- p.245 -->
 VF - Valoriser les prestations de la facture
 [RG_VF675] Identifier la présence d’une modulation d’exonération ASPA hors BS Bénéficiaire du
 régime spécial CPRPF
@@ -2257,7 +2257,7 @@ colonne « ACE - Taux de base
  Cas particuliers
 [CP01] : Présence de Forfaits Urgence (ATU / FFM), Sécurité (SE), APE
 
-<!-- transcrit de p.251 (ex-figure) -->
+<!-- transcrit de p.246 (ex-figure) -->
 
 [RG_VF675] — modulation d’exonération ASPA hors BS du régime spécial CPRPF :
 
@@ -2280,7 +2280,7 @@ colonne « ACE - Taux de base
 | Autres cas | colonne « ACE - Taux de base (régime général) » de la table 4ter | « Pas d’exonération » |
 
 
-<!-- p.252 -->
+<!-- p.247 -->
 VF - Valoriser les prestations de la facture
 Forfaits ATU/FFM/SE/APE : Le taux de prise en charge du forfait (présent en table 4ter)
 s’applique sur toutes les prestations liées de la facture (à la même date d’exécution).
@@ -2295,7 +2295,7 @@ Code justificatif d’exonération
 0%
 0 : « Pas d’exonération»
 
-<!-- p.253 -->
+<!-- p.248 -->
 VF - Valoriser les prestations de la facture
 3.3.3
 VF34.04 - Contrôler les informations relatives à l’exonération
@@ -2326,7 +2326,7 @@ phase, le justificatif d’exonération est identique.
 (NUT)
 La facturation des nutriments (NUT) n’est possible que si le bénéficiaire a une ALD.
 
-<!-- p.254 -->
+<!-- p.249 -->
 VF - Valoriser les prestations de la facture
 
 ### 3.4 VF32 - Valoriser les informations financières du regroupement
@@ -2384,7 +2384,7 @@ Le prix unitaire d’un regroupement de prestations de type NGAP ou Compléments
 prestation correspond à la somme des tarifs conventionnels ou des lettres-clé des
 prestations regroupées.
 
-<!-- p.255 -->
+<!-- p.250 -->
 VF - Valoriser les prestations de la facture
  Cas particuliers
 [CP01] : Écart indemnisable LPP (ETI)
@@ -2431,7 +2431,7 @@ Le prix unitaire d’un regroupement de prestations de type LPP correspond à la
 Le prix unitaire d’un regroupement de prestations de type médicaments correspond à la
 somme des montant totaux facturés TTC (EF_IP13_07) des médicaments (EF_IP13).
 
-<!-- p.256 -->
+<!-- p.251 -->
 VF - Valoriser les prestations de la facture
 [RG_VF637] Acquérir le Montant des honoraires (EF_VF02_03) du Regroupement de prestations
 (EF_VF01)
@@ -2468,7 +2468,7 @@ Autres cas
 de remboursement par acte effectué, arrondi à l’euro supérieur
  Le dépassement sur les actes dentaires hors panier de bien.
 
-<!-- transcrit de p.256 (ex-figure) -->
+<!-- transcrit de p.252 (ex-figure) -->
 
 Méthode de calcul du Montant des honoraires (EF_VF02_03) par type de prestation :
 
@@ -2481,7 +2481,7 @@ Méthode de calcul du Montant des honoraires (EF_VF02_03) par type de prestation
 | Autres cas | = montant de la dépense réelle incluant les dépassements éventuels |
 
 
-<!-- p.257 -->
+<!-- p.253 -->
 VF - Valoriser les prestations de la facture
 
 ### 3.5 VF33 - Déterminer les bases de remboursement AMO et AMC
@@ -2516,11 +2516,11 @@ des opérations
 Figure 11 : Diagramme d’enchaînement de la sous-fonction « VF33 - Valoriser les bases de
 remboursement AMO et AMC »
 
-![Figure 11 : Diagramme d’enchaînement de la sous-fonction « VF33 - Valoriser les bases de](figures/p257.png)
-*Figure (p.257) : Figure 11 : Diagramme d’enchaînement de la sous-fonction « VF33 - Valoriser les bases de*
+![Figure 11 : Diagramme d’enchaînement de la sous-fonction « VF33 - Valoriser les bases de](figures/p253.png)
+*Figure (p.253) : Figure 11 : Diagramme d’enchaînement de la sous-fonction « VF33 - Valoriser les bases de*
 
 
-<!-- p.258 -->
+<!-- p.254 -->
 VF - Valoriser les prestations de la facture
 3.5.1
 VF33.01 - Déterminer les bases de remboursement pour les prestations
@@ -2572,7 +2572,7 @@ de la prestation :
 5 n=nombre de modificateurs tarifants
 6 le pourcentage est exprimé sous la forme d'un coefficient
 
-<!-- transcrit de p.258 (ex-figure) -->
+<!-- transcrit de p.254 (ex-figure) -->
 
 [RG_VF640] — Base de remboursement AMO (EF_VF03_02) pour les prestations CCAM :
 
@@ -2586,7 +2586,7 @@ de la prestation :
 | Montant 3 | = Supplément de charge en cabinet |
 
 
-<!-- p.259 -->
+<!-- p.255 -->
 VF - Valoriser les prestations de la facture
 Attention : les modificateurs pris en compte pour la tarification sont ceux présentés en
 premier parmi les 4 modificateurs transmis.
@@ -2628,7 +2628,7 @@ Pour les bénéficiaires de l’AME, la base de remboursement AMO (EF_VF03_02) e
 valorisée à zéro. C’est la donnée « montant des honoraires » (EF_VF02_03) qui est
 valorisé avec les montants décrits ci-dessus pour la BR AMO :
 
-<!-- p.260 -->
+<!-- p.256 -->
 VF - Valoriser les prestations de la facture
 Donnée
 Valorisée pour les bénéficiaires de l’AME
@@ -2645,7 +2645,7 @@ BR_AMC (EF_VF03_03) =
 Arrondi [ Montant 1 + Montant 2 + Montant 3 ; 2 ]
 Avec pour chaque champ, les valeurs définies en RG_VF640.
 
-<!-- transcrit de p.260 (ex-figure) -->
+<!-- transcrit de p.256 (ex-figure) -->
 
 [SP06] — Bénéficiaire de l’AME :
 
@@ -2661,7 +2661,7 @@ Avec pour chaque champ, les valeurs définies en RG_VF640.
 > Avec pour chaque champ, les valeurs définies en RG_VF640.
 
 
-<!-- p.261 -->
+<!-- p.257 -->
 VF - Valoriser les prestations de la facture
 3.5.2
 VF33.02 - Déterminer les bases de remboursement pour les prestations non
@@ -2691,7 +2691,7 @@ EF_VF03
 Règles de
 gestion
 
-<!-- p.262 -->
+<!-- p.258 -->
 VF - Valoriser les prestations de la facture
 [RG_VF642] Déterminer le Montant de la majoration du Regroupement de prestations (EF_VF01)
 pour les prestations NGAP
@@ -2709,11 +2709,11 @@ du code prestation (EF_IP05_04) et du coefficient de la prestation (EF_IP06_01),
 comme spécifié dans la table 19.
  Cf. [TABLES] Table 23 : Type de majoration en fonction du code prestation.
 
-![Figure 12 : Étapes de calcul du montant de la majoration de la BR pour les prestations NGAP](figures/p262.png)
-*Figure (p.262) : Figure 12 : Étapes de calcul du montant de la majoration de la BR pour les prestations NGAP*
+![Figure 12 : Étapes de calcul du montant de la majoration de la BR pour les prestations NGAP](figures/p258.png)
+*Figure (p.258) : Figure 12 : Étapes de calcul du montant de la majoration de la BR pour les prestations NGAP*
 
 
-<!-- p.263 -->
+<!-- p.259 -->
 VF - Valoriser les prestations de la facture
 2. Détermination du pourcentage de la majoration de type pourcentage
 Type de
@@ -2771,7 +2771,7 @@ EF_VF03_01
 Coefficient MCO
 EF_CF04_19
 
-<!-- transcrit de p.263 (ex-figure) -->
+<!-- transcrit de p.259 (ex-figure) -->
 
 Détermination du pourcentage de la majoration de type pourcentage :
 
@@ -2793,7 +2793,7 @@ Détermination du pourcentage de la majoration de type pourcentage :
 | Coefficient MCO | EF_CF04_19 |
 
 
-<!-- p.264 -->
+<!-- p.260 -->
 VF - Valoriser les prestations de la facture
 BR_AMO (EF_VF03_02) =
 Actes, forfaits
@@ -2823,7 +2823,7 @@ Arrondi [ Prix unitaire x Quantité x coefficient ] ; 2 )
 Les médicaments sous AAP/AAC sont identifiés par la sous-catégorie = «  En
 AAP/AAC»)
 
-<!-- transcrit de p.264 (ex-figure) -->
+<!-- transcrit de p.260 (ex-figure) -->
 
 [RG_VF643] — Formule BR_AMO (EF_VF03_02) par type de prestation :
 
@@ -2836,7 +2836,7 @@ AAP/AAC»)
 | Médicaments sous AAP/AAC | Arrondi [ Prix unitaire x Quantité x coefficient ] ; 2 ) — Les médicaments sous AAP/AAC sont identifiés par la sous-catégorie = « En AAP/AAC » |
 
 
-<!-- p.265 -->
+<!-- p.260 -->
 VF - Valoriser les prestations de la facture
 Activités à forfait
 Pour les forfaits SU2, SU3, SIM, SIC, SUB, SB2, SB3, SUN, SUF, SSN, SSF, FUx, SAS,
@@ -2869,7 +2869,7 @@ dépense (EF_CF04_07) est égal à « N » alors la Base de Remboursement AMO
 différents cas de figure.
  Cf. [ANNEXE – COEFFICIENTS]
 
-<!-- transcrit de p.265 (ex-figure) -->
+<!-- transcrit de p.260 (ex-figure) -->
 
 **Calcul de la BR AMO (EF_VF03_02) — Activités à forfait**
 
@@ -2886,7 +2886,7 @@ différents cas de figure.
 | Montant des honoraires (EF_VF02_03) | = Montant de la BR AMO décrit ci-dessus dans la règle de gestion |
 
 
-<!-- p.266 -->
+<!-- p.261 -->
 VF - Valoriser les prestations de la facture
 [RG_VF644] Calculer la Base de remboursement AMC (EF_VF03_03) du Regroupement de
 prestations (EF_VF01) pour les prestations non CCAM
@@ -2926,7 +2926,7 @@ Le document suivant synthétise l’application des coefficients dans les diffé
 figure :
  Cf. ETS-SFG-032 ANNEXE – COEFFICIENT
 
-<!-- transcrit de p.266 (ex-figure) -->
+<!-- transcrit de p.261 (ex-figure) -->
 
 **[RG_VF644] BR_AMC (EF_VF03_03) — Regroupement de prestations (EF_VF01) pour les prestations non CCAM**
 
@@ -2947,7 +2947,7 @@ BR_AMC (EF_VF03_03) = Arrondi ( (Prix unitaire x Quantité x Coefficient) + mont
 BR_AMC (EF_VF03_03) = Arrondi ( Arrondi (Prix unitaire x Quantité x Coefficient ; 2 ) x Arrondi ( (100 + CG) / 100 x ( 100 + CFISC) / 100 x (100 + CSEGUR) / 100) ; 4) ; 2)
 
 
-<!-- p.267 -->
+<!-- p.262 -->
 VF - Valoriser les prestations de la facture
 
 ### 3.6 VF35 - Déterminer les parts AMO et AMC
@@ -3006,16 +3006,16 @@ EF_VF07
 Enchaînement
 des opérations
 
-<!-- p.268 -->
+<!-- p.263 -->
 VF - Valoriser les prestations de la facture
 Figure 13 : Diagramme d’enchaînement de la sous-fonction « VF35 - Déterminer les parts AMO et
 AMC »
 
-![Figure 13 : Diagramme d’enchaînement de la sous-fonction « VF35 - Déterminer les parts AMO et](figures/p268.png)
-*Figure (p.268) : Figure 13 : Diagramme d’enchaînement de la sous-fonction « VF35 - Déterminer les parts AMO et*
+![Figure 13 : Diagramme d’enchaînement de la sous-fonction « VF35 - Déterminer les parts AMO et](figures/p263.png)
+*Figure (p.263) : Figure 13 : Diagramme d’enchaînement de la sous-fonction « VF35 - Déterminer les parts AMO et*
 
 
-<!-- p.269 -->
+<!-- p.263 -->
 VF - Valoriser les prestations de la facture
 3.6.1
 VF35.01 – Déterminer les Montants Remboursables AMO et AMC
@@ -3069,7 +3069,7 @@ MRO
 (EF_VF05_03)
 = Arrondi (BR_AMO x Taux de remboursement ; 2)
 
-<!-- transcrit de p.269 (ex-figure) -->
+<!-- transcrit de p.263 (ex-figure) -->
 
 **VF35.01 — Déterminer les Montants Remboursables AMO et AMC — Vue générale**
 
@@ -3090,7 +3090,7 @@ MRO
 | MRO (EF_VF05_03) | = Arrondi (BR_AMO x Taux de remboursement ; 2) |
 
 
-<!-- p.270 -->
+<!-- p.264 -->
 VF - Valoriser les prestations de la facture
 MRC
 (EF_VF05_04)
@@ -3140,7 +3140,7 @@ pénalité MTM
 Cette pénalité, appelée MTM (Majoration du Ticket Modérateur) est calculée à partir de la
 formule suivante :
 
-<!-- transcrit de p.270 (ex-figure) -->
+<!-- transcrit de p.265 (ex-figure) -->
 
 | Montant remboursable | Formule |
 | --- | --- |
@@ -3160,7 +3160,7 @@ formule suivante :
 | MRC (EF_VF05_04) | = 0 |
 
 
-<!-- p.271 -->
+<!-- p.265 -->
 VF - Valoriser les prestations de la facture
 Montant
 Formule
@@ -3222,7 +3222,7 @@ EF_VF05_01
 [CP01] : Cas de non application de la MTM
 7 La convention médicale mise en œuvre le 22/12/2024, ne modifie pas ce montant.
 
-<!-- transcrit de p.271 (ex-figure) -->
+<!-- transcrit de p.265 (ex-figure) -->
 
 **Calcul de la pénalité MTM**
 
@@ -3251,7 +3251,7 @@ EF_VF05_01
 | MTM | EF_VF05_01 |
 
 
-<!-- p.272 -->
+<!-- p.267 -->
 VF - Valoriser les prestations de la facture
 Cas de non application de la MTM
 Identifié par
@@ -3298,7 +3298,7 @@ MTM (EF_VF05_01)
 | MRC (EF_VF05_04) | = BR_AMC - Arrondi ( BR_AMC x Taux de remboursement ; 2) + MTM (EF_VF05_01) |
 
 
-<!-- p.273 -->
+<!-- p.267 -->
 VF - Valoriser les prestations de la facture
 3.6.2
 VF35.02 – Déterminer l’application du TMF 24€
@@ -3341,7 +3341,7 @@ exhaustive se référer à VF34) : nature d’assurance maternité et AT/MP, bé
 exonérés, soins exonérés, soins en rapport avec une ALD, Soins relevant d’un programme
 de prévention, bénéficiaire de l’AME.
 
-<!-- p.274 -->
+<!-- p.268 -->
 VF - Valoriser les prestations de la facture
 Enchaînement
 des opérations
@@ -3365,11 +3365,11 @@ un acte CCAM de la facture
 valeur : AD, ID ou PD
 En effet, la présence d’un acte dentaire exonère toute la facture d’un TMF.
 
-![Figure 14 : Diagramme d’enchaînement de la sous-fonction « VF35.02 - Déterminer l’application du](figures/p274.png)
-*Figure (p.274) : Figure 14 : Diagramme d’enchaînement de la sous-fonction « VF35.02 - Déterminer l’application du*
+![Figure 14 : Diagramme d’enchaînement de la sous-fonction « VF35.02 - Déterminer l’application du](figures/p268.png)
+*Figure (p.268) : Figure 14 : Diagramme d’enchaînement de la sous-fonction « VF35.02 - Déterminer l’application du*
 
 
-<!-- p.275 -->
+<!-- p.269 -->
 VF - Valoriser les prestations de la facture
 Quand les conditions précédentes sont réunies alors pour chaque date d’exécution, un
 TMF peut être généré.
@@ -3417,7 +3417,7 @@ Activités à forfait
 En cas de forfait, c’est la prestation du forfait qui porte ce TMF.
 En présence de plusieurs forfaits SE, c’est le plus cher (celui exonéré « C ») qui le portera.
 
-<!-- transcrit de p.275 (ex-figure) -->
+<!-- transcrit de p.270 (ex-figure) -->
 
 **Présence ou non d'un TMF selon le type d'actes dans la facture**
 
@@ -3428,7 +3428,7 @@ En présence de plusieurs forfaits SE, c’est le plus cher (celui exonéré « 
 | Autres actes (sans présence d'actes dentaires) | Génération d'un TMF pour chaque spécialité de PS salariés. Le TMF sera porté par l'acte exonéré le plus couteux de chaque spécialité de PS |
 
 
-<!-- p.276 -->
+<!-- p.270 -->
 VF - Valoriser les prestations de la facture
 Déclenchement de la RG du seuil n’exonérant pas la facture
 Si la règle du seuil a été déclenchée par un acte CCAM non invasif (champ 25 de la base
@@ -3483,7 +3483,7 @@ TMF.
  [SP17] : Détenus
 Les détenus ne sont pas soumis au TMF, la règle ne s’applique pas.
 
-<!-- transcrit de p.276 (ex-figure) -->
+<!-- transcrit de p.270 (ex-figure) -->
 
 **Présence ou non d'un TMF selon le type d'actes dans la facture (RG du seuil n'exonérant pas la facture)**
 
@@ -3501,7 +3501,7 @@ Les détenus ne sont pas soumis au TMF, la règle ne s’applique pas.
 | plusieurs actes CCAM exonérés par la règle du seuil sur la facture OU plusieurs actes NGAP avec le cumul des coefficients > 60 |
 
 
-<!-- p.277 -->
+<!-- p.271 -->
 VF - Valoriser les prestations de la facture
  [RG_VF681] Déterminer les situations où le régime (AMO) prend en charge le TMF
 Certains régimes prennent en charge le TMF.
@@ -3519,7 +3519,7 @@ Dans ces situations, le régime Local prend en charge le TMF, le calcul des mont
 prestations se fait comme lors d’une exonération (taux à 100%). Ce cas particulier est donc
 assimilé à une prise en charge du régime AMO.
 
-<!-- p.278 -->
+<!-- p.267 -->
 VF - Valoriser les prestations de la facture
 [RG_VF684] Déterminer les situations d’exonération du TMF
 Dans les situations suivantes, le TMF est exonéré :
@@ -3562,7 +3562,7 @@ Valeur
 MRC (EF_VF05_04)
 = TMF
 
-<!-- transcrit de p.278 (ex-figure) -->
+<!-- transcrit de p.272 (ex-figure) -->
 
 **[RG_VF684] Situations d'exonération du TMF**
 
@@ -3589,7 +3589,7 @@ MRC (EF_VF05_04)
 | MRC (EF_VF05_04) | = TMF |
 
 
-<!-- p.279 -->
+<!-- p.272 -->
 VF - Valoriser les prestations de la facture
 [RG_VF683] Déterminer le code participation assuré (EF_VF06_01)
 Le Code participation assuré est renseigné si présence d’une situation de génération du
@@ -3615,11 +3615,11 @@ renseigné (à blanc).
 Illustration
 Figure 15 : illustration du remplissage du champ « participation assuré »
 
-![Figure 15 : illustration du remplissage du champ « participation assuré »](figures/p279.png)
-*Figure (p.279) : Figure 15 : illustration du remplissage du champ « participation assuré »*
+![Figure 15 : illustration du remplissage du champ « participation assuré »](figures/p273.png)
+*Figure (p.273) : Figure 15 : illustration du remplissage du champ « participation assuré »*
 
 
-<!-- p.280 -->
+<!-- p.274 -->
 VF - Valoriser les prestations de la facture
 3.6.3
 VF35.03 – Générer les forfaits dentaires C2S en cas de dépassement
@@ -3668,7 +3668,7 @@ EF_CF04
 Règles de
 gestion
 
-<!-- p.281 -->
+<!-- p.275 -->
 VF - Valoriser les prestations de la facture
 [RG_VF690] Déterminer les situations de génération d’un forfait dentaire C2S
 Les conditions permettant la génération d’un forfait dentaire C2S sont les suivantes :
@@ -3728,7 +3728,7 @@ prestation (EF_CF05) ainsi que son regroupement9 (EF_VF01) :
 au Journal Officiel
 9 Le regroupement, dans le cas présent, ne contient qu’une seule prestation
 
-<!-- transcrit de p.281 (ex-figure) -->
+<!-- transcrit de p.275 (ex-figure) -->
 
 **[RG_VF690] Déterminer les situations de génération d'un forfait dentaire C2S — conditions**
 
@@ -3739,7 +3739,7 @@ au Journal Officiel
 | **Et** il existe la présence d'un dépassement pris en charge au titre de la C2S | Minimum entre :<br>• Le Montant honoraire (EF_VF02_03) et<br>• Le Prix maximum autorisé pour un bénéficiaire de la C2S – BR_AMO (EF_VF03_02) |
 
 
-<!-- p.282 -->
+<!-- p.276 -->
 VF - Valoriser les prestations de la facture
  Cas particulier
 [CP01] – Présence d’une exigence particulière
@@ -3781,7 +3781,7 @@ des honoraires (EF_ »VF02_03) = Base de remboursement AMO (EF_VF03_02) +
 dépassement au-delà du montant maximum autorisé
  L’acte forfait dentaire CMU-C (FPC) correspond au dépassement autorisé
 
-<!-- transcrit de p.282 (ex-figure) -->
+<!-- transcrit de p.276 (ex-figure) -->
 
 **[RG_VF692] Déterminer les informations financières, le taux, le montant remboursable AMO et la Base de Remboursement du forfait dentaire C2S**
 
@@ -3800,7 +3800,7 @@ dépassement au-delà du montant maximum autorisé
 | Code qualificatif de la dépense | N | EF_CF04_07 |
 
 
-<!-- p.283 -->
+<!-- p.277 -->
 VF - Valoriser les prestations de la facture
 [RG_VF_RC19] Contrôler la Compatibilité du forfait dentaire (au titre de la C2S) avec le Code acte
 CCAM (EF_IP08_01) de l'acte support
@@ -3971,7 +3971,7 @@ HBLD036
 10 Le code prestation est identifié par le système comme un code forfait CMU-C s’il est présent dans la TB21 : table des forfaits CMU-C gérés dans la
 base CCAM
 
-<!-- transcrit de p.283 (ex-figure) -->
+<!-- transcrit de p.277 (ex-figure) -->
 
 **[RG_VF695] Contrôler le Montant restant à charge de l'assuré en C2S**
 
@@ -4001,7 +4001,7 @@ Montant restant à charge de l'assuré = Montant des honoraires – MRO – MRC 
 | à 70 % | PFC | HBLD036 | 1 | 1 | 1 | 0 | 107,50 | 107,50 | 70 | 75,25 | 277,50 | | 32,25 | 170,00 |
 
 
-<!-- p.284 -->
+<!-- p.277 -->
 VF - Valoriser les prestations de la facture
 FPC
 1
@@ -4051,7 +4051,7 @@ Total
  Les montants utilisés dans l’exemple ci-dessus sont mentionnés à titre d'exemple, et
 peuvent évoluer en fonction des tarifs conventionnels.
 
-<!-- transcrit de p.284 (ex-figure) -->
+<!-- transcrit de p.277 (ex-figure) -->
 
 **Exemple 2 : Forfait C2S hors panier de biens (suite)**
 
@@ -4066,7 +4066,7 @@ peuvent évoluer en fonction des tarifs conventionnels.
 > Les montants utilisés dans l'exemple ci-dessus sont mentionnés à titre d'exemple, et peuvent évoluer en fonction des tarifs conventionnels.
 
 
-<!-- p.285 -->
+<!-- p.278 -->
 VF - Valoriser les prestations de la facture
 3.6.4
 VF35.04 – Contrôler l’application du 100% Santé
@@ -4115,7 +4115,7 @@ Dans le cas contraire, le Professionnel de Santé est alerté du non-respect des
 opposables.
 La mesure est effective au 01/01/20.
 
-<!-- p.286 -->
+<!-- p.279 -->
 VF - Valoriser les prestations de la facture
 PS concernés
 Pour le contrôle des prestations dentaires :
@@ -4128,7 +4128,7 @@ Pour le contrôle des prestations dentaires :
 69 : chirurgie orale
  Cf. [TABLES] Table 2ter : Codes Prestations soumis au respect du tarif opposable
 
-<!-- p.287 -->
+<!-- p.280 -->
 VF - Valoriser les prestations de la facture
 3.6.5
 VF35.05 – Générer le forfait patient urgences
@@ -4167,11 +4167,11 @@ fonctions
 Figure 16 : Diagramme d’enchaînement de la sous-fonction « VF35.05 – Générer le forfait patient
 urgences»
 
-![Figure 16 : Diagramme d’enchaînement de la sous-fonction « VF35.05 – Générer le forfait patient](figures/p287.png)
-*Figure (p.287) : Figure 16 : Diagramme d’enchaînement de la sous-fonction « VF35.05 – Générer le forfait patient*
+![Figure 16 : Diagramme d’enchaînement de la sous-fonction « VF35.05 – Générer le forfait patient](figures/p280.png)
+*Figure (p.280) : Figure 16 : Diagramme d’enchaînement de la sous-fonction « VF35.05 – Générer le forfait patient*
 
 
-<!-- p.288 -->
+<!-- p.281 -->
 VF - Valoriser les prestations de la facture
 3.6.5.1
 VF35.05.01 – Déterminer le forfait patient urgences
@@ -4190,7 +4190,7 @@ Enchainement de
 fonctions
 Le schéma ci-dessous- représente la priorisation d’usage des RG qui suivent :
 
-<!-- p.289 -->
+<!-- p.282 -->
 VF - Valoriser les prestations de la facture
 Figure 17 : Diagramme d’enchaînement de la sous-fonction « VF35.05.01 - Déterminer le forfait
 patient urgences»
@@ -4199,11 +4199,11 @@ Le forfait patient urgences peut être pris en charge par le régime dans certai
 minoré, il s’accompagne d’un complément de forfait patient urgences à la charge de l’AMO
 (CFU).
 
-![Figure 17 : Diagramme d’enchaînement de la sous-fonction « VF35.05.01 - Déterminer le forfait](figures/p289.png)
-*Figure (p.289) : Figure 17 : Diagramme d’enchaînement de la sous-fonction « VF35.05.01 - Déterminer le forfait*
+![Figure 17 : Diagramme d’enchaînement de la sous-fonction « VF35.05.01 - Déterminer le forfait](figures/p282.png)
+*Figure (p.282) : Figure 17 : Diagramme d’enchaînement de la sous-fonction « VF35.05.01 - Déterminer le forfait*
 
 
-<!-- p.290 -->
+<!-- p.283 -->
 VF - Valoriser les prestations de la facture
 Règles de
 gestion
@@ -4236,7 +4236,7 @@ Les données suivantes sont valorisées :
 (EF_VF05_04) ;
 ○ Valorisé à Prix Unitaire
 
-<!-- transcrit de p.290 (ex-figure) -->
+<!-- transcrit de p.283 (ex-figure) -->
 
 **[RG_VF500] Identifier la présence d'une AME**
 
@@ -4255,7 +4255,7 @@ Pour les bénéficiaires de l'AME (SP06), un forfait **FPU** (participation assu
 | Montant remboursable AMC | Prix Unitaire | EF_VF05_04 |
 
 
-<!-- p.291 -->
+<!-- p.283 -->
 VF - Valoriser les prestations de la facture
 [RG_VF501] Identifier une situation médico-administrative permettant la prise en charge par le
 régime du forfait patient urgences non minoré
@@ -4344,7 +4344,7 @@ Code régime
 SNCF et MINES »
 (Exo 6)
 
-<!-- transcrit de p.291 (ex-figure) -->
+<!-- transcrit de p.284 (ex-figure) -->
 
 **[RG_VF501] Identifier une situation médico-administrative permettant la prise en charge par le régime du forfait patient urgences non minoré** — forfait **FPX** (complément de prestation EF_CF05_01), pris en charge par le régime
 
@@ -4361,7 +4361,7 @@ SNCF et MINES »
 | Régime exonérant (CANSSM) | Code régime (EF_BS04_01) = « 07 » | « Régimes spéciaux SNCF et MINES » (Exo 6) |
 
 
-<!-- p.292 -->
+<!-- p.285 -->
 VF - Valoriser les prestations de la facture
 Les données suivantes sont valorisées :
  Montant des honoraires
@@ -4421,7 +4421,7 @@ Les données suivantes sont valorisées pour le forfait CFU :
 (EF_VF04_02) ;
 ○ Valorisé à « 100 %»
 
-<!-- transcrit de p.292 (ex-figure) -->
+<!-- transcrit de p.285 (ex-figure) -->
 
 **[RG_VF502] Identifier une situation de minoration du forfait patient urgences** — génère un complément de participation forfaitaire : forfait **CFU** (complément de prestation EF_CF05_01), pris en charge par le régime
 
@@ -4431,7 +4431,7 @@ Les données suivantes sont valorisées pour le forfait CFU :
 | Nature assurance (EF_CF04_01) est valorisée à « AT/MP » | CFU | Aucun |
 
 
-<!-- p.293 -->
+<!-- p.286 -->
 VF - Valoriser les prestations de la facture
  Montant remboursable AMO
 (EF_VF05_03) ;
@@ -4489,7 +4489,7 @@ généré :
 (EF_VF05_04) ;
 ○ Valorisé à 0.
 
-<!-- transcrit de p.293 (ex-figure) -->
+<!-- transcrit de p.286 (ex-figure) -->
 
 **[RG_VF503] Identifier un bénéficiaire du régime local Alsace - Moselle** — Libellé MTM valide à la date de référence (EF_CF12_01) = « Régime Local Alsace-Moselle » ou « Régime Local frontalier ». Le forfait (complément de prestation EF_CF05_01) est pris en charge par le régime.
 
@@ -4499,7 +4499,7 @@ généré :
 | Situations de minoration identifiées dans la RG_VF502 | FPM | aucun |
 
 
-<!-- p.294 -->
+<!-- p.286 -->
 VF - Valoriser les prestations de la facture
 [RG_VF504] Identifier un bénéficiaire de la C2S
 Pour les bénéficiaires de la C2S (SP03), l’un des forfaits ci-dessous est généré :
@@ -4541,7 +4541,7 @@ généré :
 (EF_VF05_04) ;
 ○ Valorisée avec la Base de remboursement AMO
 
-<!-- transcrit de p.294 (ex-figure) -->
+<!-- transcrit de p.286 (ex-figure) -->
 
 **[RG_VF504] Identifier un bénéficiaire de la C2S** — Pour les bénéficiaires de la C2S (SP03). La complémentaire C2S prend en charge le forfait généré (complément de prestation EF_CF05_01).
 
@@ -4551,7 +4551,7 @@ généré :
 | Situations de minoration identifiées dans la RG_VF502 | FPV | aucun |
 
 
-<!-- p.295 -->
+<!-- p.287 -->
 VF - Valoriser les prestations de la facture
 [RG_VF505] Générer le forfait patient urgences à la charge de l‘assuré
 L’un des forfaits ci-dessous est généré :
@@ -4594,7 +4594,7 @@ généré :
 (EF_VF05_04) ;
 ○ Valorisé à 0
 
-<!-- transcrit de p.295 (ex-figure) -->
+<!-- transcrit de p.287 (ex-figure) -->
 
 **[RG_VF505] Générer le forfait patient urgences à la charge de l'assuré** — forfait nominal FPU ou minoré FPV (situations RG_VF502), à la charge de l'assuré ou de sa complémentaire (complément de prestation EF_CF05_01)
 
@@ -4604,7 +4604,7 @@ généré :
 | Situations de minoration identifiées dans la RG_VF502 | FPV | aucun |
 
 
-<!-- p.296 -->
+<!-- p.289 -->
 VF - Valoriser les prestations de la facture
 3.6.5.2
 VF35.05.02 – Générer le forfait patient urgences dans la facture
@@ -4629,11 +4629,11 @@ gestion
 Les informations concernant le forfait patient urgences doivent toujours être portées dans
 la facture (à titre d’information et de contrôle).
 
-![Figure 18 : Diagramme d’enchaînement de la sous-fonction « VF35.05.02 - Générer le forfait patient](figures/p296.png)
-*Figure (p.296) : Figure 18 : Diagramme d’enchaînement de la sous-fonction « VF35.05.02 - Générer le forfait patient*
+![Figure 18 : Diagramme d’enchaînement de la sous-fonction « VF35.05.02 - Générer le forfait patient](figures/p289.png)
+*Figure (p.289) : Figure 18 : Diagramme d’enchaînement de la sous-fonction « VF35.05.02 - Générer le forfait patient*
 
 
-<!-- p.297 -->
+<!-- p.290 -->
 VF - Valoriser les prestations de la facture
 La génération du forfait patient urgence se matérialise par un complément de prestation
 « Forfait patient urgences » (EF_CF05) associé à la prestation support FUx (EF_IP05)
@@ -4682,7 +4682,7 @@ FPU ou FPL ou FPX ou FPV ou FPM
 CFU
 11 Le regroupement, dans le cas présent, ne contient qu’une seule prestation
 
-<!-- p.298 -->
+<!-- p.291 -->
 VF - Valoriser les prestations de la facture
 [RG_VF508] Contrôler la cohabitation des prestations sur une même facture
 Les forfaits socles de base urgence et les forfaits patient urgence sont cumulables entre
@@ -4750,7 +4750,7 @@ Lorsque le Motif médical d'exonération (EF_IP05_03) est égal à « Traitement
 « Soins pour les nouveau-nés » alors le système de facturation doit permettre l'acquisition
 des informations suivantes :
 
-<!-- transcrit de p.298 (ex-figure) -->
+<!-- transcrit de p.291 (ex-figure) -->
 
 **[RG_VF508] Tableau de cohabitation (cumul) des forfaits socles de base urgence et des forfaits patient urgence**
 
@@ -4767,7 +4767,7 @@ des informations suivantes :
 Légende : ✗ = Pas de cumul possible ; ✓ = Cumul possible au cours d'une même venue.
 
 
-<!-- p.299 -->
+<!-- p.291 -->
 VF - Valoriser les prestations de la facture
 La situation
 d’exonération
@@ -4862,7 +4862,7 @@ Sauf CP03 (voir ci-
 dessous)
 12 Une prestation NGAP (ou cumul) dont la somme des Coefficients (EF_IP25_01) est supérieure ou égal à 60 est exonérée.
 
-<!-- transcrit de p.299 (ex-figure) -->
+<!-- transcrit de p.291 (ex-figure) -->
 
 **[RG_VF998] Identifier la présence d'une prestation exonérée pour « soins particuliers exonérés »**
 
@@ -4879,7 +4879,7 @@ dessous)
 | Prestation CCAM exonérée par règle du seuil et exonérant la facture       | Prestation CCAM dont le champ 25 est égal à « 1 » (prestation exonérée par la règle du seuil) | Si acte >= seuil -> exonération de la facture (actes de champs 25 = 1 et 2) à la même date d'exécution. Sauf CP03 (voir ci-dessous). Si acte < seuil et cumul actes de champs 25 à 1 >= seuil -> exonération de la facture (actes de champs 25 = 1 et 2) à la même date d'exécution. Sauf CP03 (voir ci-dessous) | « Soins exonérés en codage CCAM du fait de la nature de l'acte, ou du dépassement du seuil »    |
 
 
-<!-- p.300 -->
+<!-- p.297 -->
 VF - Valoriser les prestations de la facture
  Pour rappel : Facturation de l’activité d’urgence non gynécologiques (présence d’un forfait
 FUx dans la facture). Les actes ayant conduit à la facturation du forfait FUx ne doivent pas
@@ -4929,7 +4929,7 @@ la règle du seuil
 Les entités fonctionnelles sont décrites dans le document :
  Cf. [DICO] - Dictionnaire de données »
 
-<!-- transcrit de p.300 (ex-figure) -->
+<!-- transcrit de p.297 (ex-figure) -->
 
 **[CP01] Exonération du Forfait FSD accompagnant une prestation CCAM dont le champ 25 est égal à « 1 » ou « 2 » (règle du seuil)** *(cas particulier barré dans le document source)*
 
@@ -4945,7 +4945,7 @@ Les entités fonctionnelles sont décrites dans le document :
 | 2ème forfait SE | 100%                              | « Soins particuliers exonérés »                                                             |
 
 
-<!-- p.301 -->
+<!-- p.296 -->
 VF - Valoriser les prestations de la facture
 ANNEXE 1 SYNTHESE DES REGLES DE GESTION
 1
@@ -4978,7 +4978,7 @@ VF30.02 - Générer les écarts indemnisables pour les médicaments et la LPP en
 [RG_VF611] Générer la prestation pour l’écart indemnisable de la prestation regroupée de rétrocession . 24
 3.2
 
-<!-- p.302 -->
+<!-- p.297 -->
 VF - Valoriser les prestations de la facture
 [RG_VF627] Contrôler la cohabitation des prestations sur une même facture en contexte d’urgence non
 [RG_VF_CC2] Contrôler la cohérence des codes CCAM-Modificateur (EF_IP09) entre les intervenants ... 27
@@ -4999,7 +4999,7 @@ VF34.02 - Identifier la présence d’une exonération de niveau prestation pour
 [RG_VF_CC15] Contrôler la compatibilité entre le Taux de remboursement de la prestation (EF_VF04_02)
 3.4
 
-<!-- p.303 -->
+<!-- p.298 -->
 VF - Valoriser les prestations de la facture
 [RG_VF631] Déterminer le Prix Unitaire (EF_VF02_02) d’un Regroupement de prestations (EF_VF01) pour
 [RG_VF633] Déterminer le Prix Unitaire (EF_VF02_02) d’un Regroupement de prestations (EF_VF01) pour
@@ -5026,7 +5026,7 @@ VF33.02 - Déterminer les bases de remboursement pour les prestations non CCAM .
 3.6.3
 [RG_VF692] Déterminer les informations financières, le taux, le montant remboursable AMO et la Base de
 
-<!-- p.304 -->
+<!-- p.299 -->
 VF - Valoriser les prestations de la facture
 [RG_VF_RC19] Contrôler la Compatibilité du forfait dentaire (au titre de la C2S) avec le Code acte CCAM
 3.6.4

@@ -1,14 +1,14 @@
 # CF — Déterminer le Contexte de Facturation
 
-_Pages 154–203 du PDF source._
+_Pages 147–200 du PDF source._
 
 
-<!-- p.154 -->
+<!-- p.147 -->
 CF - Déterminer le contexte de
 facturation
 
 
-<!-- p.155 -->
+<!-- p.148 -->
 CF - Déterminer le contexte de facturation
 arrangement, quel que soit le procédé utilisé.
 des sanctions pour l’auteur du délit.
@@ -17,7 +17,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.156 -->
+<!-- p.149 -->
 CF - Déterminer le contexte de facturation
 1
 1.1
@@ -52,7 +52,7 @@ CF30.03 - Déterminer le contexte de facturation des compléments de prestation 
 3.2
 4
 
-<!-- p.157 -->
+<!-- p.150 -->
 CF - Déterminer le contexte de facturation
 TABLE DES ILLUSTRATIONS
 FIGURE 3 : DIAGRAMME DES OBJETS METIERS DE LA FONCTION « CF - DETERMINER LE CONTEXTE DE
@@ -62,7 +62,7 @@ FIGURE 6 : DIAGRAMME D’ENCHAINEMENT DE L’OPERATION « CF30.03 - DETERMINER L
 FIGURE 7 : DIAGRAMME D’ENCHAINEMENT DE L’OPERATION « CF30.06 - CONTROLER LE CONTEXTE DE FACTURATION
 FIGURE 8 : DIAGRAMME D’ENCHAINEMENT DES REGLES POUR LA DETERMINATION DU CONTEXTE DE FACTURATION
 
-<!-- p.158 -->
+<!-- p.151 -->
 CF - Déterminer le contexte de facturation
 
 ## 1 INTRODUCTION
@@ -93,7 +93,7 @@ De référence.
 
  Cf. [PG] – Présentation Générale
 
-<!-- p.159 -->
+<!-- p.152 -->
 CF - Déterminer le contexte de facturation
 
 ## 2 DESCRIPTION GENERALE DE LA FONCTION « CF - DETERMINER LE CONTEXTE DE FACTURATION »
@@ -106,11 +106,11 @@ puis du sous-processus « EF - Élaborer les Factures ».
 Figure 1 : Diagramme d’enchaînement du processus général
 Figure 2 : Diagramme d’enchaînement du sous-processus « EF - Élaborer les Factures »
 
-![Figure 1 : Diagramme d’enchaînement du processus général](figures/p159.png)
-*Figure (p.159) : Figure 1 : Diagramme d’enchaînement du processus général*
+![Figure 1 : Diagramme d’enchaînement du processus général](figures/p152.png)
+*Figure (p.152) : Figure 1 : Diagramme d’enchaînement du processus général*
 
 
-<!-- p.160 -->
+<!-- p.153 -->
 CF - Déterminer le contexte de facturation
 
 ### 2.2 Cadrage fonctionnel
@@ -134,11 +134,11 @@ objets
 Figure 3 : Diagramme des objets métiers de la fonction « CF - Déterminer le Contexte de
 Facturation »
 
-![Figure 3 : Diagramme des objets métiers de la fonction « CF - Déterminer le Contexte de](figures/p160.png)
-*Figure (p.160) : Figure 3 : Diagramme des objets métiers de la fonction « CF - Déterminer le Contexte de*
+![Figure 3 : Diagramme des objets métiers de la fonction « CF - Déterminer le Contexte de](figures/p153.png)
+*Figure (p.153) : Figure 3 : Diagramme des objets métiers de la fonction « CF - Déterminer le Contexte de*
 
 
-<!-- p.161 -->
+<!-- p.154 -->
 CF - Déterminer le contexte de facturation
 
 ### 2.4 Enchaînement des sous-fonctions
@@ -150,11 +150,11 @@ des sous-
 fonctions
 Figure 4 : Diagramme d’enchaînement de la fonction « CF - Déterminer le Contexte de Facturation  »
 
-![Figure 4 : Diagramme d’enchaînement de la fonction « CF - Déterminer le Contexte de Facturation  »](figures/p161.png)
-*Figure (p.161) : Figure 4 : Diagramme d’enchaînement de la fonction « CF - Déterminer le Contexte de Facturation  »*
+![Figure 4 : Diagramme d’enchaînement de la fonction « CF - Déterminer le Contexte de Facturation  »](figures/p154.png)
+*Figure (p.154) : Figure 4 : Diagramme d’enchaînement de la fonction « CF - Déterminer le Contexte de Facturation  »*
 
 
-<!-- p.162 -->
+<!-- p.155 -->
 CF - Déterminer le contexte de facturation
 
 ## 3 DESCRIPTION DETAILLEE DE LA FONCTION « CF - DETERMINER LE CONTEXTE DE FACTURATION »
@@ -202,18 +202,18 @@ EF_IP11
  CCAM-Modificateur
 EF_IP09
 
-<!-- p.163 -->
+<!-- p.156 -->
 CF - Déterminer le contexte de facturation
 Schéma des
 opérations
 Figure 5 : Diagramme d’enchaînement de la sous-fonction « CF30 - Déterminer le
 contexte de facturation de niveau prestation »
 
-![Schéma des](figures/p163.png)
-*Figure (p.163) : Schéma des*
+![Schéma des](figures/p156.png)
+*Figure (p.156) : Schéma des*
 
 
-<!-- p.164 -->
+<!-- p.157 -->
 CF - Déterminer le contexte de facturation
 3.1.1
 CF30.01 - Déterminer la date de référence
@@ -240,7 +240,7 @@ sont de type « Actes en série » ou « Acte isolé » (cf. FACT-SFG-009 « DIC
 de données »).
 Les différents cas de figure sont présentés dans le tableau ci-après :
 
-<!-- p.165 -->
+<!-- p.158 -->
 CF - Déterminer le contexte de facturation
 Nomenclature
 (EF_IP05_08)
@@ -316,7 +316,7 @@ urgentiste
 Pour la C2S, en ce qui concerne les prestations pharmaceutiques et les dispositifs de la
 LPP, il convient de retenir la date d’exécution comme date de référence.
 
-<!-- transcrit de p.165 (ex-figure) -->
+<!-- transcrit de p.160 (ex-figure) -->
 
 **Détermination de la date de référence AMO (EF_CF01_01)**
 
@@ -326,7 +326,7 @@ LPP, il convient de retenir la date d’exécution comme date de référence.
 | Prestation rattachée à un séjour / une hospitalisation | Date d'entrée du séjour |
 
 
-<!-- p.166 -->
+<!-- p.159 -->
 CF - Déterminer le contexte de facturation
 3.1.2
 CF30.02 - Déterminer le contexte AMO du bénéficiaire à prendre en compte
@@ -385,7 +385,7 @@ contraire la donnée Droits de base AMO doit être valorisée à « Faux ».
 = « oui »
 Il n’est pas nécessaire de déterminer les droits de base AMO.
 
-<!-- p.167 -->
+<!-- p.160 -->
 CF - Déterminer le contexte de facturation
 [RG_CF612] Déterminer si une (ou plusieurs) situations particulières sont valides à la date de
 référence (EF_CF10)
@@ -431,7 +431,7 @@ correspondant à la situation du Bénéficiaire des Soins à la Date de prescrip
 (EF_IP01_01), le taux de remboursement à prendre en compte est celui valable à la
 Date d’exécution de la prestation (EF_IP05_01).
 
-<!-- p.168 -->
+<!-- p.161 -->
 CF - Déterminer le contexte de facturation
  Situation particulière
 [SP10] : le bénéficiaire des soins demande le secret (facture anonyme) - EF_BS02_15
@@ -484,7 +484,7 @@ des bénéficiaires « subsistants »), seul celui-ci doit être retenu pour la 
 taux de prise en charge (les types de contrats « Caractéristiques de population » ne doivent
 pas être considérés).
 
-<!-- transcrit de p.168 (ex-figure) -->
+<!-- transcrit de p.161 (ex-figure) -->
 
 **Existence de médecin traitant à la date de référence (EF_CF02_05)**
 
@@ -494,7 +494,7 @@ pas être considérés).
 | Le bénéficiaire n'a pas déclaré de médecin traitant valide à la date de référence | Non |
 
 
-<!-- p.169 -->
+<!-- p.162 -->
 CF - Déterminer le contexte de facturation
 3.1.3
 CF30.03 - Déterminer le contexte de facturation des compléments de
@@ -523,7 +523,7 @@ L’« Arrêté du 27/04/2017 relatif aux majorations applicables aux tarifs des
 consultations externes des établissements de santé publics et des établissements de santé
 privés » définit les majorations applicables.
 
-<!-- p.170 -->
+<!-- p.163 -->
 CF - Déterminer le contexte de facturation
 Entrées Prestation
 EF_IP05
@@ -562,11 +562,11 @@ EF_IP09
 Règles de
 gestion
 
-![Figure 6 : Diagramme d’enchaînement de l’opération « CF30.03 - Déterminer le contexte de](figures/p170.png)
-*Figure (p.170) : Figure 6 : Diagramme d’enchaînement de l’opération « CF30.03 - Déterminer le contexte de*
+![Figure 6 : Diagramme d’enchaînement de l’opération « CF30.03 - Déterminer le contexte de](figures/p163.png)
+*Figure (p.163) : Figure 6 : Diagramme d’enchaînement de l’opération « CF30.03 - Déterminer le contexte de*
 
 
-<!-- p.171 -->
+<!-- p.164 -->
 CF - Déterminer le contexte de facturation
 [RG_CF630] Déterminer les compléments de prestation de type majoration
 Le tableau suivant contient les majorations applicables aux nomenclatures NGAP et NABM
@@ -651,7 +651,7 @@ L'ensemble des modificateurs prévus par la CCAM et définis dans le livre III d
 dispositions générales, est applicable.
 [CP02] : Honoraires de surveillance
 
-<!-- transcrit de p.171 (ex-figure) -->
+<!-- transcrit de p.164 (ex-figure) -->
 
 **Majorations soumises à conditions (NGAP / NABM)**
 
@@ -662,7 +662,7 @@ dispositions générales, est applicable.
 _(Ligne ci-dessus révoquée dans la version source.)_
 
 
-<!-- p.172 -->
+<!-- p.164 -->
 CF - Déterminer le contexte de facturation
 La majoration de coordination du médecin correspondant (MCS) destinée à valoriser le
 retour d’information vers le médecin traitant ne doit pas s’appliquer aux honoraires de
@@ -720,7 +720,7 @@ EF_CF05_05
 Nomenclature
  « NGAP »
 
-<!-- transcrit de p.172 (ex-figure) -->
+<!-- transcrit de p.165 (ex-figure) -->
 
 **Table 1 : Codes prestation — Majoration**
 
@@ -743,7 +743,7 @@ Nomenclature
 | EF_CF05_05 | Nomenclature | « NGAP » |
 
 
-<!-- p.173 -->
+<!-- p.166 -->
 CF - Déterminer le contexte de facturation
 3.1.3.2
 CF30.03.02 - Acquérir les informations relatives aux compléments de type
@@ -817,7 +817,7 @@ SU2
 Activités à
 forfait
 
-<!-- transcrit de p.173 (ex-figure) -->
+<!-- transcrit de p.166 (ex-figure) -->
 
 **Table 1 : Codes prestation — Forfait (RG_CF632)**
 
@@ -837,7 +837,7 @@ forfait
 | Supplément correspondant à la lourdeur de la prise en charge : état du patient CCMU 2+ et liste limitative d'actes | Urgence | SU2 | Activités à forfait |
 
 
-<!-- p.174 -->
+<!-- p.167 -->
 CF - Déterminer le contexte de facturation
 Supplément correspondant à la lourdeur de la
 prise en charge : état du patient CCMU 3-4-5
@@ -950,7 +950,7 @@ FFM
 Activités à
 forfait
 
-<!-- transcrit de p.174 (ex-figure) -->
+<!-- transcrit de p.167 (ex-figure) -->
 
 **[RG_CF636] (suite) Forfaits facturables dans le cadre des urgences non gynécologiques**
 
@@ -973,7 +973,7 @@ forfait
 | Soins non programmés non suivis d'hospitalisation ou d'une prise en charge en UHCD (établissement n'étant pas une structure d'urgence autorisée) | Petit matériel | FFM | Activités à forfait |
 
 
-<!-- p.175 -->
+<!-- p.168 -->
 CF - Déterminer le contexte de facturation
 Utilisation
 d’un
@@ -1068,7 +1068,7 @@ l’agrément adéquat.
 utilisation de matériel (le PS libéral facture l’acte CCAM en SESAM-Vitale et l’établissement
 facture le forfait technique seul).
 
-<!-- transcrit de p.175 (ex-figure) -->
+<!-- transcrit de p.168 (ex-figure) -->
 
 **[RG_CF633] (suite) Autres compléments de type « Forfait » à facturer (hors urgences non gynécologiques)**
 
@@ -1083,7 +1083,7 @@ facture le forfait technique seul).
 | Fourniture d'un consommable ingéré par le patient | Vidéocapsule | VDE | NGAP |
 
 
-<!-- p.176 -->
+<!-- p.169 -->
 CF - Déterminer le contexte de facturation
 [RG_CF635] Acquérir le FINESS de l’établissement (EF_CF07_01)
 Conditions :
@@ -1116,7 +1116,7 @@ prestations d’hospitalisation.
  Si l’exploitant est différent de l’établissement dans lequel ont été réalisés les actes, 2
 factures doivent être produites.
 
-<!-- p.177 -->
+<!-- p.170 -->
 CF - Déterminer le contexte de facturation
 3.1.4
 CF30.04 - Déterminer le contexte du parcours de soins (pour les ACE)
@@ -1166,7 +1166,7 @@ Une majoration du ticket modérateur s’applique :
  Le calcul de la majoration du ticket modérateur est décrit dans les règles de gestion
 RG_VF670 et RG_VF671, document [VF].
 
-<!-- p.178 -->
+<!-- p.171 -->
 CF - Déterminer le contexte de facturation
  Dans une même facture ACE, peuvent coexister des actes soumis au parcours de soins et
 des actes non soumis au parcours de soins. Les actes non soumis au parcours de soins
@@ -1211,7 +1211,7 @@ coordonnés y est partiellement transposé, en effet, la majoration de la partic
 d’absence de déclaration de choix d’un médecin traitant ou en cas de consultation sans respect du parcours
 de soins n’est pas appliquée.
 
-<!-- transcrit de p.178 (ex-figure) -->
+<!-- transcrit de p.171 (ex-figure) -->
 
 **[RG_CF640] Cas d'exclusion du parcours de soins**
 
@@ -1221,7 +1221,7 @@ de soins n’est pas appliquée.
 | Spécialité du PS | • les familles de Professionnels de Soins :<br>&nbsp;&nbsp;○ « Auxiliaires-Médicaux »,<br>&nbsp;&nbsp;○ « Pharmaciens »,<br>&nbsp;&nbsp;○ « Laboratoires d'analyse de biologie médicale »,<br>• les sous-familles<br>&nbsp;&nbsp;○ « Chirurgien-dentiste »<br>&nbsp;&nbsp;○ « Sage-femme »<br>Cf. [TABLES - Liste des tables] Table 100 : Code spécialité des Professionnels de Santé |
 
 
-<!-- p.179 -->
+<!-- p.172 -->
 CF - Déterminer le contexte de facturation
  Seule la sous-famille « Médecin » est concernée par le
 parcours de soins, à l’exception des Professionnels de Santé
@@ -1303,7 +1303,7 @@ S
 N ou
 blanc
 
-<!-- transcrit de p.179 (ex-figure) -->
+<!-- transcrit de p.172 (ex-figure) -->
 
 **[RG_CF640] (suite) Cas d'exclusion du parcours de soins**
 
@@ -1328,7 +1328,7 @@ blanc
 | Accès direct spécifique (RG_CF670) | Non | HORS | S | N ou blanc |
 
 
-<!-- p.180 -->
+<!-- p.173 -->
 CF - Déterminer le contexte de facturation
 Médecin orienté par le MT
 (sans objet)
@@ -1376,7 +1376,7 @@ où le Bénéficiaire des Soins est orienté par un médecin autre que le médec
  Prénom du médecin ayant orienté
 (EF_CF03_04).
 
-<!-- transcrit de p.180 (ex-figure) -->
+<!-- transcrit de p.173 (ex-figure) -->
 
 **[RG_CF641] (suite) Détermination de l'IPS (EF_CF03_01) et du Top MT (EF_CF03_02)**
 
@@ -1388,7 +1388,7 @@ où le Bénéficiaire des Soins est orienté par un médecin autre que le médec
 | Non-respect du parcours (PS non Médecin Traitant, non orienté,…) | (sans objet) | HORS | S | O, N ou Blanc |
 
 
-<!-- p.181 -->
+<!-- p.174 -->
 CF - Déterminer le contexte de facturation
 3.1.5
 CF30.05 - Déterminer le contexte de la prestation à la date de référence
@@ -1438,7 +1438,7 @@ Facture électronique acceptée
 Sinon
 Facture papier
 
-<!-- p.182 -->
+<!-- p.175 -->
 CF - Déterminer le contexte de facturation
 NATURE D’ASSURANCE
 [RG_CF653] Déterminer la nature d‘assurance (EF_CF04_01) à partir de la nature des soins à la
@@ -1507,7 +1507,7 @@ AT/MP
 Présence d’un AT déclaré correspondant aux soins à la date de
 référence.
 
-<!-- transcrit de p.182 (ex-figure) -->
+<!-- transcrit de p.175 (ex-figure) -->
 
 **NATURE D'ASSURANCE — [RG_CF653] Déterminer la nature d'assurance (EF_CF04_01) à partir de la nature des soins à la date de référence (EF_CF01_01)**
 
@@ -1531,7 +1531,7 @@ Déterminer les autres natures d'assurance :
 | --- | --- | --- |
 | Un accident du travail ou une maladie professionnelle | AT/MP | Présence d'un AT déclaré correspondant aux soins à la date de référence. |
 
-<!-- p.183 -->
+<!-- p.176 -->
 CF - Déterminer le contexte de facturation
 L’identifiant de l’AT correspondant aux soins (EF_CF04_10) est
 renseigné avec l’AT déclaré (EF_BS09) valide à la date de
@@ -1584,7 +1584,7 @@ concourir au respect de l’Objectif National de Dépenses d’Assurance Maladie
 (ONDAM).
 ○ Une valeur unique pour toute l’activité MCO de tous les établissements.
 
-<!-- transcrit de p.183 (ex-figure) -->
+<!-- transcrit de p.176 (ex-figure) -->
 
 Déterminer les autres natures d'assurance (suite) :
 
@@ -1594,7 +1594,7 @@ Déterminer les autres natures d'assurance (suite) :
 | Un dispositif de prévention | Prévention | Motif médical d'exonération (EF_IP05_03) = « Soins entrants dans le cadre d'un dispositif de prévention » |
 | Autre | Maladie | |
 
-<!-- p.184 -->
+<!-- p.177 -->
 CF - Déterminer le contexte de facturation
  CFISC : Coefficient de reprise des effets des dispositifs d’allègement fiscaux et
 sociaux
@@ -1702,7 +1702,7 @@ Coefficient MCO = Arrondi (  (100 + CG) / 100  x  ( 100 + CFISC ) / 100  x
 100%) et ils peuvent être positifs ou négatifs sauf le coefficient prudentiel qui est exprimé
 en valeur positive mais qui est à retrancher.
 
-<!-- transcrit de p.184 (ex-figure) -->
+<!-- transcrit de p.177 (ex-figure) -->
 
 Contexte d'application de chaque coefficient en fonction des types de prestation (les coefficients peuvent s'appliquer aux parts AMO et/ou AMC) :
 
@@ -1714,7 +1714,7 @@ Contexte d'application de chaque coefficient en fonction des types de prestation
 | Actes associés aux forfaits ATU, FFM, SEx | | | | | | | | | | |
 | FU1, FU2, FU3, FU4, SIM, SIC, SAS, SUB, SB2, SB3 | | | | | | | | | | |
 
-<!-- p.185 -->
+<!-- p.179 -->
 CF - Déterminer le contexte de facturation
  Dans la formule précédente, il est donc très important d’être vigilant avec les signes des
 opérations utilisées ainsi qu’avec les signes des valeurs indiquées dans les arrêtés
@@ -1737,7 +1737,7 @@ Le coefficient MCO du forfait est valorisé avec le coefficient du forfait (cf R
 Le coefficient MCO des actes associés aux forfaits est valorisé à 1 (en type 4S dans la
 facture)
 
-<!-- p.186 -->
+<!-- p.179 -->
 CF - Déterminer le contexte de facturation
 CODE QUALIFICATIF DE LA DEPENSE
 [RG_CF655] Acquérir le code qualificatif de la dépense (EF_CF04_07)
@@ -1768,7 +1768,7 @@ Les bénéficiaires de la C2S ne sont pas concernés par l’application du DA.
  [SP06] : Bénéficiaire de l’AME
 Le code qualificatif de la dépense est à « N » pour tous les actes.
 
-<!-- transcrit de p.186 (ex-figure) -->
+<!-- transcrit de p.179 (ex-figure) -->
 
 **CODE QUALIFICATIF DE LA DÉPENSE — [RG_CF655] Acquérir le code qualificatif de la dépense (EF_CF04_07)**
 
@@ -1780,7 +1780,7 @@ Dans le cas général, le qualificatif de la dépense est non renseigné. Il peu
 | Acte gratuit — Ce qualificatif de la dépense est utilisé pour les actes gratuits (le Professionnel de Santé ne fait pas payer les honoraires au patient). | G |
 | Dépassement autorisé dans le cadre du parcours de soins — Le non-respect du parcours coordonné de soins par le bénéficiaire de soins (IPS = « S ») autorise les médecins spécialistes de secteur I à pratiquer le « Dépassement Autorisé » (DA), qui n'est pas couvert par le régime obligatoire. Dans ce cas, le code qualificatif de la dépense est valorisé à « A ». Le DA ne s'applique pas aux spécialités suivantes (EF_IP03_01) : 01, 22, 23. | A |
 
-<!-- p.187 -->
+<!-- p.181 -->
 CF - Déterminer le contexte de facturation
 3.1.6
 CF30.06 - Contrôler le contexte de facturation de niveau prestation
@@ -1831,7 +1831,7 @@ Contrôler les
 compléments de
 prestation
 
-<!-- p.188 -->
+<!-- p.182 -->
 CF - Déterminer le contexte de facturation
 3.1.6.1
 CF30.06.01 - Contrôler la nature d’assurance
@@ -1890,7 +1890,7 @@ Les non-salariés agricoles (i.e. les exploitants) sont
 caractérisés par un n° de code caisse gestionnaire
 dont le dernier caractère est 1.
 
-<!-- transcrit de p.188 (ex-figure) -->
+<!-- transcrit de p.182 (ex-figure) -->
 
 **3.1.6.1 CF30.06.01 — Contrôler la nature d'assurance** — Vue générale
 
@@ -1912,7 +1912,7 @@ dont le dernier caractère est 1.
 | --- | --- | --- |
 | AT/MP | Compatible avec la qualité du bénéficiaire « assuré » sauf pour les non-salariés agricoles pour lesquels la qualité de bénéficiaire peut être différente | Les non-salariés agricoles (i.e. les exploitants) sont caractérisés par un n° de code caisse gestionnaire dont le dernier caractère est 1. |
 
-<!-- p.189 -->
+<!-- p.183 -->
 CF - Déterminer le contexte de facturation
 Les salariés agricoles sont caractérisés par un n°
 de code caisse gestionnaire dont le dernier
@@ -1957,7 +1957,7 @@ la table suivante :
  Cf. [TABLES], Table 7 : Table des compatibilités entre les codes prestation et le qualificatif
 de la dépense
 
-<!-- transcrit de p.189 (ex-figure) -->
+<!-- transcrit de p.183 (ex-figure) -->
 
 [RG_CF663] (suite) — Compatibilité entre la nature assurance et le code qualité du bénéficiaire :
 
@@ -1977,7 +1977,7 @@ de la dépense
 | Qualificatif de la dépense | EF_CF04 |
 | Code prestation | EF_CF05_01 |
 
-<!-- p.190 -->
+<!-- p.184 -->
 CF - Déterminer le contexte de facturation
 3.1.6.3
 CF30.06.03 - Contrôler le parcours de soins
@@ -2033,7 +2033,7 @@ autorisées, sauf exceptions (cf. cas particuliers).
 En hors parcours de soins, les majorations de coordination MCG, MCS et MCC sont
 autorisées.
 
-<!-- transcrit de p.190 (ex-figure) -->
+<!-- transcrit de p.184 (ex-figure) -->
 
 **3.1.6.3 CF30.06.03 — Contrôler le parcours de soins** — Vue générale
 
@@ -2054,7 +2054,7 @@ autorisées.
 | Respect du parcours de soins (IPS différent de 'S') | Les majorations MCG, MCS et MCC sont autorisées dans les situations d'orientation (IPS='O' ou 'M'), d'accès direct spécifique (IPS='D') ou de hors résidence habituelle du patient (IPS='H'). |
 | Hors parcours de soins (IPS = 'S') | Les majorations MCG, MCS et MCC ne sont pas autorisées, sauf exceptions (cf. cas particuliers). |
 
-<!-- p.191 -->
+<!-- p.185 -->
 CF - Déterminer le contexte de facturation
 [CP1] : Enfant de moins de 16 ans
 Pour les enfants de moins de 16, les majorations de coordination MCG, MCS et MCC sont
@@ -2093,7 +2093,7 @@ en table.
 L’âge maximum indiqué dans la table s’entend jusqu’à la veille de la date anniversaire de
 l’âge indiqué en table.
 
-<!-- p.192 -->
+<!-- p.186 -->
 CF - Déterminer le contexte de facturation
 CONTROLE DES MAJORATIONS NUIT, DIMANCHE OU FERIE
  [RG_CF680] Contrôler la compatibilité entre un complément de prestation majoration nuit,
@@ -2126,7 +2126,7 @@ CONTROLE EN CAS DE TELEEXPERTISE
 Condition : la sous-catégorie de la prestation EF_IP05_07 vaut « télé expertise »
 Un acte de téléexpertise n’est cumulable avec aucun autre acte ni majoration.
 
-<!-- p.193 -->
+<!-- p.186 -->
 CF - Déterminer le contexte de facturation
 CONTROLE DES ACTES DE BIOLOGIE
 [RG_CF684] Contrôler la validité des suppléments pour les actes de biologie
@@ -2167,7 +2167,7 @@ L’acte PAI n’est pas facturable en sus des forfaits :
  d'accueil et de traitement des urgences (ATU)
  sécurité et environnement (SE)
 
-<!-- p.194 -->
+<!-- p.189 -->
 CF - Déterminer le contexte de facturation
 CONTROLES DES COMPLEMENTS DE PRESTATION DU FORFAIT FUX
 [RG_CF683] Contrôler la validité des compléments de prestation SUN, SSN (EF_CF05_01)
@@ -2218,7 +2218,7 @@ facture
 Les compléments de type « forfait » présents dans la facture doivent respecter les critères
 suivants :
 
-<!-- transcrit de p.194 (ex-figure) -->
+<!-- transcrit de p.189 (ex-figure) -->
 
 [RG_CF672] Contrôler la facturation des compléments de type « Forfait urgence » dans une facture — critères :
 
@@ -2244,7 +2244,7 @@ suivants :
 | --- | --- |
 | Forfait technique d'imagerie | SIC |
 
-<!-- p.195 -->
+<!-- p.190 -->
 CF - Déterminer le contexte de facturation
 Le nombre de suppléments nuit ou férié doit être inférieur ou égal au nombre de forfaits
 SAS (ou au nombre de forfaits SAS +1 su présence d’un forfait SIM ou SIC) :
@@ -2281,7 +2281,7 @@ Le complément de prestation SUF n’est facturable que pour des actes effectué
  et les jours fériés.
 Les périodes horaires ouvrant droit au forfait SUF sont définies par arrêté ministériel
 
-<!-- p.196 -->
+<!-- p.192 -->
 CF - Déterminer le contexte de facturation
 
 ### 3.2 CF31 - Déterminer le contexte de facturation de niveau facture
@@ -2336,7 +2336,7 @@ renseigné avec N° le FINESS géographique de l’ES exécutant ou exploitant
 ○ Nom ou raison sociale de l’établissement facturant ou de la personne morale ou
 physique (cas de la facturation des forfaits techniques d’imagerie)
 
-<!-- p.197 -->
+<!-- p.193 -->
 CF - Déterminer le contexte de facturation
  N° FINESS juridique
 (EF_CF09_03) ;
@@ -2384,7 +2384,7 @@ facture correspond à l’Organisme gestionnaire AMO Maladie (EF_BS04) :
 (EF_CF08_04) ;
 ○ A renseigner avec le Code centre de gestion (EF_BS04_03)
 
-<!-- p.198 -->
+<!-- p.194 -->
 CF - Déterminer le contexte de facturation
 RECHERCHE DE L’ORGANISME GESTIONNAIRE
 POUR LE RISQUE AT
@@ -2404,11 +2404,11 @@ Le terme « support AT » correspond à l’un des supports suivants :
  soit la déclaration de la victime,
  soit le retour du service CDRi.
 
-![Figure 8 : Diagramme d’enchaînement des règles pour la détermination du contexte de facturation](figures/p198.png)
-*Figure (p.198) : Figure 8 : Diagramme d’enchaînement des règles pour la détermination du contexte de facturation*
+![Figure 8 : Diagramme d’enchaînement des règles pour la détermination du contexte de facturation](figures/p194.png)
+*Figure (p.194) : Figure 8 : Diagramme d’enchaînement des règles pour la détermination du contexte de facturation*
 
 
-<!-- p.199 -->
+<!-- p.195 -->
 CF - Déterminer le contexte de facturation
 Organisme gestionnaire issu de la carte Vitale
 L’organisme gestionnaire issu de la carte Vitale correspond :
@@ -2452,7 +2452,7 @@ feuille de soins papier doit être établie au risque Accident du Travail.
 Ce contrôle est sans objet dès lors que l’organisme gestionnaire de l’AT est issu des
 données AT de la carte Vitale.
 
-<!-- p.200 -->
+<!-- p.196 -->
 CF - Déterminer le contexte de facturation
 La liste des régimes autorisant l’envoi d’une facture électronique AT est donnée dans la
 table suivante :
@@ -2478,7 +2478,7 @@ le risque AT.
 Les entités fonctionnelles sont décrites dans le document :
  Cf. [ DICO - Dictionnaire de données]
 
-<!-- p.201 -->
+<!-- p.197 -->
 CF - Déterminer le contexte de facturation
 ANNEXE 1 SYNTHESE DES REGLES DE GESTION
 1
@@ -2507,7 +2507,7 @@ DESCRIPTION DETAILLEE DE LA FONCTION « CF - DETERMINER LE CONTEXTE DE
 [CP01] : La date de référence est strictement antérieure à la date de début de MTT
 [RG_CF636] Déterminer les compléments de type « Forfait » à facturer dans le cadre des urgences non
 
-<!-- p.202 -->
+<!-- p.198 -->
 CF - Déterminer le contexte de facturation
 [RG_CF633] Déterminer les autres compléments de type « Forfait » à facturer (hors urgences non
 [RG_CF640] Identifier les cas d’exclusion du parcours de soins et déterminer l’IPS (EF_CF03_01) et le Top
@@ -2516,7 +2516,7 @@ CF - Déterminer le contexte de facturation
 [RG_CF653] Déterminer la nature d‘assurance (EF_CF04_01) à partir de la nature des soins à la date de
 [RG_CF663] Contrôler la compatibilité entre la nature assurance (EF_CF04_01) et le Code qualité du
 
-<!-- p.203 -->
+<!-- p.199 -->
 CF - Déterminer le contexte de facturation
 [RG_CF881] Contrôler la compatibilité de l’âge du bénéficiaire avec une majoration ou un complément de
 [RG_CF680] Contrôler la compatibilité entre un complément de prestation majoration nuit, dimanche ou jour

@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Le skill FIDES ACE donne aux agents IA un accès navigable à la **spécification fonctionnelle générale FIDES ACE v06.08** (SFG FIDES — Facturation Individuelle Des Établissements de Santé, Actes et Consultations Externes, GIE SESAM-Vitale, ~380 pages). Le PDF source a été converti en Markdown chunké + figures pour permettre une lecture ciblée section par section.
+Le skill FIDES ACE donne aux agents IA un accès navigable à la **spécification fonctionnelle générale FIDES ACE v06.09** (SFG FIDES — Facturation Individuelle Des Établissements de Santé, Actes et Consultations Externes, GIE SESAM-Vitale, ~374 pages). Le PDF source a été converti en Markdown chunké + figures pour permettre une lecture ciblée section par section.
 
 ## Ce qu'il fait
 

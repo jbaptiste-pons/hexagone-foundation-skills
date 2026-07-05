@@ -1,6 +1,6 @@
 # BS — Acquérir les informations du Bénéficiaire des Soins
 
-_Pages 43–86 du PDF source._
+_Pages 43–83 du PDF source._
 
 
 <!-- p.43 -->
@@ -17,7 +17,7 @@ Pour toute question technique ou fonctionnelle, contactez le Centre de services 
 •
 e-mail : centre-de-service@sesam-vitale.fr
 
-<!-- p.45 -->
+<!-- p.46 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 1
 1.1
@@ -279,7 +279,7 @@ Le système de facturation doit permettre la saisie des informations suivantes :
 | 03 | NIR certifié + clé | `<ident><nirCertifie>` | Matricule bénéficiaire + Clé | |
 
 
-<!-- p.53 -->
+<!-- p.52 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 En présence d’un mois lunaire la date de naissance est ramenée au 01/01 de l’année de
 naissance.
@@ -340,7 +340,7 @@ En l’absence de la Carte Vitale, le système de facturation doit permettre l�
 | EF_BS02_03 | Clé du NIR |
 
 
-<!-- p.54 -->
+<!-- p.53 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 Champ
 Valeur à renseigner
@@ -372,7 +372,7 @@ assurés nés en Corse tel que :
 La formule à appliquer pour vérifier la clé du NIR est la suivante :
 Clé NIR = 97 - ((Valeur numérique du NIR) modulo 97).
 
-<!-- transcrit de p.54 (ex-figure) -->
+<!-- transcrit de p.53 (ex-figure) -->
 
 Tableau des informations à renseigner pour une facture anonyme ([SP10]) :
 
@@ -1093,7 +1093,7 @@ Date fin contrat particulier
 
 Date fin contrat particulier
 
-<!-- transcrit de p.62 (ex-figure) -->
+<!-- transcrit de p.61 (ex-figure) -->
 
 | Code contrat particulier CPRPSNCF | Type contrat | Libellé | Description |
 | --- | --- | --- | --- |
@@ -1117,7 +1117,7 @@ Par exemple :
 | 02 | Date fin contrat particulier | ← | CDRi03.04 : Période contrat particulier | Date fin contrat particulier |
 
 
-<!-- p.63 -->
+<!-- p.62 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 ACQUISITION A PARTIR D’UN AUTRE SUPPORT
 [RG_BS636] Acquérir les informations de l’Organisme AMO maladie (EF_BS04) à partir d’un autre
@@ -1145,7 +1145,7 @@ Le système de facturation doit permettre la saisie des informations suivantes :
 Les informations sur la période de droits ne sont pas nécessaires pour l’élaboration de la
 facture
 
-<!-- p.64 -->
+<!-- p.63 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 3.3.3
 BS32.03 - Acquérir les informations relatives aux accidents du Travail
@@ -1211,7 +1211,7 @@ Identifiant du 1er AT
 Et
 Identifiant du 2ème AT
 
-<!-- transcrit de p.64 (ex-figure) -->
+<!-- transcrit de p.63 (ex-figure) -->
 
 #### 3.3.3 BS32.03 - Acquérir les informations relatives aux accidents du Travail
 
@@ -1246,7 +1246,7 @@ La Carte Vitale peut recenser au maximum la déclaration de deux accidents du tr
 | 01 | Identifiant accident du travail | ← | `<listeat><at2><identifiant>` Et `<listeat><at3><identifiant>` | Identifiant du 1er AT Et Identifiant du 2ème AT |
 
 
-<!-- p.65 -->
+<!-- p.64 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS642] Acquérir les informations de l’Organisme gestionnaire de l’AT (EF_BS10) à partir de
 la Carte Vitale
@@ -1341,7 +1341,7 @@ Date fin AT par défaut
 
 Date fin AT par défaut
 
-<!-- transcrit de p.65 (ex-figure) -->
+<!-- transcrit de p.64 (ex-figure) -->
 
 [RG_BS642] Acquérir les informations de l'Organisme gestionnaire de l'AT (EF_BS10) à partir de la Carte Vitale
 
@@ -1379,7 +1379,7 @@ Le service CDRi peut retourner plusieurs accidents de travail. Chaque accident d
 | 01 | Identifiant accident du travail | ← | CDRi03.09 : Accident du travail déclaré | Identifiant accident du travail |
 
 
-<!-- p.66 -->
+<!-- p.64 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS646] Acquérir les informations de l’Organisme gestionnaire de l’AT (EF_BS10) à partir de
 CDRi
@@ -1450,7 +1450,7 @@ Date fin AT
 
 Date fin AT
 
-<!-- transcrit de p.66 (ex-figure) -->
+<!-- transcrit de p.64 (ex-figure) -->
 
 [RG_BS646] Acquérir les informations de l'Organisme gestionnaire de l'AT (EF_BS10) à partir de CDRi
 
@@ -1494,7 +1494,7 @@ Ce contrôle a pour objet de vérifier que la clé de l'AT correspond bien à l'
 - Déterminer le complément à 10 du chiffre unitaire de cette somme : il constitue la clé ;
 
 
-<!-- p.67 -->
+<!-- p.65 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 La clé issue du calcul doit être égale à la clé de l’AT saisie.
 [RG_BS649] Acquérir les informations de l’Organisme gestionnaire de l’AT (EF_BS10) à partir
@@ -1521,7 +1521,7 @@ entité Accident du travail déclaré (EF_BS07) :
 (EF_BS11_02).
 À noter que la date de l’accident est à minima présente sur le feuillet AT.
 
-<!-- p.68 -->
+<!-- p.66 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 3.3.4
 BS32.04 - Acquérir les informations relatives aux accidents de droit
@@ -1562,7 +1562,7 @@ EF_BS25
 Règles de
 gestion
 
-<!-- p.69 -->
+<!-- p.67 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 ACQUISITION A PARTIR DE CDRi
 [RG_BS670] Acquérir les informations de la Maternité (EF_BS16) à partir du service CDRi
@@ -1636,7 +1636,7 @@ Le système de facturation doit permettre la saisie de :
  la Date présumée de début de grossesse (EF_BS16_01) ou
  la Date réelle d'accouchement ou date d'adoption (EF_B16_02).
 
-<!-- transcrit de p.69 (ex-figure) -->
+<!-- transcrit de p.67 (ex-figure) -->
 
 *ACQUISITION A PARTIR DE CDRi*
 
@@ -1672,7 +1672,7 @@ Le système de facturation doit permettre la saisie de :
 - la Date réelle d'accouchement ou date d'adoption (EF_B16_02).
 
 
-<!-- p.70 -->
+<!-- p.68 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 3.3.6
 BS32.06 - Acquérir les informations relatives aux exonérations
@@ -1728,7 +1728,7 @@ exonération
 Donnée soumise à la présence
 d’une CPX.
 
-<!-- transcrit de p.70 (ex-figure) -->
+<!-- transcrit de p.68 (ex-figure) -->
 
 #### 3.3.6 BS32.06 - Acquérir les informations relatives aux exonérations
 
@@ -1769,7 +1769,7 @@ Chaque Libellé exonération (EF_BS10_01) faisant référence à l'une des valeu
 Chaque entité Exonération du TM (EF_BS12) doit faire l'objet de la création d'une entité Période ETM (EF_BS13).
 
 
-<!-- p.71 -->
+<!-- p.69 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 EF_BS13 : Période
 ETM
@@ -1843,7 +1843,7 @@ présence d’une CPX.
 Date fin MTM
 
 
-<!-- transcrit de p.71 (ex-figure) -->
+<!-- transcrit de p.69 (ex-figure) -->
 
 | EF_BS13 : Période ETM — Réf. | Nom | | Source (Données API Lecture Vitale 6.xx) | Libellé | Précision |
 | --- | --- | --- | --- | --- | --- |
@@ -1877,7 +1877,7 @@ Chaque entité Majoration du TM (EF_BS14) déclaré doit faire l'objet de la cr�
 | 02 | Date fin MTM | ← | `<amo><libelleExo>` | Libellé exonération | Donnée soumise à la présence d'une CPX. |
 
 
-<!-- p.72 -->
+<!-- p.69 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 ACQUISITION A PARTIR DE CDRi
 [RG_BS684] Acquérir les informations de l’Exonération du TM (EF_BS12) à partir du service CDRi
@@ -1950,7 +1950,7 @@ CDRi03.07 : Modulation
 du TM
 Code MTM
 
-<!-- transcrit de p.72 (ex-figure) -->
+<!-- transcrit de p.69 (ex-figure) -->
 
 *ACQUISITION A PARTIR DE CDRi*
 
@@ -1992,7 +1992,7 @@ Le service CDRi peut retourner plusieurs modulations du TM :
 Chaque Code exonération MTM du service CDRi fait référence à l'une des valeurs suivantes et doit faire l'objet de la création d'une entité Modulation du TM (EF_BS14) avec le libellé suivant :
 
 
-<!-- p.73 -->
+<!-- p.70 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 Libellé exonération (EF_BS14_01)
 Correspondance avec le Code
@@ -2043,7 +2043,7 @@ modulation du TM :
  Période MTM
 (EF_BS15).
 
-<!-- transcrit de p.73 (ex-figure) -->
+<!-- transcrit de p.70 (ex-figure) -->
 
 | Libellé exonération (EF_BS14_01) | Correspondance avec le Code exonération MTM de CDRi (CDRi03.07) |
 | --- | --- |
@@ -2078,7 +2078,7 @@ Le système de facturation doit permettre la saisie des informations suivantes p
 - Période MTM (**EF_BS15**).
 
 
-<!-- p.74 -->
+<!-- p.71 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 
 ### 3.4 BS33 - Acquérir les informations sur le médecin traitant
@@ -2154,7 +2154,7 @@ médecin traitant
 N° Assurance Maladie
 du médecin traitant
 
-<!-- transcrit de p.74 (ex-figure) -->
+<!-- transcrit de p.71 (ex-figure) -->
 
 ### 3.4 BS33 - Acquérir les informations sur le médecin traitant
 
@@ -2188,7 +2188,7 @@ du médecin traitant
 | 04 | N° Assurance Maladie du médecin traitant | | CDRi03.03 : Médecin Traitant | N° Assurance Maladie du médecin traitant | |
 
 
-<!-- p.75 -->
+<!-- p.72 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS692] Acquérir les informations de la Période MTT (Médecin Traitant) (EF_BS18) à partir
 du service CDRi
@@ -2233,7 +2233,7 @@ Le système de facturation doit permettre la saisie des informations suivantes :
  Date fin MTT
 (EF_BS18_02).
 
-<!-- transcrit de p.75 (ex-figure) -->
+<!-- transcrit de p.72 (ex-figure) -->
 
 **[RG_BS692] Acquérir les informations de la Période MTT (Médecin Traitant) (EF_BS18) à partir du service CDRi**
 
@@ -2245,7 +2245,7 @@ EF_BS18 : Période MTT — Données service CDRi
 | 02 | Date fin MTT | | | Date fin MTT | |
 
 
-<!-- p.76 -->
+<!-- p.73 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 
 ### 3.5 BS34 - Identifier les situations particulières
@@ -2296,7 +2296,7 @@ Précision
 <amo><libelleExo>
 Libellé exonération
 
-<!-- transcrit de p.76 (ex-figure) -->
+<!-- transcrit de p.73 (ex-figure) -->
 
 Données API Lecture Vitale 6.xx (RG_BS700 / SP03)
 
@@ -2311,7 +2311,7 @@ Données API Lecture Vitale 6.xx (RG_BS703 / SP17)
 | `<amo><libelleExo>` | Libellé exonération | |
 
 
-<!-- p.77 -->
+<!-- p.75 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
  Remarque : un détenu possède un code BGDH = « 65 »
 [RG_BS702] [SP08.2] : Identifier un bénéficiaire permanent coordonné RSS à partir de la Carte
@@ -2383,7 +2383,7 @@ Dans ce cas, les informations suivantes doivent être valorisées :
 ○ Donnée valorisée à « SP08.1 »
 [SP08.2] : Identifier un BS permanent coordonné RSS à partir de CDRi
 
-<!-- transcrit de p.77 (ex-figure) -->
+<!-- transcrit de p.75 (ex-figure) -->
 
 **[RG_BS704] Acquérir les informations de la période SP (EF_BS20) à partir de la Carte Vitale**
 
@@ -2410,7 +2410,7 @@ Correspondance entre le contrat CDRi et le code situation particulière :
 | « 10 » | SP06 : Bénéficiaire de l'AME |
 
 
-<!-- p.78 -->
+<!-- p.75 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 Un BS permanent coordonné RSS est identifié à partir de CDRi par son code régime
 (EF_BS04_01) égal à « 01 » et par un code gestion BGDH (EF_BS03_03) égal à « 70 ».
@@ -2453,7 +2453,7 @@ Date fin SP
 Les informations de la période SP (EF_BS20) pour les détenus sont à prendre sur la
 période liée à l’ETM « pension militaire » (EF_BS13).
 
-<!-- transcrit de p.78 (ex-figure) -->
+<!-- transcrit de p.76 (ex-figure) -->
 
 **[RG_BS706] Acquérir les informations de la période SP (EF_BS20) à partir du service CDRi**
 
@@ -2465,7 +2465,7 @@ EF_BS20 : Période SP — Données service CDRi
 | 02 | Date fin SP | ← | | Date fin SP | |
 
 
-<!-- p.79 -->
+<!-- p.76 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 IDENTIFICATION A PARTIR D’UN AUTRE SUPPORT (CDR, Attestations)
 [RG_BS707] [SP03] : Identifier un bénéficiaire de la Complémentaire Santé Solidaire à partir d’un
@@ -2515,7 +2515,7 @@ CDRi (attestation) doivent permettre la valorisation des informations suivantes 
 passage coordonnés RSS. Dans ce cas, la situation particulière utilisée est SP08
 (signifie SP08.1 ou SP08.2)
 
-<!-- p.80 -->
+<!-- p.77 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
  Lorsque le bénéficiaire des soins permanent coordonné RSS est également
 bénéficiaire de la C2S, les 2 situations se « cumulent » ;
@@ -2535,7 +2535,7 @@ Pour information, le service CDR, en présence d’un détenu affichera « TIERS
 INTEGRAL SANS DEPASSEMENT SUR LES HONORAIRES, PRISE EN CHARGE A
 100% PAR LE REGIME GENERAL »
 
-<!-- p.81 -->
+<!-- p.78 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 
 ### 3.6 BS35 - Acquérir les informations de l'organisme complémentaire (C2S / AME)
@@ -2592,7 +2592,7 @@ Identifiant Organisme Complémentaire
 2
 99999997
 
-<!-- transcrit de p.81 (ex-figure) -->
+<!-- transcrit de p.78 (ex-figure) -->
 
 **[RG_BS720] Acquérir l'identifiant de l'organisme complémentaire (EF_BS21_01) pour le bénéficiaire de la C2S, de l'AME — [SP03]**
 
@@ -2612,7 +2612,7 @@ Identifiant Organisme Complémentaire
 | 2 | 99999997 |
 
 
-<!-- p.82 -->
+<!-- p.79 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 3
 88888888
@@ -2708,7 +2708,7 @@ de lecture carte vitale par les libellés égaux à « COMPLEMENTAIRE SANTE SOLI
 gérée par un organisme complémentaire », et « COMPLEMENTAIRE SANTE SOLIDAIRE
 gérée par votre caisse d’Assurance Maladie ».
 
-<!-- transcrit de p.82 (ex-figure) -->
+<!-- transcrit de p.79 (ex-figure) -->
 
 **[RG_BS721] Déterminer le mode de gestion (EF_BS21_02) et le mode de facturation (EF_BS21_03) pour les bénéficiaires de la C2S**
 
@@ -2721,7 +2721,7 @@ Pour la situation particulière C2S :
 | `<typeCMU>` = COMPLEMENTAIRE SANTE SOLIDAIRE gérée par votre caisse d'Assurance Maladie | CDRi03.10 : Code situation particulière = « 01 » ou « 02 » | Gestion conjointe | Un seul flux est envoyé à l'AMO pour la part obligatoire et la part complémentaire | Facturation unique |
 
 
-<!-- p.83 -->
+<!-- p.80 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS722] Déterminer le mode de gestion (EF_BS21_02) et le mode de facturation
 (EF_BS21_03) pour les bénéficiaires de la C2S à partir d’un autre support de droits
@@ -2742,7 +2742,7 @@ le choix de l’ES.
 Les entités fonctionnelles sont décrites dans le document suivant :
  [ DICO ] - Dictionnaire de données
 
-<!-- p.84 -->
+<!-- p.81 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 
 ## 5 ANNEXE 1 - SYNTHESE DES REGLES DE GESTION
@@ -2768,7 +2768,7 @@ DESCRIPTION DETAILLEE DE LA FONCTION « BS - ACQUERIR LES INFORMATIONS DU
 [RG_BS630] Acquérir les informations de l’Organisme AMO maladie (EF_BS04) à partir de la Carte Vitale. 18
 [RG_BS631] Acquérir les informations de la Période de droits AMO (EF_BS05) à partir de la Carte Vitale .. 18
 
-<!-- p.85 -->
+<!-- p.82 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS636] Acquérir les informations de l’Organisme AMO maladie (EF_BS04) à partir d’un autre support
 [RG_BS637] Acquérir les informations de la Période de droits AMO (EF_BS05) à partir d’un autre support de
@@ -2783,7 +2783,7 @@ BS - Acquérir les informations sur le Bénéficiaire des Soins
 3.4
 [RG_BS690] Acquérir le Code existence d’une déclaration de médecin traitant (EF_BS17_01) à partir de la
 
-<!-- p.86 -->
+<!-- p.83 -->
 BS - Acquérir les informations sur le Bénéficiaire des Soins
 [RG_BS692] Acquérir les informations de la Période MTT (Médecin Traitant) (EF_BS18) à partir du service
 [RG_BS693] Acquérir les informations du Médecin Traitant (EF_BS17) à partir d’un autre support de droits 33
