@@ -61,6 +61,8 @@ côté du script puis :
 cd skills/fides-ace-spec/reference && python build_docs.py
 ```
 
+Outils complémentaires (suivi de modifications V06.09) : `detect_strikethrough.py <p_début> <p_fin>` (détecte le texte barré du PDF), `apply_strikethrough.py <fichier.md> <p_début> <p_fin>` (applique le marquage `~~…~~`, page-aware) et `regen_section.py <slug> <out_path>` (régénère une seule section depuis le PDF).
+
 > ⚠️ **Attention** : `build_docs.py` régénère tout depuis le PDF et **écrase** les fichiers
 > Markdown. La détection de figures se fait désormais par **légende** (`Figure N :`, `Schéma…`,
 > `Diagramme…`) + un petit allowlist `EXTRA_FIGURE_PAGES` pour les schémas sans légende : elle
