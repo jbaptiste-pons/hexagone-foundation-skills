@@ -15,7 +15,10 @@ def main():
     n = doc.page_count
     bounds = [(s[0], bd.SECTIONS[i + 1][0] - 1 if i + 1 < len(bd.SECTIONS) else n, s[1], s[2])
               for i, s in enumerate(bd.SECTIONS)]
-    target = next(b for b in bounds if b[2] == slug)
+    target = next((b for b in bounds if b[2] == slug), None)
+    if target is None:
+        valid = ", ".join(b[2] for b in bounds)
+        sys.exit(f"Erreur : slug inconnu '{slug}'. Slugs valides : {valid}")
     start, end, _slug, title = target
 
     lines = [f"# {title}", "", f"_Pages {start}\u2013{end} du PDF source._", ""]
@@ -33,7 +36,8 @@ def main():
             if pno in bd.MERMAID:
                 lines += ["", "> Transcription Mermaid (depuis la figure ci-dessus) :", "", bd.MERMAID[pno]]
             lines.append("")
-    open(out_path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
     print(f"wrote {out_path}  pages {start}-{end}")
 
 
