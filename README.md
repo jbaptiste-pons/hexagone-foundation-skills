@@ -4,6 +4,30 @@ Bibliothèque de skills IA pour les équipes Dedalus ERP-PAS. Chaque skill donne
 
 ## Installation
 
+### GitHub Copilot CLI (plugin)
+
+```bash
+# Installer le plugin directement
+copilot plugin install Dedalus-ERP-PAS/foundation-skills
+
+# Ou l'ajouter comme marketplace pour parcourir les skills
+copilot plugin marketplace add Dedalus-ERP-PAS/foundation-skills
+copilot plugin marketplace browse foundation-skills
+```
+
+Vous pouvez aussi l'activer de manière déclarative dans votre fichier de configuration :
+
+- **Utilisateur** : `~/.copilot/settings.json`
+- **Projet** : `.github/copilot/settings.json`
+
+```json
+{
+  "enabledPlugins": ["Dedalus-ERP-PAS/foundation-skills"]
+}
+```
+
+### Agent Skills CLI (npx)
+
 ```bash
 # Installer tous les skills
 npx skills add Dedalus-ERP-PAS/foundation-skills -g -y
