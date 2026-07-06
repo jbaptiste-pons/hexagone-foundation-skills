@@ -1,0 +1,21 @@
+{
+  "name": "hexagone-foundation-skills",
+  "owner": {
+    "name": "Dedalus ERP-PAS",
+    "email": "erp-pas@dedalus.com"
+  },
+  "metadata": {
+    "description": "Skills IA pour les équipes Dedalus ERP-PAS — développement, tests, design system, parseurs santé, documents et collaboration.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "hexagone-foundation-skills",
+      "description": "Collection complète de skills IA pour les équipes Dedalus ERP-PAS",
+      "version": "1.0.0",
+      "source": ".",
+      "license": "MIT",
+      "keywords": ["healthcare", "dedalus", "hexagone", "skills"]
+    }
+  ]
+}

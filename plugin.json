@@ -1,0 +1,28 @@
+{
+  "name": "hexagone-foundation-skills",
+  "description": "Bibliothèque de skills IA pour les équipes Dedalus ERP-PAS — code, tests, design system, parseurs santé, documents et collaboration.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dedalus ERP-PAS"
+  },
+  "homepage": "https://github.com/Dedalus-ERP-PAS/hexagone-foundation-skills",
+  "repository": "https://github.com/Dedalus-ERP-PAS/hexagone-foundation-skills",
+  "license": "MIT",
+  "keywords": [
+    "healthcare",
+    "dedalus",
+    "hexagone",
+    "skills",
+    "code-quality",
+    "testing",
+    "design-system",
+    "hl7",
+    "hpk",
+    "vue",
+    "react",
+    "typescript"
+  ],
+  "category": "development",
+  "tags": ["healthcare", "erp", "france", "fullstack"],
+  "skills": "skills/"
+}
