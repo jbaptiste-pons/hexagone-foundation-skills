@@ -75,6 +75,7 @@ graph LR
 | **fast-meeting** | Réunion autonome rapide avec décision et MR/PR | [doc](docs/fast-meeting.md) |
 | **meeting-report** | Compte-rendu automatique en français depuis une transcription Teams (`.vtt`) — spécifique hexagone-monorepo | [doc](docs/meeting-report.md) |
 | **grill-me** | Interview approfondie pour valider un plan | [doc](docs/grill-me.md) |
+| **loop-until-done** | Boucle itérative auto-évaluée jusqu'à qualité 8+/10 (Karpathy Loop) | [doc](docs/loop-until-done.md) |
 | **ubiquitous-language** | Extraction de glossaire DDD (domaine santé) | [doc](docs/ubiquitous-language.md) |
 
 ### Documents
