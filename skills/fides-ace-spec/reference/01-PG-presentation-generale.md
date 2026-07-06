@@ -2,6 +2,8 @@
 
 _Pages 1–42 du PDF source._
 
+> **Note de version (V06.09).** Le PDF source utilise le suivi de modifications (légende p.36 : « Texte barré jaune = texte supprimé »). Passages **barrés** rendus ici en `~~texte~~`. Suppressions marquées dans cette section : le paragraphe SP03/C2S sur le « dépassement autorisé (DA) » hors parcours de soins (p.32). Détection reproductible via `detect_strikethrough.py`.
+
 
 <!-- p.1 -->
 PG  -  Présentation Générale
@@ -1197,10 +1199,10 @@ Le Professionnel de Santé ne peut appliquer de dépassement tarifaire pour les 
 dispensés aux bénéficiaires de la complémentaire santé solidaire, sauf en cas d’exigence
 particulière du patient, auquel cas le bénéficiaire de la C2S peut perdre le bénéfice de sa
 couverture complémentaire
-Pour les bénéficiaires de la complémentaire santé solidaire ne respectant pas le parcours
-coordonné de soins, les médecins spécialistes peuvent pratiquer le dépassement autorisé
-« DA ». Ce dépassement reste en totalité à la charge du bénéficiaire (il n’est pas pris en
-charge par la complémentaire santé solidaire).
+~~Pour les bénéficiaires de la complémentaire santé solidaire ne respectant pas le parcours~~
+~~coordonné de soins, les médecins spécialistes peuvent pratiquer le dépassement autorisé~~
+~~« DA ». Ce dépassement reste en totalité à la charge du bénéficiaire (il n’est pas pris en~~
+~~charge par la complémentaire santé solidaire).~~
 L’établissement doit :
  identifier que le bénéficiaire des soins est couvert par un contrat de complémentaire santé
 solidaire (C2S),
@@ -1208,8 +1210,8 @@ solidaire (C2S),
 soins peut refuser cette dispense d’avance des frais.
  respecter les montants maximums de facturation (sans dépassement) sauf :
 ○ exigence particulière du patient,
-○ pour les médecins spécialistes, quand le parcours coordonné de soins n’est pas
-respecté,
+~~○ pour les médecins spécialistes, quand le parcours coordonné de soins n’est pas~~
+~~respecté,~~
 L’éditeur doit s’assurer que la prise en compte du montant maximum et de la dispense
 d’avance de frais correspondante sont possibles (sans blocage par le progiciel).
 Identification
@@ -1355,7 +1357,7 @@ marge
 Codes couleur
 Les codes couleur suivants sont utilisés dans ce document :
  Texte surligné jaune = texte ajouté par rapport à la version précédente
- Texte barré jaune = texte supprimé
+~~ Texte barré jaune = texte supprimé~~
 Exigences
 fonctionnelles
 Par défaut, la totalité de ce corpus documentaire est constituée d’exigences fonctionnelles.

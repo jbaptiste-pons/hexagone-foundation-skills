@@ -2,6 +2,8 @@
 
 _Pages 350–374 du PDF source._
 
+> **Note de version (V06.09).** Passages **barrés** (supprimés) rendus ici en `~~texte~~`. Suppressions marquées dans cette section : l'abréviation **CFISC** et sa définition (p.357), et la donnée **EF_CF04_13** « Coefficient de reprise… (CFISC) » (p.369) — cohérent avec la suppression du CFISC dans CF (RG_CF654). Détection reproductible via `detect_strikethrough.py`.
+
 
 <!-- p.350 -->
 DICO  -  Dictionnaire de données
@@ -342,8 +344,8 @@ CEAM
 Carte Européenne d’Assurance Maladie
 CEPS
 Comité économique des produits de santé
-CFISC
-Coefficient Fiscal de reprise des effets des dispositifs d’allègements fiscaux et sociaux
+~~CFISC~~
+~~Coefficient Fiscal de reprise des effets des dispositifs d’allègements fiscaux et sociaux~~
 CSEGUR
 Coefficient de revalorisation SEGUR
 CTOM
@@ -397,7 +399,7 @@ géographique et le coefficient prudentiel.
 | CCAM | Classification Commune des Actes Médicaux |
 | CEAM | Carte Européenne d'Assurance Maladie |
 | CEPS | Comité économique des produits de santé |
-| CFISC | Coefficient Fiscal de reprise des effets des dispositifs d'allègements fiscaux et sociaux |
+| ~~CFISC~~ | ~~Coefficient Fiscal de reprise des effets des dispositifs d'allègements fiscaux et sociaux~~ |
 | CSEGUR | Coefficient de revalorisation SEGUR |
 | CTOM | Coefficient des Territoires outre-mer |
 | CG | Caisse Gestionnaire |
@@ -1347,9 +1349,9 @@ Date accident de droit commun
 Identifiant de l'AT correspondant aux soins
 11
 Top exigence particulière
-13
-Coefficient de reprise des effets des dispositifs d'allégement fiscaux et sociaux
-(CFISC)
+~~13~~
+~~Coefficient de reprise des effets des dispositifs d'allégement fiscaux et sociaux~~
+~~(CFISC)~~
 19
 Coefficient MCO
 EF_CF07
@@ -1388,7 +1390,7 @@ EF_CF07
 |  | 09 | Date accident de droit commun |
 |  | 10 | Identifiant de l'AT correspondant aux soins |
 |  | 11 | Top exigence particulière |
-|  | 13 | Coefficient de reprise des effets des dispositifs d'allégement fiscaux et sociaux (CFISC) |
+|  | ~~13~~ | ~~Coefficient de reprise des effets des dispositifs d'allégement fiscaux et sociaux (CFISC)~~ |
 |  | 19 | Coefficient MCO |
 | EF_CF07 |  | Établissement ( Exécutant / exploitant) |
 

@@ -2,6 +2,8 @@
 
 _Pages 147–200 du PDF source._
 
+> **Note de version (V06.09).** Cette version comporte des modifications en révision : passages **barrés** (supprimés, rendus ici en `~~texte~~`) et passages **surlignés** (ajoutés, signalés par _(ajout V06.09)_). Modifications V06.09 intégrées dans cette transcription : refonte du tableau des coefficients (RG_CF654, p.177‑178, ajout **CSEGUR** / « Coefficient MCO dans la facture »), nouvelle colonne/ligne **SE8** dans le tableau de cumul, et nouvelles règles **RG_CF889** (forfaits fausse couche FEF/FFE), **RG_CF897** (forfait FSD), **RG_CF898** (cumul SEx/APE/ATU/FFM) et **RG_CF899** (cohabitation forfaits urgence), p.188‑189. Détection du barré reproductible via `detect_strikethrough.py`.
+
 
 <!-- p.147 -->
 CF - Déterminer le contexte de
@@ -694,7 +696,7 @@ EF_CF05_04
 Sous-catégorie
  « contexte médical »,
  « coordination »
- non renseignée.
+ ~~non renseignée.~~
 EF_CF05_05
 Nomenclature
  « NGAP »
@@ -729,7 +731,7 @@ Nomenclature
 | EF_CF05_01 | Code Prestation | Code Prestation (ou Regroupement) |
 | EF_CF05_02 | Niveau | « Complément » |
 | EF_CF05_03 | Catégorie | « Majoration » |
-| EF_CF05_04 | Sous-catégorie | « contexte médical », « coordination », non renseignée. |
+| EF_CF05_04 | Sous-catégorie | « contexte médical », « coordination », ~~non renseignée.~~ |
 | EF_CF05_05 | Nomenclature | « NGAP » |
 
 **[CP01] : Majorations complexes et très complexes**
@@ -1196,15 +1198,15 @@ est inférieur à 16 ans ;
  le bénéficiaire est affilié à la caisse de Mayotte (N° de caisse
 976).1
 Spécialité du PS
- les familles de Professionnels de Soins :
-○  « Auxiliaires-Médicaux »,
-○ « Pharmaciens »,
-○ « Laboratoires d'analyse de biologie médicale »,
- les sous-familles
-○ « Chirurgien-dentiste »
-○ « Sage-femme »
- Cf. [TABLES - Liste des tables] Table 100 : Code spécialité
-des Professionnels de Santé
+La table 15.1 liste les spécialités PS qui sont exclus du parcours de soins.
+ ~~les familles de Professionnels de Soins :~~
+○ ~~« Auxiliaires-Médicaux »,~~
+○ ~~« Pharmaciens »,~~
+○ ~~« Laboratoires d'analyse de biologie médicale »,~~
+ ~~les sous-familles~~
+○ ~~« Chirurgien-dentiste »~~
+○ ~~« Sage-femme »~~
+ ~~Cf. [TABLES - Liste des tables] Table 100 : Code spécialité des Professionnels de Santé~~
 1 La loi n° 2019-774 du 24 juillet 2019 relative à l'organisation et à la transformation du système de santé
 procède à l’extension à Mayotte, du dispositif de parcours de soins coordonnés. Le parcours de soins
 coordonnés y est partiellement transposé, en effet, la majoration de la participation de l’assuré en cas
@@ -1218,7 +1220,7 @@ de soins n’est pas appliquée.
 | Contexte d'exclusion | Cas d'exclusion |
 | --- | --- |
 | Situation du bénéficiaire | • l'âge du bénéficiaire à la date de référence AMO (EF_CF01_01) est inférieur à 16 ans ;<br>• le bénéficiaire bénéficie de l'AME (EF_CF10_01 est égal à « SP06 ») ;<br>• le bénéficiaire est un BS de passage coordonné RSS (EF_CF10_01 est égal à « SP08.1 ») ;<br>• le bénéficiaire est affilié à la caisse de Mayotte (N° de caisse 976).¹ |
-| Spécialité du PS | • les familles de Professionnels de Soins :<br>&nbsp;&nbsp;○ « Auxiliaires-Médicaux »,<br>&nbsp;&nbsp;○ « Pharmaciens »,<br>&nbsp;&nbsp;○ « Laboratoires d'analyse de biologie médicale »,<br>• les sous-familles<br>&nbsp;&nbsp;○ « Chirurgien-dentiste »<br>&nbsp;&nbsp;○ « Sage-femme »<br>Cf. [TABLES - Liste des tables] Table 100 : Code spécialité des Professionnels de Santé |
+| Spécialité du PS | **La table 15.1 liste les spécialités PS qui sont exclus du parcours de soins.**<br>~~• les familles de Professionnels de Soins :~~<br>~~○ « Auxiliaires-Médicaux »,~~<br>~~○ « Pharmaciens »,~~<br>~~○ « Laboratoires d'analyse de biologie médicale »,~~<br>~~• les sous-familles~~<br>~~○ « Chirurgien-dentiste »~~<br>~~○ « Sage-femme »~~<br>~~Cf. [TABLES - Liste des tables] Table 100 : Code spécialité des Professionnels de Santé~~ |
 
 
 <!-- p.172 -->
@@ -1238,6 +1240,7 @@ du parcours de soins sont données dans la table 15.5.
  Cf. [TABLES - Liste des tables], Table 15.5 : Cas d’exclusion
 du parcours de soins en fonction de la catégorie médicale
 d’un acte CCAM
+ Le contexte métier (EF_IP05_13) vaut « IST » _(ajout V06.09)_
 Téléconsultations
 Les téléconsultations (prestations dont la sous-catégorie
 EF_IP05_07 = « téléconsultation ») pour les patients n’ayant pas
@@ -1310,7 +1313,7 @@ blanc
 | Contexte d'exclusion | Cas d'exclusion |
 | --- | --- |
 | Spécialité du PS (suite) | Seule la sous-famille « Médecin » est concernée par le parcours de soins, à l'exception des Professionnels de Santé de spécialité 38. |
-| Nature des soins | • La rétrocession hospitalière<br>• Les actes présents dans la table suivante : Cf. [TABLES - Liste des tables], Table 15.3 : Cas d'exclusion du parcours de soins en fonction de la nature des soins<br>• La catégorie médicale de l'acte pour un acte de nomenclature CCAM<br>• Les catégories médicales (champ 12 de la base CCAM) exclues du parcours de soins sont données dans la table 15.5. Cf. [TABLES - Liste des tables], Table 15.5 : Cas d'exclusion du parcours de soins en fonction de la catégorie médicale d'un acte CCAM |
+| Nature des soins | • La rétrocession hospitalière<br>• Les actes présents dans la table suivante : Cf. [TABLES - Liste des tables], Table 15.3 : Cas d'exclusion du parcours de soins en fonction de la nature des soins<br>• La catégorie médicale de l'acte pour un acte de nomenclature CCAM<br>• Les catégories médicales (champ 12 de la base CCAM) exclues du parcours de soins sont données dans la table 15.5. Cf. [TABLES - Liste des tables], Table 15.5 : Cas d'exclusion du parcours de soins en fonction de la catégorie médicale d'un acte CCAM<br>• **Le contexte métier (EF_IP05_13) vaut « IST »** _(ajout V06.09)_ |
 | Téléconsultations | Les téléconsultations (prestations dont la sous-catégorie EF_IP05_07 = « téléconsultation ») pour les patients n'ayant pas de médecin traitant désigné ou si ce dernier n'est pas disponible dans un délai compatible avec l'état de santé du patient sont exclues du parcours de soins |
 
 **[RG_CF641] Détermination de l'IPS (EF_CF03_01) et du Top MT (EF_CF03_02)** — Condition : hors exclusion du parcours de soins déterminé en RG_CF640
@@ -1596,12 +1599,8 @@ Déterminer les autres natures d'assurance (suite) :
 
 <!-- p.177 -->
 CF - Déterminer le contexte de facturation
- CFISC : Coefficient de reprise des effets des dispositifs d’allègement fiscaux et
-sociaux
- (EF_CF04_13).
-○ Ce coefficient vise à neutraliser l'impact financier des dispositifs d'allègements
-fiscaux ou sociaux ayant pour objet de réduire le coût du travail et dont bénéficient
-certaines catégories d'établissements
+ ~~CFISC : Coefficient de reprise des effets des dispositifs d’allègement fiscaux et sociaux (EF_CF04_13).~~
+~~○ Ce coefficient vise à neutraliser l'impact financier des dispositifs d'allègements fiscaux ou sociaux ayant pour objet de réduire le coût du travail et dont bénéficient certaines catégories d'établissements~~
 – Jusqu’au 28 février 2025 : Une valeur différente suivant le type d’établissement
 (défini par arrêté)
 – A partir du 1er mars 2025 : neutralisation du coefficient fixé à la valeur « 0 »
@@ -1704,15 +1703,16 @@ en valeur positive mais qui est à retrancher.
 
 <!-- transcrit de p.177 (ex-figure) -->
 
-Contexte d'application de chaque coefficient en fonction des types de prestation (les coefficients peuvent s'appliquer aux parts AMO et/ou AMC) :
+**[RG_CF654] Contexte d'application des coefficients par type de prestation (V06.09).** En‑têtes barrés = supprimés en V06.09 ; colonnes **CSEGUR**, **Coefficients intégrés dans**, **Coefficient MCO dans la facture** = ajouts V06.09.
 
-| Type de prestation | CT | CG AMO | CG AMC | CP AMO | CP AMC | CFISC EPS | CFISC PNL b) c) AMO | CFISC PNL b) c) AMC | CSEGUR EPS et PNL AMO | CSEGUR EPS et PNL AMC |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ACE (assurés sociaux) | ✓ | | | | | | | | | |
-| Rétrocession, médicaments et LPP | | | | | | | | | | |
-| ATU, FFM, SEx (assurés sociaux) | ✓ | ✓ | ✓ | ✓ | | | ✓ | ✓ | ✓ | ✓ |
-| Actes associés aux forfaits ATU, FFM, SEx | | | | | | | | | | |
-| FU1, FU2, FU3, FU4, SIM, SIC, SAS, SUB, SB2, SB3 | | | | | | | | | | |
+| Type de prestation | CT | CG | CP AMO | CP AMC | ~~CFISC EPS~~ | ~~CFISC PNL b) c)~~ | CSEGUR | Coefficients intégrés dans | Coefficient MCO dans la facture |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ACE (assurés sociaux) | ✓ | | | | | | | | Cf RG_CF656 (1 à ce jour car le CT vaut 0) |
+| ATU, FFM, SEx, **APE** (assurés sociaux) | ✓ | ✓ | ✓ | | | ~~✓~~ | ✓ | Coefficient MCO | Cf RG_CF656 |
+| Actes associés aux forfaits ATU, FFM, SEx, **APE** | _non concerné_ | | | | | | | | 1 sauf CP, RG_CF656 |
+| SU1, SU2, SUN, SUF, SSN, SSF, FUx, SIM, SIC, SAS, SUB, SB2, SB3, PE1, PE2 | _non concerné_ | | | | | | | | 0 |
+| Rétrocession | | | | | | | | | 0 |
+| FSD, VDE, forfaits techniques, médicaments de la liste en sus, médicaments sous AAP / AAC, LPP en sus | | | | | | | | | 0 |
 
 <!-- p.179 -->
 CF - Déterminer le contexte de facturation
@@ -1728,14 +1728,16 @@ valorisé à 0% dans la formule de calcul ci-dessus.
 Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2).
 [SP08] : BS coordonné RSS
 Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2).
-[CP03] : Rétrocession de médicaments
-Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2).
-[CP04] : Présence d’un forfait de type FUx dans la facture
-Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2)
-[CP05] : Activité à forfait
-Le coefficient MCO du forfait est valorisé avec le coefficient du forfait (cf RG_CF654)
-Le coefficient MCO des actes associés aux forfaits est valorisé à 1 (en type 4S dans la
-facture)
+~~[CP03] : Rétrocession de médicaments~~
+~~Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2).~~
+~~[CP04] : Présence d’un forfait de type FUx dans la facture~~
+~~Le coefficient MCO n’est pas valorisé (valeur à zéro dans la norme B2)~~
+~~[CP05] : Activité à forfait~~
+~~Le coefficient MCO du forfait est valorisé avec le coefficient du forfait (cf RG_CF654)~~
+~~Le coefficient MCO des actes associés aux forfaits est valorisé à 1 (en type 4S dans la
+facture)~~
+
+_(Les cas particuliers [CP03], [CP04] et [CP05] ci-dessus sont barrés / révoqués dans la version source V06.09.)_
 
 <!-- p.179 -->
 CF - Déterminer le contexte de facturation
@@ -2059,14 +2061,12 @@ CF - Déterminer le contexte de facturation
 [CP1] : Enfant de moins de 16 ans
 Pour les enfants de moins de 16, les majorations de coordination MCG, MCS et MCC sont
 autorisées.
-[CP2] : Facturation d’une CCP
-La facturation d’une CCP n’est pas cumulable avec les majorations MCG, MCS et MCC.
-[CP3] : Facturation d’une Consultation Complexe
-La facturation d’une consultation complexe (Catégorie = « Réservé PS ») n’est pas
-cumulable avec les majorations MCG, MCS et MCC.
-[CP4] : Facturation d’un avis de consultant
-La facturation d’un avis de consultant (APC, APY, APU) n’est pas cumulable avec les
-majorations MCG, MCS et MCC.
+~~[CP2] : Facturation d’une CCP~~
+~~La facturation d’une CCP n’est pas cumulable avec les majorations MCG, MCS et MCC.~~
+~~[CP3] : Facturation d’une Consultation Complexe~~
+~~La facturation d’une consultation complexe (Catégorie = « Réservé PS ») n’est pas cumulable avec les majorations MCG, MCS et MCC.~~
+~~[CP4] : Facturation d’un avis de consultant~~
+~~La facturation d’un avis de consultant (APC, APY, APU) n’est pas cumulable avec les majorations MCG, MCS et MCC.~~
 3.1.6.4
 CF30.06.04 - Contrôler les compléments de prestation des actes
 Vue générale
@@ -2167,9 +2167,49 @@ L’acte PAI n’est pas facturable en sus des forfaits :
  d'accueil et de traitement des urgences (ATU)
  sécurité et environnement (SE)
 
+[RG_CF889] Contrôler la facturation des forfaits fausse couche établissement (FEF, FFE) _(ajout V06.09)_
+Aucune consultation, ou acte ne peut être facturé en sus des Forfaits fausse couche établissement (FEF, FFE).
+ Cas particulier
+[CP01] : Forfaits fausse couche établissement et prise en charge lors d’un passage aux urgences
+Le forfait ATU peut être facturé en sus des forfaits FEF ou FFE, en cas de prise en charge lors d’un passage aux urgences.
+[RG_CF897] Contrôler la facturation du forfait FSD _(ajout V06.09)_
+Le forfait FSD ne peut pas se cumuler avec les forfaits ATU / FFM / SEx (selon Dispositions générales et diverses de la CCAM et article R 162-33 -1 du CSS).
+[RG_CF898] Contrôler la facturation des forfaits SEx, APE, ATU, FFM _(ajout V06.09)_
+Pour une même Venue (EF_BS01), et sauf urgences non gynécologiques, les forfaits sont cumulables entre eux suivant le tableau ci-après :
+
+**[RG_CF898] Cumul des forfaits SEx / APE / ATU / FFM (même Venue)** — ✓ = cumul possible au cours d'une même séquence ; case grise (—) = pas de cumul possible. La colonne/ligne **SE8** est un ajout V06.09.
+
+| | SE1 | SE2 | SE3 | SE4 | SE5 | SE6 | SE7 | SE8 | APE | ATU | FFM |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SE1 | — | | | | | | | | | | |
+| SE2 | ✓ | — | | | | | | | | | |
+| SE3 | ✓ | ✓ | — | | | | | | | | |
+| SE4 | ✓ | ✓ | ✓ | — | | | | | | | |
+| SE5 | ✓ | ✓ | ✓ | ✓ | — | | | | | | |
+| SE6 | ✓ | ✓ | ✓ | ✓ | ✓ | — | | | | | |
+| SE7 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | | | | |
+| **SE8** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | | | |
+| APE | | ~~CP01~~ | | | | | | | — | | |
+| ATU | | | | | | | | | | — | |
+| FFM | | | | | | | | | | | — |
+
+~~[CP01] : Facturation de l’Avastin~~
+~~Il est possible de cumuler le forfait SE2 et APE dans le cas de l’administration de Bevacizumab (Avastin) dans le traitement de la dégénérescence maculaire liée à l’âge néo vasculaire (DMLA) au titre de sa recommandation temporaire d’utilisation (RTU).~~
+~~➜ Facturation de l’AVASTIN :~~
+~~○ BGLB001 (Acte CCAM d’injection dans le corps vitré)~~
+~~○ SE2~~
+~~○ APE~~
+~~○ PH8 : UCD du produit (BEVACIZUMAB)~~
+
 <!-- p.189 -->
 CF - Déterminer le contexte de facturation
-CONTROLES DES COMPLEMENTS DE PRESTATION DU FORFAIT FUX
+3.1.6.4.1 Contrôle des compléments de prestation du forfait Fux
+[RG_CF899] Contrôler la cohabitation des prestations sur une même facture en contexte d’urgence non gynécologiques _(ajout V06.09)_
+Les forfaits activité urgence et compléments :
+ FUx, SUM, SUx, SIM, SIC, SUB, SB2, SB3, SAS, SSN, SSF, SUN, SUF, PE1, PE2
+ne sont compatibles avec aucun autre type d’acte ou forfait, hormis :
+ le forfait patient urgences (FPV, FPM, FPU, FPX, FPL, CFU).
+Autrement dit, les actes ayant conduit à la facturation de ces forfaits ne doivent pas figurer dans la facture.
 [RG_CF683] Contrôler la validité des compléments de prestation SUN, SSN (EF_CF05_01)
 Les forfaits SUN, SSN ne sont facturables que pour des actes effectués selon des périodes
 horaires définies par arrêté ministériel.

@@ -1,7 +1,7 @@
 ---
 name: fides-ace-spec
 description: "Navigue et interroge la spécification fonctionnelle FIDES ACE (SFG FIDES — Facturation Individuelle Des Établissements de Santé, Actes et Consultations Externes, v06.09, GIE SESAM-Vitale). À utiliser quand l'utilisateur pose des questions sur la facturation FIDES, les domaines fonctionnels BS / IP / CF / VF / TF, les entités de données (EF_BS, EF_IP, EF_CF, EF_VF), les règles de valorisation, le contexte de facturation, les flux de transmission des factures, ou le dictionnaire de données FIDES. La doc est découpée en Markdown + figures dans le dépôt — ne pas répondre de mémoire."
-version: 1.1.0
+version: 1.2.0
 license: Proprietary
 metadata:
   author: dedalus-erp-pas

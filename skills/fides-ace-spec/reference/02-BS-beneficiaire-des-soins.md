@@ -2,6 +2,8 @@
 
 _Pages 43–83 du PDF source._
 
+> **Note de version (V06.09).** Le tableau CDRi de la règle **RG_BS647** (Période AT, EF_BS11, p.65) comporte des cellules en révision (colonnes/libellés barrés et réécrits « EF_BS10 : Organisme gestionnaire » / « Données service CDRi »). Ces modifications superposées ne sont pas marquées ligne à ligne ici ; audit du barré via `python3 detect_strikethrough.py 43 83`.
+
 
 <!-- p.43 -->
 BS  -  Acquérir les informations sur le

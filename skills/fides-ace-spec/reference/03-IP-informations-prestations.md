@@ -2,6 +2,8 @@
 
 _Pages 84–146 du PDF source._
 
+> **Note de version (V06.09).** Passages **barrés** (supprimés) rendus ici en `~~texte~~`. Suppression marquée dans cette section : la règle sur la cotation minimale des actes de prélèvement de sang (p.119). Détection reproductible via `detect_strikethrough.py`.
+
 
 <!-- p.84 -->
 IP  -  Acquérir les informations des
@@ -1538,8 +1540,8 @@ dans :
  http://www.codage.ext.cnamts.fr/codif/nabm/telecharge/index_tele.php?p_site=AM
 ELI
 Ces actes sont identifiés avec la lettre clé « B », « PB » ou « TB ».
-La cotation minimale d’un ou plusieurs actes de prélèvement de sang, effectué pour un
-même bénéficiaire ne peut être inférieure à 20.
+~~La cotation minimale d’un ou plusieurs actes de prélèvement de sang, effectué pour un~~
+~~même bénéficiaire ne peut être inférieure à 20.~~
 Entrées Prestation
 EF_IP05
 Sorties Prestation NABM
