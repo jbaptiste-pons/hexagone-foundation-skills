@@ -2,7 +2,7 @@
 name: meeting-report
 description: "Génère automatiquement un compte-rendu de réunion en français à partir d'une transcription Teams (.vtt) et optionnellement d'un rapport de présence (.csv). Propose ensuite optionnellement de créer des issues de suivi GitLab/GitHub à partir du compte-rendu. Agnostique par défaut, avec un mode enrichi auto-détecté pour le projet hexagone-monorepo. À utiliser quand l'utilisateur dépose un ou deux chemins de fichiers Teams dans le prompt et demande la génération d'un compte-rendu."
 allowed-tools: Read, Write, Bash, Grep, Glob, AskUserQuestion
-version: 1.4.0
+version: 1.5.0
 license: MIT
 metadata:
   author: Foundation Skills
@@ -259,12 +259,20 @@ The filename always uses the **ISO date format** `YYYY-MM-DD`, different from th
 1. Check if a file with the same name already exists — if yes, append `-2`, `-3`, etc. before writing (do NOT overwrite)
 2. Write the file with the Write tool
 
+### Step 10b: Generate HTML Report (Optional)
+
+After writing Markdown, check if HTML generation is enabled. Look for .meeting-reports.json with htmlGeneration:true or meetingReports.htmlGeneration in package.json. If not found, skip silently.
+
+If enabled, generate modern HTML with: responsive design, dark/light toggle, CSS variables for theming, web-safe fonts, CSS-based diagrams, color-coded sections. Write to .html extension, same collision handling. If generation fails, log warning and continue.
+
+
 ### Step 11: Report to the User
 
 Show a concise summary:
 
 1. ✓ Mode: `hexagone-monorepo` or `generic`
 2. ✓ Target path
+3a. ✓ HTML report: generated (if enabled), skipped (if disabled), or failed (with warning)
 3. One-line summary: (sub-domain in hexagone mode), number of topics, number of participants
 4. Note any fallback that was triggered (no attendance CSV, no voice tags, today's date used because no date found, default folder created, etc.)
 5. Do not run `git add`, `git commit`, or `git push` — the user commits the report manually after review.

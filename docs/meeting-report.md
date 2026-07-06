@@ -113,6 +113,26 @@ Cette étape est **optionnelle, gated et opt-in** :
 
 Le skill ne commite ni ne pousse jamais. La création d'issues est le seul effet de bord réseau, et elle n'a lieu qu'après sélection explicite de l'utilisateur.
 
+
+## Génération HTML (optionnelle)
+
+Le skill peut générer automatiquement un rapport HTML moderne.
+
+### Activation
+
+Créer .meeting-reports.json avec htmlGeneration: true
+
+### Fonctionnalités
+
+- Design responsive (mobile-first)
+- Mode sombre/clair avec toggle
+- Variables CSS pour theming
+- Diagrammes CSS (Mermaid -> HTML)
+- Code couleur par type de section
+
+Fichier écrit avec extension .html, même nom que le Markdown.
+
+
 ## Rewrite intelligent
 
 Le skill ne recopie pas la transcription — il la **réorganise par sujet** et en extrait les décisions :

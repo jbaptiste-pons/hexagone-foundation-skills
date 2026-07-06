@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compte-rendu — {MEETING_TITLE}</title>
+  <style>
+    :root {
+      --bg-primary: #f9fafb;
+      --bg-secondary: #ffffff;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --heading: #111827;
+      --accent: #3b82f6;
+      --border: #e5e7eb;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --error: #ef4444;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #111827;
+      --bg-secondary: #1f2937;
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --heading: #ffffff;
+      --accent: #60a5fa;
+      --border: #374151;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --error: #f87171;
+      --shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 20px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px var(--shadow);
+      padding: 40px;
+    }
+
+    header {
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      color: var(--heading);
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .metadata {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .metadata strong { color: var(--text-primary); }
+
+    .theme-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--bg-primary);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme-toggle:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .participants {
+      background: var(--bg-primary);
+      border-left: 4px solid var(--accent);
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .participants h2 {
+      font-size: 1.1rem;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+
+    .topic {
+      margin: 40px 0;
+      padding: 25px;
+      background: var(--bg-primary);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .topic h2 {
+      font-family: Georgia, serif;
+      color: var(--heading);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .topic h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 20px 0 10px;
+    }
+
+    .decisions ul, .problems ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .decisions li, .problems li {
+      padding: 12px 15px;
+      margin: 8px 0;
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--success);
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+
+    .decisions li:hover, .problems li:hover {
+      transform: translateX(5px);
+    }
+
+    .problems li { border-left-color: var(--error); }
+
+    .attention {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--warning);
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    .flow-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .flow-step {
+      background: linear-gradient(135deg, var(--accent), #2563eb);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px var(--shadow);
+      font-weight: 500;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .flow-arrow {
+      color: var(--text-secondary);
+      font-size: 1.5rem;
+    }
+
+    strong { font-weight: 600; color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .container { padding: 20px; }
+      h1 { font-size: 1.5rem; }
+      .metadata { flex-direction: column; gap: 10px; }
+      .topic { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <h1>{MEETING_TITLE}</h1>
+      <div class="metadata">
+        <div><strong>Date :</strong> {DATE}</div>
+        <div><strong>Organisateur :</strong> {ORGANIZER}</div>
+      </div>
+    </header>
+
+    <div class="participants">
+      <h2>Participants</h2>
+      <p>{PARTICIPANTS}</p>
+    </div>
+
+    <!-- Topics will be inserted here -->
+    {TOPICS_HTML}
+  </div>
+
+  <script>
+    const html = document.documentElement;
+    const themeIcon = document.getElementById('theme-icon');
+    
+    const savedTheme = localStorage.getItem('meetingReportTheme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
+    
+    html.setAttribute('data-theme', initialTheme);
+    themeIcon.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+    
+    function toggleTheme() {
+      const current = html.getAttribute('data-theme');
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('meetingReportTheme', newTheme);
+    }
+  </script>
+</body>
+</html>
