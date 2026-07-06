@@ -59,7 +59,8 @@ def main():
     md, first, last = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
     span_pages = struck_span_pages(first, last)
 
-    lines = open(md, encoding="utf-8").read().split("\n")
+    with open(md, encoding="utf-8") as f:
+        lines = f.read().split("\n")
     cur_page = None
     wrapped = 0
     marked = set()
@@ -75,7 +76,8 @@ def main():
             wrapped += 1
             marked.add(c)
 
-    open(md, "w", encoding="utf-8").write("\n".join(lines))
+    with open(md, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
 
     unmatched = sorted(s for s in span_pages if s not in marked)
     print(f"== {md}  (pages {first}-{last}) ==")
